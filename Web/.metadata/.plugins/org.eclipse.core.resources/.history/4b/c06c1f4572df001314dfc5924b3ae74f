@@ -15,6 +15,7 @@ public class LoginDao implements ILoginDao {
     public Usuario validarlogin(String user) {
 	Connection cn = null;
 	Usuario usu = null;
+	int cant=0;
 	try {
 	    cn=AccesoDB.getConnection();
 	    String sql="select usuario,contrasenia,tipo from usuario where usuario=?";
@@ -26,6 +27,7 @@ public class LoginDao implements ILoginDao {
 	    	usu.setUsuario(rs.getString("usuario"));
 	    	usu.setContrasenia(rs.getString("contrasenia"));
 	    	usu.setTipo(rs.getString("tipo"));
+	    	cant++;
 	    }
 	    rs.close();
 	    pstm.close();

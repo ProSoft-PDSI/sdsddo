@@ -175,6 +175,7 @@ create table mensaje(
 
 
 
+  
 
 SET TERMOUT ON
 SET ECHO OFF
