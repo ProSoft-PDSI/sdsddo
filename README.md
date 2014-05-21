@@ -1,4 +1,4 @@
-Sistema de Servicios de Restaurantes
+Sistema de Servicios de Delivery Online
 ====
 Sistema hecho por
  - Alberto Castro Sernaque
