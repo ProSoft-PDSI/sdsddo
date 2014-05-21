@@ -1,7 +1,8 @@
 Sistema de Servicios de Restaurantes
 ====
 Sistema hecho por
- - Alberto Castro Cernaque
+ - Alberto Castro Sernaque
+ - Juan Carlos Gutierrez Neira
  - Yoshitomi Maehara Aliaga
  - Henry Muñoz Evangelista
  - Ruth Riveros Huanay
