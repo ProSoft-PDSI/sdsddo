@@ -2,7 +2,7 @@
  *
  * DBMS           :  ORACLE
  * Base de Datos  :  RESTAURANTE
- * Descripción    :  
+ * Descripción    :  Base de Datos de Restaurante
  * Script         :  Crea la esquema
  * Creado por     :  Prosoft
  * Email          :  yoshitomimaehara@gmail.com
@@ -40,6 +40,10 @@ end;
 -- Asignar Privilegios
 grant connect,resource to restaurante;
 
+-- Desconectar el usuario sysdba
+
+disconnect 
+
 -- Conexión con la base de datos
 connect restaurante/admin
 
@@ -69,7 +73,11 @@ constraint chk_producto_stock
 create table cliente(
 dni char(8) not null,
 nomcliente varchar2(100) not null,
-Direccioncliente varchar2(100) not null,
+direccioncliente varchar2(100) not null,
+email varchar2(100) not null,
+fechanac date not null,
+telefono char(7) not null,
+usuario varchar2(30) not null,
 constraint pk_cliente
 	primary key(dni),
 constraint u_nomcliente
@@ -132,7 +140,7 @@ constraint chk_detpedido_pretot
 -- Crear la Tabla de Usuarios:usuario
 -- ====================================
 create table usuario(
-usuario varchar2(6) not null,
+usuario varchar2(30) not null,
 contrasenia varchar2(20) not null,
 tipo char not null,
 constraint pk_usuario
