@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="Restaurante_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="0BE7DECA-D063-5A2C-5968-10DCD21141E7">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:26 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_500" id="0F67C91D-2013-4563-BCD9-B01F946B2CF9">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>500</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="4AADD194-62FB-DD8D-6165-6B64665D320D">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="51E2B11E-6A6F-5E34-C775-C4A85F522C8E">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>100</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_7" id="600F10B8-64F0-0623-EA9E-ED74AD5A2F54">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>7</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="826C73E4-20D3-E89D-A01B-8878943149F6">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>20</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_5_2_0" id="8C4C73CF-D269-E841-4FB6-C7BEF918FA41">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>5</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_8" id="A32F0A69-6432-1C7F-E4E5-49B3A3C7FBDA">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>8</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_6" id="B77E87BC-84D6-3A2E-A46E-BD9D6D0A75A7">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_0" id="B9313728-8BD0-827A-7897-1B2514429F9D">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:26 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_3_0_0" id="CD13AC26-0DE8-3A8F-346B-8312F907B535">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:26 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>3</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_6" id="CE3FBA94-B8AA-4804-AF52-883466D4C594">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_4" id="E22479CE-CA5F-27EF-ACD2-0F5E29D42FCB">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>4</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="ECA553F4-2813-7F99-70B3-5D8DF0BB6EB9">
+         <createdBy>YOSHITOMI</createdBy>
+         <createdTime>2014-06-02 18:31:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>Untitled_1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>50</dataTypeSize>
+         <fileName>Restaurante_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

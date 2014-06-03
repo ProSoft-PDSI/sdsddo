@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="cliente" directorySegmentName="seg_0" id="CBD04F78-5BD4-F871-A40A-5C9DADDDF88C">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="Direccioncliente" id="00B15A70-04EB-4446-6B90-A22667CE2618">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="nomcliente" id="70340CF1-96BA-B3FB-D721-457E092C9B94">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="dni" id="FD4EB303-E4E6-E1E8-012B-CFE2BB005755">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_cliente" id="163069D6-0C1F-D735-AE60-1B269F3FD033">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="INDEX_1" id="18820E06-CEE8-1A96-6BC4-A8AA67E5BE1B">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

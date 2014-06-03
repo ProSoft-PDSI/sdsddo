@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C95F0306-49F0-DF1A-ADD3-099F65CEACB8" name="auditoria">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>355ED131-D366-7127-3AF1-C66EDF362F62</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codseguimiento" id="67D0D3AC-A06D-C3C6-E200-6896109EA906">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>A253EF02-0144-C4E3-16E5-4C0236C5D00F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>4AADD194-62FB-DD8D-6165-6B64665D320D</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cambio" id="663C9A02-2ACA-D08B-EC23-157ECD3A5593">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>751489C3-245A-FBA8-8DC3-472B04FCE5EA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0F67C91D-2013-4563-BCD9-B01F946B2CF9</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_inicio" id="908C0D0D-F30A-462B-FCB7-AB4ACFBA1AAA">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>127BB52F-4054-A7B4-9514-22F5E502C3DA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ECA553F4-2813-7F99-70B3-5D8DF0BB6EB9</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_modif" id="65596C87-7468-9B40-0C03-8E0C8C47852F">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>1164D802-A877-18B5-79D2-E2CAEBB2B59D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ECA553F4-2813-7F99-70B3-5D8DF0BB6EB9</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="DEB10127-49DA-03A1-452C-684E03C505CE">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>7877A3AC-506A-2A2E-B457-B95F86B6BF66</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B77E87BC-84D6-3A2E-A46E-BD9D6D0A75A7</domain>
+<delegate>E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7327298-146C-206E-62A8-B396CA4252BC" referredColumn="E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C46C68A5-B44D-B285-F04B-29F23C220922" name="pk_auditoria">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>7DEA1348-9BC8-AEA3-EE1B-3BDF5478671C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67D0D3AC-A06D-C3C6-E200-6896109EA906"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B95F03C-1937-1E33-2B8A-0C0707FF2487" name="fk_usuario">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEB10127-49DA-03A1-452C-684E03C505CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

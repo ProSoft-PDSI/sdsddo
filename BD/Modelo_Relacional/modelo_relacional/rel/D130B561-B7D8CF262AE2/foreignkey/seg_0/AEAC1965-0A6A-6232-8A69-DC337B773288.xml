@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AEAC1965-0A6A-6232-8A69-DC337B773288" name="fk_codproducto">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>96573E1D-1D13-1590-DE97-9AEE5F041E8B</importedID>
+<containerWithKeyObject>DB0C9C9F-44D3-1124-0A69-6F14AE4F72C8</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>39E8D987-0BE9-B00E-8D04-D9FEDDD893A2</localFKIndex>
+<keyObject>7BDD0747-557E-6274-50CE-81B47DFBC699</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

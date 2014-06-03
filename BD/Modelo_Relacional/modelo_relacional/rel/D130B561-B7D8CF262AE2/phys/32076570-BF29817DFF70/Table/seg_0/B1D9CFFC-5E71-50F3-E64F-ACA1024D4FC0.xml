@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="control" directorySegmentName="seg_0" id="B1D9CFFC-5E71-50F3-E64F-ACA1024D4FC0">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="parametro" id="31986022-15BD-78E7-E192-3CC19D86173F">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="valor" id="41886539-7CC0-E072-8E85-D16623BD9556">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

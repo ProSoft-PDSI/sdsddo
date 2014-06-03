@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0628CDEF-1F25-BD27-9DF0-FE6F5BD3AA61" name="pedido">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>622EFC48-FAD5-1017-44B2-E2E28E5183B0</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nropedido" id="16D3E08C-C220-8B51-6F8F-D61B49C5C50B">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>A8A3CA2D-2062-435B-2209-A98715606636</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>600F10B8-64F0-0623-EA9E-ED74AD5A2F54</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dni" id="4D96EAE5-4D2D-4D0D-F765-E9A39CC7774D">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>8D0123EB-1948-F0CE-336A-EE8D41F17066</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A32F0A69-6432-1C7F-E4E5-49B3A3C7FBDA</domain>
+<delegate>FD4EB303-E4E6-E1E8-012B-CFE2BB005755</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87B8D220-2D2C-E64E-8D58-F95F591CFF2C" referredColumn="FD4EB303-E4E6-E1E8-012B-CFE2BB005755"/>
+</associations>
+</Column>
+<Column name="fecha" id="CFC2627D-E8EF-0565-A3F4-C14DF1AC0958">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>F7BCAD66-FD73-5E7F-E050-8B7491D972EA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0BE7DECA-D063-5A2C-5968-10DCD21141E7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtotalpedido" id="9EC6B015-E0DE-3D3F-9FDC-ECBB5748807F">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>08AF99FA-0F53-759E-B0BD-022F43A5203F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="igv" id="16283A03-F810-2F92-F39D-BABCE1852604">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>47D80CC7-3B00-2D81-EB1D-F2B052687D13</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="servicio" id="5A5EDA89-656F-C45E-7734-84B6442F6681">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>3D862F98-E91D-0CB9-2E7B-0A2C02DEE822</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="totalpedido" id="BA113B1A-D460-1302-F4A7-B365CBDB31C9">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>2618CC41-70B5-1506-7D61-7C61E079CA17</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8434FE9B-89B7-5EF3-76F4-CBB22146688A" name="pk_pedido">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>15C475EE-BD08-032E-9513-4F11FF3A215C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16D3E08C-C220-8B51-6F8F-D61B49C5C50B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46B443ED-00A9-51BD-2F0B-D60D083FCFAE" name="fk_dni">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D96EAE5-4D2D-4D0D-F765-E9A39CC7774D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints>
+<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido0" directorySegmentName="seg_0" id="3082046D-9C54-1DC1-305B-011D98769FA5">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>98BC3B35-A755-693C-B904-46380FB22329</importedID>
+<rule>subtotalpedido&gt;0.0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido1" directorySegmentName="seg_0" id="868DC377-98C5-3FED-5454-865605C3FAA1">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>99D6F652-3007-47EF-23A7-6650FED571EA</importedID>
+<rule>igv&gt;0.0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido2" directorySegmentName="seg_0" id="950ECF7C-F5D7-E402-5A8F-224AF6980795">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>A0D69723-6376-57D3-FCE7-3C5CC54E23C7</importedID>
+<rule>servicio&gt;0.0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido3" directorySegmentName="seg_0" id="4FD38827-BF88-CC83-44BF-3CDAB3199763">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>BB0E5634-2FA1-5D4E-96DC-E496EEE2FE5A</importedID>
+<rule>totalpedido&gt;0.0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
