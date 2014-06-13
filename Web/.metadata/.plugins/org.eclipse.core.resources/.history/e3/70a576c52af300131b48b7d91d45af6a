@@ -1,0 +1,9 @@
+package dao.spec;
+
+import java.util.Hashtable;
+
+import entity.Producto;
+
+public interface IProductoDao {
+	Hashtable<Integer, Producto> getMenu();
+}

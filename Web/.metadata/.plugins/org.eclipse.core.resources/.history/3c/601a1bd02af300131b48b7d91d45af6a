@@ -1,0 +1,11 @@
+package dao.spec;
+
+import java.util.Hashtable;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+import entity.Producto;
+
+public interface IProductoDao {
+	List<Producto> getMenu();
+}

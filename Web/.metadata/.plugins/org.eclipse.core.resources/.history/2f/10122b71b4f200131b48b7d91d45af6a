@@ -1,0 +1,15 @@
+package dao.impl;
+
+import java.util.Hashtable;
+
+import dao.spec.IProductoDao;
+
+public class ProductoDao implements IProductoDao {
+
+	@Override
+	public Hashtable<String, String> getMenu() {
+		Hashtable<String, String> menu = new Hashtable<String, String>();
+		return null;
+	}
+
+}

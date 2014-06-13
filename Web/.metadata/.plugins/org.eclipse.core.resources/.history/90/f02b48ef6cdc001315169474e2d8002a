@@ -1,5 +1,0 @@
-package dao.spec;
-
-public interface ILogin {
-	public boolean verificarDatos();
-}

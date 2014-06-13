@@ -9,6 +9,6 @@
 	<title>..::Sistema de Servicios de Restaurantes::..</title>
 </head>
 <body>
-
+	
 </body>
 </html>

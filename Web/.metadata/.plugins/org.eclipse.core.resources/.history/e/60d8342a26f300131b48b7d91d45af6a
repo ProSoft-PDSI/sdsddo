@@ -1,0 +1,48 @@
+package dao.impl;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Hashtable;
+
+import dao.spec.IProductoDao;
+import dao.util.AccesoDB;
+import dao.util.RowMapper;
+import entity.Producto;
+
+public class ProductoDao implements IProductoDao,RowMapper<Producto> {
+
+	@Override
+	public Hashtable<String, Producto> getMenu() {
+		Hashtable< String , Producto> menu = null;
+		try {
+			Connection cn = AccesoDB.getConnection();
+			String sql="select * from producto";
+			Statement stm = cn.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			
+			while(rs.next()){
+				mapRow(rs);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return null;
+	}
+	
+	public Producto mapRow(ResultSet rs) {
+		Producto bean = new Producto();
+		try {
+			bean.setCodProducto(rs.getString("codp"));
+			bean.setNombre("descrproducto");
+			bean.setPrecio(rs.getDouble("preciounitario"));
+			bean.setStock(rs.getInt("stock"));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return bean;
+		
+	}
+
+}

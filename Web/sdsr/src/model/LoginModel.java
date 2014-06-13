@@ -12,11 +12,8 @@ public class LoginModel {
 		ILoginDao dao = new LoginDao();
 		usu = dao.validarlogin(user);
 		IMensajeDao men = new MensajeDao();
-		if(usu == null){
-			throw new RuntimeException(men.getMensaje("000001"));
-		}
-		if(!usu.getContrasenia().equals(pass)){
-			throw new RuntimeException(men.getMensaje("000002"));
+		if(usu == null || !usu.getContrasenia().equals(pass)){
+			throw new RuntimeException(men.getMensaje("000001") +" o "+men.getMensaje("000002"));
 		}
 		return usu;
 	}

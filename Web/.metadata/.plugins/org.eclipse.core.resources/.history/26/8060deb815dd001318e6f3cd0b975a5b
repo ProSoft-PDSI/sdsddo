@@ -1,7 +1,0 @@
-package entity;
-
-public class Cliente {
-	private String dni;                                       
-	private String nomcliente;                                
-	private String direccioncliente;                        
-}

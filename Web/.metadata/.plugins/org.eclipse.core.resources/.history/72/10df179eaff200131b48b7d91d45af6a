@@ -1,0 +1,9 @@
+package dao.util;
+
+public interface DataMapper<T> {
+
+
+	
+	
+	
+}

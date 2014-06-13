@@ -1,0 +1,5 @@
+package dao.util;
+
+public class Menu {
+
+}

@@ -7,3 +7,10 @@ may 16, 2014 12:38:47.04
 may 16, 2014 12:38:47.04 ###!!! [Child][MessageChannel] Error: Channel closing: too late to send/recv, messages will be lost
 may 16, 2014 12:38:47.04 
 may 16, 2014 12:38:47.04 NOTE: child process received `Goodbye', closing down
+
+jun 12, 2014 22:56:18.19 NEW SESSION
+jun 12, 2014 22:56:18.19 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jun 12, 2014 22:56:18.28 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jun 12, 2014 22:56:19.29 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jun 12, 2014 23:09:14.80 NOTE: child process received `Goodbye', closing down
+jun 12, 2014 23:09:14.80 [2156] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310

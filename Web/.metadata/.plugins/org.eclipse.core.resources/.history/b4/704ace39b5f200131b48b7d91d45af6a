@@ -1,0 +1,16 @@
+package dao.mapper;
+
+import java.sql.ResultSet;
+
+import dao.util.DataMapper;
+import entity.Producto;
+
+public class ProductoMapper implements DataMapper<Producto> {
+
+	@Override
+	public void mapData(ResultSet rs) {
+		rs.getString("codp");
+		
+	}
+
+}

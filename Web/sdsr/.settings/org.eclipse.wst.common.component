@@ -2,7 +2,7 @@
     <wb-module deploy-name="sdsr">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="sdsr"/>
         <property name="java-output-path" value="/sdsr/build/classes"/>
+        <property name="context-root" value="sdsr"/>
     </wb-module>
 </project-modules>
