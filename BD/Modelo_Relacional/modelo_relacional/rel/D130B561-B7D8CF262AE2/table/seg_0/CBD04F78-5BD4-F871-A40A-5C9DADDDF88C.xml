@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBD04F78-5BD4-F871-A40A-5C9DADDDF88C" name="cliente">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>90302551-ADBD-255B-643C-2F25E16C3C88</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dni" id="FD4EB303-E4E6-E1E8-012B-CFE2BB005755">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>E29CE34E-9B01-F00A-6E61-879914FA75E0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A32F0A69-6432-1C7F-E4E5-49B3A3C7FBDA</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nomcliente" id="70340CF1-96BA-B3FB-D721-457E092C9B94">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>B3D56FB9-8F48-76A1-7E3A-25B9049AF496</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>51E2B11E-6A6F-5E34-C775-C4A85F522C8E</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccioncliente" id="00B15A70-04EB-4446-6B90-A22667CE2618">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>DA122ED0-851E-E2B3-96B7-1CAB3B548CEA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>51E2B11E-6A6F-5E34-C775-C4A85F522C8E</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="163069D6-0C1F-D735-AE60-1B269F3FD033" name="pk_cliente">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>3AE552BE-93FD-1287-F72C-A9596202BE5E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD4EB303-E4E6-E1E8-012B-CFE2BB005755"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18820E06-CEE8-1A96-6BC4-A8AA67E5BE1B" name="INDEX_1">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>3C334638-9979-09C7-D04A-2E005DDD52E1</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70340CF1-96BA-B3FB-D721-457E092C9B94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

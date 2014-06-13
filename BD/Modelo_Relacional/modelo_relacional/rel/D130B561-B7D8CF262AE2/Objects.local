@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="C95F0306-49F0-DF1A-ADD3-099F65CEACB8" name="auditoria" seqName="seg_0"/>
+   <object objectType="Table" objectID="CBD04F78-5BD4-F871-A40A-5C9DADDDF88C" name="cliente" seqName="seg_0"/>
+   <object objectType="Table" objectID="B1D9CFFC-5E71-50F3-E64F-ACA1024D4FC0" name="control" seqName="seg_0"/>
+   <object objectType="Table" objectID="DB0C9C9F-44D3-1124-0A69-6F14AE4F72C8" name="detallepedido" seqName="seg_0"/>
+   <object objectType="Table" objectID="910CE71F-4D0A-467C-AF92-4E5187A8C7A8" name="mensaje" seqName="seg_0"/>
+   <object objectType="Table" objectID="0628CDEF-1F25-BD27-9DF0-FE6F5BD3AA61" name="pedido" seqName="seg_0"/>
+   <object objectType="Table" objectID="5287E8F4-F3AF-1A22-F311-708CE77F0177" name="producto" seqName="seg_0"/>
+   <object objectType="Table" objectID="14982DB9-07EC-69F8-BFDE-923E8C6B1BE9" name="usuario" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B7327298-146C-206E-62A8-B396CA4252BC" name="fk_usuario" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="AEAC1965-0A6A-6232-8A69-DC337B773288" name="fk_codproducto" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="87B8D220-2D2C-E64E-8D58-F95F591CFF2C" name="fk_dni" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E3CB506F-CEAA-FAA0-B1EE-CFE6403331B0" name="fk_nropedido" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
