@@ -2,7 +2,7 @@
  *
  * DBMS           :  ORACLE
  * Base de Datos  :  RESTAURANTE
- * Descripción    :  Base de Datos de Restaurante
+ * Descripcion    :  Base de Datos de Restaurante
  * Script         :  Crea la esquema
  * Creado por     :  Prosoft
  * Email          :  yoshitomimaehara@gmail.com
@@ -15,14 +15,14 @@ SET TERMOUT ON
 SET ECHO OFF
 SET SERVEROUTPUT ON
 BEGIN
-  DBMS_OUTPUT.PUT_LINE('Inicio del proceso...');
+	DBMS_OUTPUT.PUT_LINE('Inicio del proceso...');
 END;
 /
 SET TERMOUT OFF
 
---================================
+-- ================================
 -- Creando el Esquema
---================================
+-- ================================
 
 -- Verificar Cuenta
 
@@ -40,32 +40,36 @@ end;
 -- Asignar Privilegios
 grant connect,resource to restaurante;
 
--- Conexión con la base de datos
+-- Desconectar el usuario sysdba
+
+disconnect 
+
+-- Conexion con la base de datos
 connect restaurante/admin
 
---=====================================
+-- =====================================
 -- Crear la Tabla de Productos:producto
---=====================================
+-- =====================================
 create table producto(
 codproducto char(4) not null,
 descrproducto varchar2(100)not null,
 preciounitario number(5,2) not null,
 stock number(3,0) not null,
 constraint pk_producto
-  primary key (codproducto),
+	primary key (codproducto),
 constraint u_descr_producto
-  unique(descrproducto),
+	unique(descrproducto),
 constraint chk_producto_codproducto
-  check( REGEXP_LIKE(codproducto,'[PEB][IAONE][0-9][0-9]')),
+	check( REGEXP_LIKE(codproducto,'[PEB][IAONE][0-9][0-9]')),
 constraint chk_producto_preciounitario
   check(preciounitario>0),
 constraint chk_producto_stock
-  check(stock>=0)   
+	check(stock>=0)		
 );
 
---===================================
+-- ===================================
 -- Crear la Tabla de Clientes:cliente
---===================================
+-- ===================================
 create table cliente(
 dni char(8) not null,
 nomcliente varchar2(100) not null,
@@ -75,15 +79,15 @@ fechanac date not null,
 telefono char(7) not null,
 usuario varchar2(30) not null,
 constraint pk_cliente
-  primary key(dni),
+	primary key(dni),
 constraint u_nomcliente
-  unique(nomcliente)
+	unique(nomcliente)
 );
 
 
---===================================
+-- ===================================
 -- Crear la Tabla de Pedidos:pedido
---===================================
+-- ===================================
 create table pedido(
 nropedido char(7) not null,
 dni char(8) not null,
@@ -92,88 +96,51 @@ subtotalpedido number(5,2) not null,
 igv    number(5,2) not null,
 servicio number(5,2) not null,
 totalpedido  number(5,2) not null,
-estado char(1) not null,
 constraint pk_pedido
-  primary key(nropedido),
+	primary key(nropedido),
 constraint fk_dni
-  foreign key(dni)
-  references cliente,
+	foreign key(dni)
+	references cliente,
 constraint chk_subtotal
-  check(subtotalpedido>0.0),
+	check(subtotalpedido>0.0),
 constraint chk_igv
-  check(igv>0.0),
+	check(igv>0.0),
 constraint chk_servicio
-  check(servicio>0.0),  
+	check(servicio>0.0),	
 constraint chk_totalpedido
-  check(totalpedido>0.0)  
+	check(totalpedido>0.0)	
 );
 
 
---====================================================
+-- ====================================================
 -- Crear la Tabla de Detalle de Pedido:detallepedido
---====================================================
+-- ====================================================
 
 create table detallepedido(
-nropedido char(7) not null,
+nropedido	char(7) not null,
 codproducto char(4) not null,
 preciounitario number(5,2) not null,
 cant int not null,
 preciototal number(5,2) not null,
 constraint fk_nropedido
-  foreign key (nropedido)
-  references pedido,
+	foreign key (nropedido)
+	references pedido,
 constraint fk_codproducto
-  foreign key (codproducto)
-  references producto,
+	foreign key (codproducto)
+	references producto,
 constraint chk_detpedido_preuni
-  check(preciounitario>0),
+	check(preciounitario>0),
 constraint chk_detpedido_cant
-  check(cant>=0),
+	check(cant>=0),
 constraint chk_detpedido_pretot
-  check(preciounitario>0)
+	check(preciounitario>0)
 );
-
---===================================================
---Crear tabla Tipo_Pago
---===================================================
-create table tipo_pago(
-codtipo_pago char(1) not null,
-descrtipo_pago varchar2(50) not null,
-constraint pk_tipo_pago
-  primary key(codtipo_pago),
-constraint u_descrtipo_pago
-  unique(descrtipo_pago)
-);
-
-
---===================================================
---Crear la Tabla Pagos
---===================================================
-create table pagos(
-nropedido char(7) not null,
-codtipo_pago char(1) not null,
-totalpedido  number(5,2) not null,
-efectivo number(5,2),
-cambio number(5,2),
-estado char(1) not null,
-constraint pk_pagos
-  primary key(nropedido),
-constraint fk_nropedidos
-  foreign key(nropedido)
-  references pedido,
-constraint fk_codtipo_pago
-  foreign key(codtipo_pago)
-  references tipo_pago,
-constraint chk_totalpedidos  
- check(totalpedido > 0)
- );
-
 
 -- ====================================
 -- Crear la Tabla de Usuarios:usuario
 -- ====================================
 create table usuario(
-usuario varchar2(6) not null,
+usuario varchar2(30) not null,
 contrasenia varchar2(20) not null,
 tipo char not null,
 constraint pk_usuario
@@ -208,22 +175,11 @@ create table auditoria(
 -- Crear la tabla de Mensaje
 -- ========================================
 create table mensaje(
-  codmensaje char(6) not null,
-  mensaje varchar2(100) not null,
-  constraint pk_mensaje 
-    primary key(codmensaje)
+	codmensaje char(6) not null,
+	mensaje varchar2(100) not null,
+	constraint pk_mensaje 
+		primary key(codmensaje)
   );
-
-
-
-
-SET TERMOUT ON
-SET ECHO OFF
-SET SERVEROUTPUT ON
-BEGIN
-  DBMS_OUTPUT.PUT_LINE('Fin del proceso...');
-END;
-/
 
 
 
@@ -236,5 +192,5 @@ BEGIN
 	DBMS_OUTPUT.PUT_LINE('Fin del proceso...');
 END;
 /
->>>>>>> origin/master
 SET TERMOUT OFF
+
