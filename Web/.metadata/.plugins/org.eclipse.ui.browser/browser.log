@@ -14,3 +14,7 @@ jun 12, 2014 22:56:18.28 No permission to use the keyboard API for http://google
 jun 12, 2014 22:56:19.29 No permission to use the keyboard API for http://googleads.g.doubleclick.net
 jun 12, 2014 23:09:14.80 NOTE: child process received `Goodbye', closing down
 jun 12, 2014 23:09:14.80 [2156] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+
+jun 25, 2014 10:35:03.50 NEW SESSION
+jun 25, 2014 10:35:03.50 NOTE: child process received `Goodbye', closing down
+jun 25, 2014 10:35:03.52 [5068] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310

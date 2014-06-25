@@ -94,7 +94,6 @@ dni char(8) not null,
 fecha date not null,
 subtotalpedido number(5,2) not null,
 igv    number(5,2) not null,
-servicio number(5,2) not null,
 totalpedido  number(5,2) not null,
 constraint pk_pedido
 	primary key(nropedido),
@@ -104,9 +103,7 @@ constraint fk_dni
 constraint chk_subtotal
 	check(subtotalpedido>0.0),
 constraint chk_igv
-	check(igv>0.0),
-constraint chk_servicio
-	check(servicio>0.0),	
+	check(igv>0.0),	
 constraint chk_totalpedido
 	check(totalpedido>0.0)	
 );
@@ -159,11 +156,11 @@ create table control(
 -- Crear la tabla de Auditoria
 -- ====================================
 create table auditoria(
- codseguimiento integer not null,
+ codseguimiento varchar2 not null,
  cambio varchar2(500) not null,
  valor_inicio varchar2(50)not null,
  valor_modif varchar2(50)not null,
- usuario varchar2(6)not null,
+ usuario varchar2(30)not null,
  constraint pk_auditoria
  primary key(codseguimiento),
  constraint fk_usuario
@@ -181,7 +178,40 @@ create table mensaje(
 		primary key(codmensaje)
   );
 
+--===================================================
+--Crear tabla Tipo_Pago
+--===================================================
+create table tipo_pago(
+codtipo_pago char(1) not null,
+descrtipo_pago varchar2(50) not null,
+constraint pk_tipo_pago
+  primary key(codtipo_pago),
+constraint u_descrtipo_pago
+  unique(descrtipo_pago)
+);
 
+
+--===================================================
+--Crear la Tabla Pagos
+--===================================================
+create table pagos(
+nropedido char(7) not null,
+codtipo_pago char(1) not null,
+totalpedido  number(5,2) not null,
+efectivo number(5,2),
+cambio number(5,2),
+estado char(1) not null,
+constraint pk_pagos
+  primary key(nropedido),
+constraint fk_nropedidos
+  foreign key(nropedido)
+  references pedido,
+constraint fk_codtipo_pago
+  foreign key(codtipo_pago)
+  references tipo_pago,
+constraint chk_totalpedidos  
+ check(totalpedido > 0)
+ );
 
   
 

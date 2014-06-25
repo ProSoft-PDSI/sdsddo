@@ -104,6 +104,6 @@ insert into mensaje(codmensaje,mensaje) values ('MEN02','La Contraseña es Incorr
 -- ====================================
 -- Cargar datos a la tabla control
 -- ====================================
- insert into control(parametro,valor) values ('pedidos','PED01')
- insert into control(parametro,valor) values ('pagos','PAG01')
+ insert into control(parametro,valor) values ('pedido','PED01');
+ insert into control(parametro,valor) values ('pagos','PAG01');
 commit;
