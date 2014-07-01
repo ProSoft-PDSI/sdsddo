@@ -6,4 +6,9 @@
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>41494219-4253-2945-5DEC-0C07C84F6F56</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="617EC702-F1AA-DB17-5F39-60D726D69837">
+<designStoragePath>D:\Restaurante</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>

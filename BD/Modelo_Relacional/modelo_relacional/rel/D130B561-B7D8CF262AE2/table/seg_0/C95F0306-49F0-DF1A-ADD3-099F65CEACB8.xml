@@ -17,8 +17,8 @@
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <importedID>A253EF02-0144-C4E3-16E5-4C0236C5D00F</importedID>
 <use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>4AADD194-62FB-DD8D-6165-6B64665D320D</domain>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ED36325A-A968-4006-0401-524D70DB6D91</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="cambio" id="663C9A02-2ACA-D08B-EC23-157ECD3A5593">
@@ -66,7 +66,7 @@
 <importedID>7877A3AC-506A-2A2E-B457-B95F86B6BF66</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B77E87BC-84D6-3A2E-A46E-BD9D6D0A75A7</domain>
+<domain>A1110455-1009-DACA-E9E5-E312412DF9DD</domain>
 <delegate>E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

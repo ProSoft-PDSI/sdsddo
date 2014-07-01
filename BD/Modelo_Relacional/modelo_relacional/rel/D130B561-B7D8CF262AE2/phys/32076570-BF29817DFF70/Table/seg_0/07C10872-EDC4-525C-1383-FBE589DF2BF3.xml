@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="tipo_pago" directorySegmentName="seg_0" id="07C10872-EDC4-525C-1383-FBE589DF2BF3">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="descrtipo_pago" id="56275265-2E46-AF8F-A84A-91291F7ABA37">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="codtipo_pago" id="7F09BC9C-C2D8-2281-4218-3C5E40F3E645">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_tipo_pago" id="2F2939D6-A364-47DD-3740-EFAA2F43DF01">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="INDEX_1" id="CA550ADB-567A-A607-827B-81841EB68F90">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

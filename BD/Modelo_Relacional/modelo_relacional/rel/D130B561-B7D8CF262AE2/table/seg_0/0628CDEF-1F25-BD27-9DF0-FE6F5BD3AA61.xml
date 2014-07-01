@@ -73,18 +73,6 @@
 <domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="servicio" id="5A5EDA89-656F-C45E-7734-84B6442F6681">
-<sourceDDLFile>Restaurante.sql</sourceDDLFile>
-<createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
-<importedID>3D862F98-E91D-0CB9-2E7B-0A2C02DEE822</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="totalpedido" id="BA113B1A-D460-1302-F4A7-B365CBDB31C9">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
@@ -92,6 +80,18 @@
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <importedID>2618CC41-70B5-1506-7D61-7C61E079CA17</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="servicio" id="5A5EDA89-656F-C45E-7734-84B6442F6681">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>3D862F98-E91D-0CB9-2E7B-0A2C02DEE822</importedID>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
@@ -125,8 +125,8 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
-<tableCheckConstraints>
-<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido0" directorySegmentName="seg_0" id="3082046D-9C54-1DC1-305B-011D98769FA5">
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="SYS_pedido0" directorySegmentName="seg_0" id="3082046D-9C54-1DC1-305B-011D98769FA5">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
 <createdTime>2014-06-02 18:31:26 UTC</createdTime>
@@ -135,7 +135,7 @@
 <importedID>98BC3B35-A755-693C-B904-46380FB22329</importedID>
 <rule>subtotalpedido&gt;0.0</rule>
 </tableCheckConstraint>
-<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido1" directorySegmentName="seg_0" id="868DC377-98C5-3FED-5454-865605C3FAA1">
+<tableCheckConstraint name="SYS_pedido1" directorySegmentName="seg_0" id="868DC377-98C5-3FED-5454-865605C3FAA1">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
 <createdTime>2014-06-02 18:31:26 UTC</createdTime>
@@ -144,16 +144,16 @@
 <importedID>99D6F652-3007-47EF-23A7-6650FED571EA</importedID>
 <rule>igv&gt;0.0</rule>
 </tableCheckConstraint>
-<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido2" directorySegmentName="seg_0" id="950ECF7C-F5D7-E402-5A8F-224AF6980795">
+<tableCheckConstraint name="SYS_pedido2" directorySegmentName="seg_0" id="950ECF7C-F5D7-E402-5A8F-224AF6980795">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
 <createdTime>2014-06-02 18:31:26 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <importedID>A0D69723-6376-57D3-FCE7-3C5CC54E23C7</importedID>
-<rule>servicio&gt;0.0</rule>
+<rule>totalpedido&gt;0.0</rule>
 </tableCheckConstraint>
-<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_pedido3" directorySegmentName="seg_0" id="4FD38827-BF88-CC83-44BF-3CDAB3199763">
+<tableCheckConstraint name="SYS_pedido3" directorySegmentName="seg_0" id="4FD38827-BF88-CC83-44BF-3CDAB3199763">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
 <createdTime>2014-06-02 18:31:26 UTC</createdTime>

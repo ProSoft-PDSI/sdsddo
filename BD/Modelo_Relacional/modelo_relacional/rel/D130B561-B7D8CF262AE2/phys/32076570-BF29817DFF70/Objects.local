@@ -2,11 +2,13 @@
 <oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
    <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0"/>
    <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0"/>
-   <object objectType="User" objectID="79BB3D95-8D66-2ADE-CA0E-8301F8471495" name="restaurante" seqName="seg_0"/>
+   <object objectType="User" objectID="2CFA5AB5-5736-DE40-96D4-A8C44875D85D" name="restaurante" seqName="seg_0"/>
    <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
    <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
    <object objectType="Table" objectID="0628CDEF-1F25-BD27-9DF0-FE6F5BD3AA61" name="pedido" seqName="seg_0"/>
+   <object objectType="Table" objectID="07C10872-EDC4-525C-1383-FBE589DF2BF3" name="tipo_pago" seqName="seg_0"/>
    <object objectType="Table" objectID="14982DB9-07EC-69F8-BFDE-923E8C6B1BE9" name="usuario" seqName="seg_0"/>
+   <object objectType="Table" objectID="1CA43629-2550-B194-69E6-03A653145EB2" name="pagos" seqName="seg_0"/>
    <object objectType="Table" objectID="5287E8F4-F3AF-1A22-F311-708CE77F0177" name="producto" seqName="seg_0"/>
    <object objectType="Table" objectID="910CE71F-4D0A-467C-AF92-4E5187A8C7A8" name="mensaje" seqName="seg_0"/>
    <object objectType="Table" objectID="B1D9CFFC-5E71-50F3-E64F-ACA1024D4FC0" name="control" seqName="seg_0"/>

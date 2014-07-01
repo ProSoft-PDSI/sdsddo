@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9153B835-0C75-34E7-5624-F9C94D3AAD76" name="fk_nropedidos">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>EBC0AA63-EEAB-4189-7747-32DC062B2610</importedID>
+<containerWithKeyObject>1CA43629-2550-B194-69E6-03A653145EB2</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>1635C6E6-9EBD-A53E-A1B3-B7A9886C4FA0</localFKIndex>
+<keyObject>8434FE9B-89B7-5EF3-76F4-CBB22146688A</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

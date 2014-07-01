@@ -5,11 +5,15 @@
    <object objectType="Table" objectID="B1D9CFFC-5E71-50F3-E64F-ACA1024D4FC0" name="control" seqName="seg_0"/>
    <object objectType="Table" objectID="DB0C9C9F-44D3-1124-0A69-6F14AE4F72C8" name="detallepedido" seqName="seg_0"/>
    <object objectType="Table" objectID="910CE71F-4D0A-467C-AF92-4E5187A8C7A8" name="mensaje" seqName="seg_0"/>
+   <object objectType="Table" objectID="1CA43629-2550-B194-69E6-03A653145EB2" name="pagos" seqName="seg_0"/>
    <object objectType="Table" objectID="0628CDEF-1F25-BD27-9DF0-FE6F5BD3AA61" name="pedido" seqName="seg_0"/>
    <object objectType="Table" objectID="5287E8F4-F3AF-1A22-F311-708CE77F0177" name="producto" seqName="seg_0"/>
+   <object objectType="Table" objectID="07C10872-EDC4-525C-1383-FBE589DF2BF3" name="tipo_pago" seqName="seg_0"/>
    <object objectType="Table" objectID="14982DB9-07EC-69F8-BFDE-923E8C6B1BE9" name="usuario" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="B7327298-146C-206E-62A8-B396CA4252BC" name="fk_usuario" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9153B835-0C75-34E7-5624-F9C94D3AAD76" name="fk_nropedidos" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="AEAC1965-0A6A-6232-8A69-DC337B773288" name="fk_codproducto" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="82980EFA-68D8-0A50-E919-C1D22391BBA1" name="fk_codtipo_pago" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="87B8D220-2D2C-E64E-8D58-F95F591CFF2C" name="fk_dni" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="E3CB506F-CEAA-FAA0-B1EE-CFE6403331B0" name="fk_nropedido" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B7327298-146C-206E-62A8-B396CA4252BC" name="fk_usuario" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

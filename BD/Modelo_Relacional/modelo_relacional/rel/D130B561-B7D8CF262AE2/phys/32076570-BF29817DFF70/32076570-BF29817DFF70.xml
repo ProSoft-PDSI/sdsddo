@@ -1,10 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<StorageDesignOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g" name="Oracle Database 11g" id="253647C6-8B15-53CC-69AF-EC4ED87F334C">
+<StorageDesignOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g" name="Oracle Database 11g" id="E9F4C913-EB66-D1BC-BCB8-B7AE1AC09586" siteID="32076570-2523-435C-2E92-BF29817DFF70" siteName="Oracle Database 11g" siteType="9">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:05 UTC</createdTime>
+<createdTime>2014-07-01 19:40:19 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>Untitled_1</ownerDesignName>
-<siteID>32076570-2523-435C-2E92-BF29817DFF70</siteID>
-<siteName>Oracle Database 11g</siteName>
-<siteType>9</siteType>
+<ownerDesignName>modelo_relacional</ownerDesignName>
 </StorageDesignOraclev11g>

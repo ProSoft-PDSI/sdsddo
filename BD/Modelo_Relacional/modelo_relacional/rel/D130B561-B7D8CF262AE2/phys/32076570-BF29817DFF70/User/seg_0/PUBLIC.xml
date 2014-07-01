@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="PUBLIC" directorySegmentName="seg_0" id="PUBLIC">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:05 UTC</createdTime>
+<createdTime>2014-07-01 19:40:20 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <nullInstance>true</nullInstance>

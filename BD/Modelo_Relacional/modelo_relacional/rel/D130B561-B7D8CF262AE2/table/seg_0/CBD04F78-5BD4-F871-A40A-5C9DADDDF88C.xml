@@ -45,6 +45,54 @@
 <domain>51E2B11E-6A6F-5E34-C775-C4A85F522C8E</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="email" id="50A60E7D-A394-3D92-32E9-A26458CA868F">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>41B3D1E1-0C3B-37A3-76AE-22C633F93312</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>51E2B11E-6A6F-5E34-C775-C4A85F522C8E</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechanac" id="4D3E7525-0AFD-5269-BACE-E36832D1E0E0">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>944682CC-897D-C0B3-D20A-B9471A9FC65E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0BE7DECA-D063-5A2C-5968-10DCD21141E7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="09C16421-9B0D-18DF-6623-C3E55E59BC87">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>11E06620-0C28-20E6-A960-219E40CA8E1C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>600F10B8-64F0-0623-EA9E-ED74AD5A2F54</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="6272E08F-F5B4-65AE-1E94-187BEBF1D74B">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>B9AB7577-932E-622F-35B2-9238241CFA9F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1110455-1009-DACA-E9E5-E312412DF9DD</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="163069D6-0C1F-D735-AE60-1B269F3FD033" name="pk_cliente">

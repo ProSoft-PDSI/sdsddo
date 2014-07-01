@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="82980EFA-68D8-0A50-E919-C1D22391BBA1" name="fk_codtipo_pago">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>DD2F5DDC-B333-3569-62D7-8D1BDB028FA0</importedID>
+<containerWithKeyObject>1CA43629-2550-B194-69E6-03A653145EB2</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>055BFF85-ABF1-82E2-E636-07658AF4E22B</localFKIndex>
+<keyObject>2F2939D6-A364-47DD-3740-EFAA2F43DF01</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
