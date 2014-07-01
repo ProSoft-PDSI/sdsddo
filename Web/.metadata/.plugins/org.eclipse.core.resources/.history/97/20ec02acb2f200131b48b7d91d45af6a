@@ -1,7 +1,0 @@
-package dao.spec;
-
-import java.util.Hashtable;
-
-public interface IProductoModel {
-	Hashtable<String, String> getMenu();
-}
