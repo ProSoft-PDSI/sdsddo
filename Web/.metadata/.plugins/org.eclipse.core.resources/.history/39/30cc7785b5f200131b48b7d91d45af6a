@@ -1,8 +1,0 @@
-package dao.util;
-
-import java.sql.ResultSet;
-
-public abstract class DataMapper<T> {
-	T bean;
-	abstract void mapData(ResultSet rs);
-}

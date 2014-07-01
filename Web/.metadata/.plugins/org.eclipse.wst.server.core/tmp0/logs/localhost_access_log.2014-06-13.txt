@@ -1,4 +1,0 @@
-127.0.0.1 - - [13/Jun/2014:13:48:47 -0500] "GET / HTTP/1.1" 404 961
-127.0.0.1 - - [13/Jun/2014:13:48:49 -0500] "GET /sdsr/WEB-INF/classes/dao/impl/ProductoDao.java HTTP/1.1" 404 959
-127.0.0.1 - - [13/Jun/2014:13:48:49 -0500] "GET /favicon.ico HTTP/1.1" 404 983
-127.0.0.1 - - [13/Jun/2014:13:48:49 -0500] "GET /favicon.ico HTTP/1.1" 404 983

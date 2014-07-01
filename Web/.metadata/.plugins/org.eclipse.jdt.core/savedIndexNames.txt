@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.126+C:\Users\YOSHITOMI\Documents\GitHub\sdsddo\Web\.metadata\.plugins\org.eclipse.jdt.core
 2870587253.index
 2877109961.index
@@ -31,3 +32,10 @@ INDEX VERSION 1.126+C:\Users\YOSHITOMI\Documents\GitHub\sdsddo\Web\.metadata\.pl
 2594609853.index
 2371787850.index
 2720405276.index
+=======
+INDEX VERSION 1.126+C:\Users\Yoshitomi\Documents\GitHub\sdsddo\Web\.metadata\.plugins\org.eclipse.jdt.core
+1075088056.index
+4159480400.index
+3079439228.index
+223434235.index
+>>>>>>> 9cdb39ec9a0f8946f228d695159940001881a8a0
