@@ -2,12 +2,12 @@ package model;
 
 import java.util.List;
 
-import dao.impl.ProductoDao;
+import dao.impl.ProductoDaoImpl;
 import entity.Producto;
 
 public class ProductoModel {
 	public List<Producto> getMenu(){
-		ProductoDao model = new ProductoDao();
+		ProductoDaoImpl model = new ProductoDaoImpl();
 		List<Producto> menu = model.getMenu();
 		return menu;
 	}

@@ -1,0 +1,25 @@
+package dao.impl;
+
+import dao.spec.IPedidoDao;
+
+public class PedidoDao implements IPedidoDao {
+
+	@Override
+	public void InsertarPedido() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void EliminarPedido(String Nropedido) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void ModificarPedido(String Nropedido) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

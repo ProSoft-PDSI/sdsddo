@@ -7,12 +7,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import dao.spec.IProductoDao;
+import dao.spec.ProductoDao;
 import dao.util.AccesoDB;
 import dao.util.RowMapper;
 import entity.Producto;
 
-public class ProductoDaoImpl implements IProductoDao,RowMapper<Producto> {
+public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 
 	@Override
 	public List<Producto> getMenu() {

@@ -1,0 +1,7 @@
+package dao.spec;
+
+public interface PedidoDao {
+	public void InsertarPedido();
+	public void EliminarPedido(String Nropedido);
+	public void ModificarPedido(String Nropedido);
+}

@@ -4,6 +4,6 @@ import java.util.List;
 
 import entity.Producto;
 
-public interface IProductoDao {
+public interface ProductoDao {
 	List<Producto> getMenu();
 }

@@ -1,5 +1,5 @@
 package dao.spec;
 
-public interface IMensajeDao {
+public interface MensajeDao {
     public String getMensaje(String codigo);
 }

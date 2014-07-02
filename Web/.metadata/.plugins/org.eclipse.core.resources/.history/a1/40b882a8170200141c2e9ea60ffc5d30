@@ -12,7 +12,7 @@ import dao.util.AccesoDB;
 import dao.util.RowMapper;
 import entity.Producto;
 
-public class ProductoDao implements IProductoDao,RowMapper<Producto> {
+public class ProductoDaoImpl implements IProductoDao,RowMapper<Producto> {
 
 	@Override
 	public List<Producto> getMenu() {

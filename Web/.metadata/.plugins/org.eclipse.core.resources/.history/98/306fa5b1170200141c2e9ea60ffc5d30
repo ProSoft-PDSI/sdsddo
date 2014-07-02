@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import dao.spec.IMensajeDao;
 import dao.util.AccesoDB;
 
-public class  MensajeDao implements IMensajeDao{
+public class  MensajeDaoImpl implements IMensajeDao{
 
     @Override
     public String getMensaje(String codigo) {

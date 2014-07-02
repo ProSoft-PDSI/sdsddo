@@ -1,0 +1,9 @@
+package dao.spec;
+
+import java.util.Date;
+
+public interface PedidoDao {
+	public void InsertarPedido(String nropedido,String dni,Date fecha);
+	public void EliminarPedido(String Nropedido);
+	public void ModificarPedido(String Nropedido);
+}
