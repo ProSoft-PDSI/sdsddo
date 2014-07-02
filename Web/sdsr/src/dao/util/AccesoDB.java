@@ -12,6 +12,5 @@ public class AccesoDB {
 		Class.forName(driver).newInstance();
 		Connection cn=DriverManager.getConnection(url,user,pass);
 		return cn;
-		
 	}
 }
