@@ -3,17 +3,14 @@ CREATE OR REPLACE PROCEDURE sp_insertapedidos(
   p_fecha date
 )
 as
-v_subtotal number;
-v_igv number;
-v_total number;
-v_nro varchar2(10);
-v_temporal varchar(10);
+  v_nro varchar2(10);
+  v_inicio varchar2(7);
+  v_temporal varchar2(10);
+  n number;
+  msg_error varchar2(100);
 begin
-  v_subtotal:= fn_obtenersubtotalpedido();
-  v_igv := v_subtotal * 0.18;
-  v_total := v_subtotal + v_igv;
-  v_nro := fn_obtnervalorcontrol('pedido'); 
-  insert into pedidos values (v_nro,P_dni,p_fecha,v_subtotal,v_igv,v_total);
+  v_nro := fn_obtenervalorcontrol('pedido');
+  insert into pedido values (v_nro,P_dni,p_fecha,null,null,null);
   
   v_inicio:=substr(v_nro,4,3);
   n:=to_number(v_inicio);

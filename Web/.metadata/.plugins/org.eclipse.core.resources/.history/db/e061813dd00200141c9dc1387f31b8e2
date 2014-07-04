@@ -1,0 +1,11 @@
+package model;
+
+import dao.spec.PedidoDao;
+
+public class PedidosModel {
+	public void InsertarPedidos(){
+		PedidoDao dao = new PedidosDaoImpl();
+		
+		
+	}
+}

@@ -7,7 +7,7 @@ is
   msg_error varchar2(500);
 begin
   select valor into v_valor from control where parametro = p_parametro;
-  return(valor);
+  return(v_valor);
 exception
 when others then
   msg_error:=SQLERRM;

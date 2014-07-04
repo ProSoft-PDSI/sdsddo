@@ -8,7 +8,6 @@ public class Pedido {
 	Date fecha;
 	double subtotalpedido;
 	double igv;
-	double servicio;
 	double totalpedido;
 	
 	public String getNropedido() {
@@ -40,12 +39,6 @@ public class Pedido {
 	}
 	public void setIgv(double igv) {
 		this.igv = igv;
-	}
-	public double getServicio() {
-		return servicio;
-	}
-	public void setServicio(double servicio) {
-		this.servicio = servicio;
 	}
 	public double getTotalpedido() {
 		return totalpedido;

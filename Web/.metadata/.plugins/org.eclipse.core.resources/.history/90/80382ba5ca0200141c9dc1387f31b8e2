@@ -1,0 +1,13 @@
+package dao.impl;
+
+import dao.spec.ControlDao;
+
+public class ControlDaoImpl implements ControlDao {
+
+	@Override
+	public String getValor(String Parametro) {
+		String valor;
+		return null;
+	}
+
+}
