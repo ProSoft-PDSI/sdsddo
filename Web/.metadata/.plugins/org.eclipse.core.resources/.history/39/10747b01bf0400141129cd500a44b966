@@ -1,0 +1,17 @@
+package model;
+
+import dao.impl.PedidoDaoImpl;
+import dao.spec.PedidoDao;
+import entity.DetallePedido;
+
+public class PedidosModel {
+	public void InsertarPedidos(String dni){
+		PedidoDao dao = new PedidoDaoImpl();
+		dao.InsertarPedido(dni);
+	}
+	
+	public void InsertaProductosDetallePedido(List<DetallePedido> pedido){
+		PedidoDao dao = new PedidoDaoImpl();
+		dao.InsertarProductoPedidos(nropedidos, codproducto, cant);
+	}
+}

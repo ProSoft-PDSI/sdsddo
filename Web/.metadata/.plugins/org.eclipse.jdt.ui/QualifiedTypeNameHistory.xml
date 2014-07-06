@@ -3,8 +3,19 @@
 <fullyQualifiedTypeName name="dao.spec.IProductoDao"/>
 <fullyQualifiedTypeName name="dao.util.AccesoDB"/>
 <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
-<fullyQualifiedTypeName name="util.UtilDate"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="dao.impl.PedidoDaoImpl"/>
+<fullyQualifiedTypeName name="entity.DetallePedido"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="model.PedidosModel"/>
+<fullyQualifiedTypeName name="dao.util.RowMapper"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="util.UtilDate"/>
+<fullyQualifiedTypeName name="controller.LoginController"/>
+<fullyQualifiedTypeName name="model.ClienteModel"/>
+<fullyQualifiedTypeName name="dao.spec.ClienteDao"/>
+<fullyQualifiedTypeName name="dao.impl.ClienteDaoImpl"/>
+<fullyQualifiedTypeName name="entity.Cliente"/>
 </qualifiedTypeNameHistroy>

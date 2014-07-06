@@ -12,3 +12,7 @@
 1404326179284	Delete element
 1404402674514	Delete element
 1404408077613	Delete element
+1404622912462	Encapsulate field 'emailcliente'
+1404622920378	Encapsulate field 'fechanac'
+1404622927264	Encapsulate field 'usuario'
+1404623160032	Encapsulate field 'telefono'

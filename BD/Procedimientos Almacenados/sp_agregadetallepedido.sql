@@ -18,7 +18,7 @@ begin
   v_subtotal:= fn_obtenersubtotalpedido(p_nropedido);
   v_igv := v_subtotal * 0.18;
   v_total := v_subtotal + v_igv;
-  update pedido set subtotalpedido=v_subtotal where nropedido = p_nropedido;
+  update pedido set subtotalpedido=v_subtotal,igv=v_igv,totalpedido=v_total where nropedido = p_nropedido;
   commit;
 exception
 when others then

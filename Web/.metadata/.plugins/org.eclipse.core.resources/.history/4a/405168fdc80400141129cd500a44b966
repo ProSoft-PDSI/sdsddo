@@ -1,0 +1,14 @@
+package dao.impl;
+
+import dao.spec.ClienteDao;
+import entity.Cliente;
+
+public class ClienteDaoImpl implements ClienteDao {
+
+	@Override
+	public Cliente getCliente(String usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

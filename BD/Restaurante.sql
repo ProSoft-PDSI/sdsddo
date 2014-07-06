@@ -95,17 +95,18 @@ fecha date not null,
 subtotalpedido number(5,2) not null,
 igv    number(5,2) not null,
 totalpedido  number(5,2) not null,
+estado char(1) not null,
 constraint pk_pedido
 	primary key(nropedido),
 constraint fk_dni
 	foreign key(dni)
 	references cliente,
 constraint chk_subtotal
-	check(subtotalpedido>0.0),
+	check(subtotalpedido>=0.0),
 constraint chk_igv
-	check(igv>0.0),	
+	check(igv>=0.0),	
 constraint chk_totalpedido
-	check(totalpedido>0.0)	
+	check(totalpedido>=0.0)	
 );
 
 
@@ -212,8 +213,6 @@ constraint fk_codtipo_pago
 constraint chk_totalpedidos  
  check(totalpedido > 0)
  );
-
-  
 
 SET TERMOUT ON
 SET ECHO OFF
