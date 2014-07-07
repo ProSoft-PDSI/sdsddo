@@ -9,6 +9,18 @@
 	<title>..::Sistema de Servicios de Restaurantes::..</title>
 </head>
 <body>
-	<p>llego al destino</p>
+<form method="post" action="Menu"> 
+	<input type="submit" value="presiona">
+	<c:if test="${requestScope.menu != null}">
+		<table>
+			<c:forEach var = "i" items = "${requestScope.menu}" >
+				<tr><td><c:out value="${i.nombre}"></c:out></td><td><button onclick="agregaracarrito("+${i.codProducto}+")">Agregar</button></td></tr>
+			</c:forEach>
+		</table>
+	</c:if>
+	<c:if test="${requestScope.error != null}">
+		${requestScope.error}
+	</c:if>
+</form>
 </body>
 </html>

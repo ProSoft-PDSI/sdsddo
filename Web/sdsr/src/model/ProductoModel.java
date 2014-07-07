@@ -7,8 +7,8 @@ import entity.Producto;
 
 public class ProductoModel {
 	public List<Producto> getMenu(){
-		ProductoDaoImpl model = new ProductoDaoImpl();
-		List<Producto> menu = model.getMenu();
+		ProductoDaoImpl dao = new ProductoDaoImpl();
+		List<Producto> menu = dao.getMenu();
 		return menu;
 	}
 	

@@ -7,7 +7,6 @@
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="dao.impl.PedidoDaoImpl"/>
 <fullyQualifiedTypeName name="entity.DetallePedido"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="model.PedidosModel"/>
 <fullyQualifiedTypeName name="dao.util.RowMapper"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
@@ -18,4 +17,9 @@
 <fullyQualifiedTypeName name="dao.spec.ClienteDao"/>
 <fullyQualifiedTypeName name="dao.impl.ClienteDaoImpl"/>
 <fullyQualifiedTypeName name="entity.Cliente"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="entity.Producto"/>
+<fullyQualifiedTypeName name="controller.ProductoController"/>
+<fullyQualifiedTypeName name="model.ProductoModel"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

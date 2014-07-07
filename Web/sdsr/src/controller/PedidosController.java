@@ -22,7 +22,7 @@ public class PedidosController extends HttpServlet {
         super();
     }
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String alias = request.getServletPath();
 		if(alias.equals("/InsertarPedido")){
 			try {

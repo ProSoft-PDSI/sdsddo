@@ -43,8 +43,8 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 	public Producto mapRow(ResultSet rs) {
 		Producto bean = new Producto();
 		try {
-			bean.setCodProducto(rs.getString("codp"));
-			bean.setNombre("descrproducto");
+			bean.setCodProducto(rs.getString("codproducto"));
+			bean.setNombre(rs.getString("descrproducto"));
 			bean.setPrecio(rs.getDouble("preciounitario"));
 			bean.setStock(rs.getInt("stock"));
 		} catch (SQLException e) {
