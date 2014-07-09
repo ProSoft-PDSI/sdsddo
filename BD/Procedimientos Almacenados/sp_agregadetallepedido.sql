@@ -13,7 +13,7 @@ msg_error varchar2(500);
 begin
   v_preciouni := fn_obtenerpreunitproducto(p_codproducto);
   v_preciototal := v_preciouni * p_cant;
-  insert into detallepedido values (p_nropedido,p_codproducto,v_preciouni,p_cant,v_preciototal);
+  insert into detallepedido values (p_nropedido,p_codproducto,v_preciouni,p_cant,v_preciototal,p_usuario);
   
   v_subtotal:= fn_obtenersubtotalpedido(p_nropedido);
   v_igv := v_subtotal * 0.18;
