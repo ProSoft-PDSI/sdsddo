@@ -55,6 +55,7 @@ codproducto char(4) not null,
 descrproducto varchar2(100)not null,
 preciounitario number(5,2) not null,
 stock number(3,0) not null,
+usuario varchar2(30) not null,
 constraint pk_producto
 	primary key (codproducto),
 constraint u_descr_producto
@@ -96,6 +97,7 @@ subtotalpedido number(5,2) not null,
 igv    number(5,2) not null,
 totalpedido  number(5,2) not null,
 estado char(1) not null,
+usuario varchar2(30) not null,
 constraint pk_pedido
 	primary key(nropedido),
 constraint fk_dni
@@ -120,6 +122,7 @@ codproducto char(4) not null,
 preciounitario number(5,2) not null,
 cant int not null,
 preciototal number(5,2) not null,
+usuario varchar2(30) not null,
 constraint fk_nropedido
 	foreign key (nropedido)
 	references pedido,
@@ -141,6 +144,7 @@ create table usuario(
 usuario varchar2(30) not null,
 contrasenia varchar2(20) not null,
 tipo char not null,
+usuario varchar2(30) not null,
 constraint pk_usuario
 primary key(usuario)
 );
@@ -157,7 +161,7 @@ create table control(
 -- Crear la tabla de Auditoria
 -- ====================================
 create table auditoria(
- codseguimiento varchar2 not null,
+ codseguimiento number not null,
  cambio varchar2(500) not null,
  valor_inicio varchar2(50)not null,
  valor_modif varchar2(50)not null,
@@ -202,6 +206,7 @@ totalpedido  number(5,2) not null,
 efectivo number(5,2),
 cambio number(5,2),
 estado char(1) not null,
+usuario varchar2(30) not null,
 constraint pk_pagos
   primary key(nropedido),
 constraint fk_nropedidos
