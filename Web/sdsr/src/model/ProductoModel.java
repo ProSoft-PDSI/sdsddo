@@ -12,5 +12,9 @@ public class ProductoModel {
 		return menu;
 	}
 	
-	
+	public Producto getProducto(){
+		
+		return null;
+		
+	}
 }

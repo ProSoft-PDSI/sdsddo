@@ -1,6 +1,7 @@
 package dao.impl;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -52,6 +53,32 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 		}
 		return bean;
 		
+	}
+
+	@Override
+	public Producto getProducto(String codproducto) {
+		Connection cn=null;
+		Producto pro = new Producto();
+		try {
+			cn = AccesoDB.getConnection();
+			String sql="select * from producto where codproducto = ?";
+			PreparedStatement pstm = cn.prepareStatement(sql);
+			pstm.setString(1, codproducto);
+			ResultSet rs = pstm.executeQuery(sql);
+			rs.next();
+			pro=mapRow(rs);
+			rs.close();
+			pstm.close();
+		} catch (Exception e) {
+			throw new RuntimeException(e.getMessage());
+		}finally{
+			try {
+				cn.close();
+			} catch (SQLException e) {
+				throw new RuntimeException(e.getMessage());
+			}
+		}
+		return pro;
 	}
 
 }

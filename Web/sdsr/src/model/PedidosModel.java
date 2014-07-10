@@ -18,4 +18,6 @@ public class PedidosModel {
 			dao.InsertarProductoPedidos(i.getNropedido(), i.getCodproducto(), i.getCant());
 		}
 	}
+	
+	
 }
