@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="dao.impl.PedidoDaoImpl"/>
 <fullyQualifiedTypeName name="entity.DetallePedido"/>
 <fullyQualifiedTypeName name="model.PedidosModel"/>
-<fullyQualifiedTypeName name="dao.util.RowMapper"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="util.UtilDate"/>
@@ -22,4 +21,6 @@
 <fullyQualifiedTypeName name="controller.ProductoController"/>
 <fullyQualifiedTypeName name="model.ProductoModel"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="dao.util.RowMapper"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

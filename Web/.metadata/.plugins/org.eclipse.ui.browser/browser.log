@@ -21,3 +21,6 @@ jun 25, 2014 10:35:03.52 [5068] WARNING: pipe error: 109: file c:/builds/moz2_sl
 
 jul 09, 2014 17:36:54.65 NEW SESSION
 jul 09, 2014 17:36:54.65 1404945414637	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+jul 11, 2014 11:21:31.68 NEW SESSION
+jul 11, 2014 11:21:31.68 1405095691669	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property

@@ -26,7 +26,7 @@
 		</table>
 	</c:if>
 	<c:if test="${requestScope.error != null}">
-		${requestScope.error}
+		<c:out value="${requestScope.error}"></c:out>
 	</c:if>
 	<div id="contenido">
 	</div>

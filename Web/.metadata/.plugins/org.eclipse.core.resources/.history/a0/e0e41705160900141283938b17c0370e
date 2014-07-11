@@ -7,11 +7,10 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/foundation.css" />
 	<title>..::Sistema de Servicios de Restaurantes::..</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript">
-		function agregaracarrito(codproducto){
-			var tabla = document.getElementById('tabla');
-			var contenido = '<tr><td>'+ codproducto.value +'</td></tr>';
-			tabla.innerHTML(contenido);
+		function agregaracarrito(seleccion){
+			console.log(String(seleccion));
 		}
 	
 	</script>
@@ -22,15 +21,15 @@
 	<c:if test="${requestScope.menu != null}">
 		<table>
 			<c:forEach var = "i" items = "${requestScope.menu}" >
-				<tr><td><c:out value="${i.nombre}"></c:out></td><td><button onclick="agregaracarrito()">Agregar</button></td></tr>
+				<tr><td id="${i.codProducto}"><c:out value="${i.nombre}"></c:out></td><td><button onclick="agregaracarrito(${i.stock})">Agregar</button></td></tr>
 			</c:forEach>
 		</table>
 	</c:if>
 	<c:if test="${requestScope.error != null}">
 		${requestScope.error}
 	</c:if>
-	<table id="contenido">
-	</table>
+	<div id="contenido">
+	</div>
 </form>
 </body>
 </html>
