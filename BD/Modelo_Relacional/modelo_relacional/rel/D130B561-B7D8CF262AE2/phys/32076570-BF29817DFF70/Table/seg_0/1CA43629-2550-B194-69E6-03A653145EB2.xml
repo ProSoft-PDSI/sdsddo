@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="pagos" directorySegmentName="seg_0" id="1CA43629-2550-B194-69E6-03A653145EB2">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
@@ -9,61 +9,73 @@
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
-<ColumnProxy name="totalpedido" id="02EA9F8A-49D9-1186-59A1-00A02C686247">
+<ColumnProxy name="usuario" id="1E56DF4F-6C9F-570A-453A-977655BAF49F">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="codtipo_pago" id="0C30EE9C-76E7-3FE3-3802-425FF1093892">
+<ColumnProxy name="codtipo_pago" id="358F9E90-D94A-C008-B334-B000413F9D32">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="nropedido" id="0D610EA9-3131-3C9B-F02E-400F4E289FA9">
+<ColumnProxy name="cambio" id="5D42FE48-F12E-C740-39F3-5AA8D4249E6B">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="cambio" id="7350E6D6-4B58-AEFD-B03B-22BBDAD9FFAE">
+<ColumnProxy name="efectivo" id="768E7A21-D0A6-9DB8-4FA3-A81305FFE20E">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="estado" id="B01546FF-167F-9587-217C-7312576A1BDC">
+<ColumnProxy name="estado" id="C837EBB2-4CBB-7511-3A8F-5DD369A98FFB">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="efectivo" id="C1E475A2-0F57-5DBA-E85C-6B4A79AA9398">
+<ColumnProxy name="totalpedido" id="D6AC176E-B9F6-EF5D-69B0-8E115D1B84BF">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nropedido" id="F925D704-2372-CC1D-0ECE-E37487579206">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
 <foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_codtipo_pago" id="055BFF85-ABF1-82E2-E636-07658AF4E22B">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_nropedidos" id="4B2D8842-7B61-D7B3-1A7D-262F3B048B39">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ForeignKey>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_nropedidos" id="1635C6E6-9EBD-A53E-A1B3-B7A9886C4FA0">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_codtipo_pago" id="4CB6F255-27D5-67CD-FAA4-939EF2875EB3">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_usuario_pagos" id="B11F6DDB-1DFF-5F3D-67E1-64A6FBCE2CF8">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
-<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_pagos" id="A2A23896-12BC-86CA-D915-8E3225EB39FD">
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_pagos" id="D0227DA1-89D5-9E82-BE43-37463EB52B53">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <indexSort>SORTED</indexSort>
@@ -72,7 +84,7 @@
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
 <TableCheckConstraint name="SYS_pagos0" id="2A30155E-F283-476B-94E4-8820BA1BD7BF">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-07-01 19:41:22 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </TableCheckConstraint>

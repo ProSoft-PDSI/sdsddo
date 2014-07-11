@@ -85,6 +85,34 @@
 <domain>8C4C73CF-D269-E841-4FB6-C7BEF918FA41</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="estado" id="B9D18EFB-DC95-209A-1B59-4963A3FAAAF2">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>658EC1B7-F4DF-3791-5000-C9C943427026</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>E6C8593F-BD12-EB0F-8C71-5FCF03461328</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="D1E65739-AD9E-3180-82F2-B652E4BCD7CC">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>28C706A9-7088-0866-3C1A-F4CAD738BE08</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1110455-1009-DACA-E9E5-E312412DF9DD</domain>
+<delegate>E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F624C8E-4F84-0220-9553-EF85B1B2231A" referredColumn="E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8"/>
+</associations>
+</Column>
 <Column name="servicio" id="5A5EDA89-656F-C45E-7734-84B6442F6681">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
@@ -124,6 +152,17 @@
 <colUsage columnID="4D96EAE5-4D2D-4D0D-F765-E9A39CC7774D"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="548BA774-D8EC-C7EE-9E37-041EAEDB3D51" name="fk_usuario_pedido">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1E65739-AD9E-3180-82F2-B652E4BCD7CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
 <tableCheckConstraint name="SYS_pedido0" directorySegmentName="seg_0" id="3082046D-9C54-1DC1-305B-011D98769FA5">
@@ -133,7 +172,7 @@
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <importedID>98BC3B35-A755-693C-B904-46380FB22329</importedID>
-<rule>subtotalpedido&gt;0.0</rule>
+<rule>subtotalpedido&gt;=0.0</rule>
 </tableCheckConstraint>
 <tableCheckConstraint name="SYS_pedido1" directorySegmentName="seg_0" id="868DC377-98C5-3FED-5454-865605C3FAA1">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
@@ -142,7 +181,7 @@
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <importedID>99D6F652-3007-47EF-23A7-6650FED571EA</importedID>
-<rule>igv&gt;0.0</rule>
+<rule>igv&gt;=0.0</rule>
 </tableCheckConstraint>
 <tableCheckConstraint name="SYS_pedido2" directorySegmentName="seg_0" id="950ECF7C-F5D7-E402-5A8F-224AF6980795">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
@@ -151,7 +190,7 @@
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <importedID>A0D69723-6376-57D3-FCE7-3C5CC54E23C7</importedID>
-<rule>totalpedido&gt;0.0</rule>
+<rule>totalpedido&gt;=0.0</rule>
 </tableCheckConstraint>
 <tableCheckConstraint name="SYS_pedido3" directorySegmentName="seg_0" id="4FD38827-BF88-CC83-44BF-3CDAB3199763">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>

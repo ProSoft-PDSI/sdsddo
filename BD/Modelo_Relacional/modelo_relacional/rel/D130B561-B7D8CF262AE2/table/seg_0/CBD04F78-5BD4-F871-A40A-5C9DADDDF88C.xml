@@ -91,7 +91,11 @@
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>A1110455-1009-DACA-E9E5-E312412DF9DD</domain>
+<delegate>E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D068E505-0D8B-5D09-4D8E-4003177C0831" referredColumn="E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -120,6 +124,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="70340CF1-96BA-B3FB-D721-457E092C9B94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B29F739-9B42-7FFB-A23D-2C3B4C451C53" name="fk_usuario_cliente">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6272E08F-F5B4-65AE-1E94-187BEBF1D74B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
