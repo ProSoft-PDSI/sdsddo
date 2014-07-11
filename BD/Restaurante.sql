@@ -58,6 +58,9 @@ stock number(3,0) not null,
 usuario varchar2(30) not null,
 constraint pk_producto
 	primary key (codproducto),
+constraint fk_usuario_producto
+	foreign key (usuario)
+	references usuario,
 constraint u_descr_producto
 	unique(descrproducto),
 constraint chk_producto_codproducto
@@ -81,6 +84,9 @@ telefono char(7) not null,
 usuario varchar2(30) not null,
 constraint pk_cliente
 	primary key(dni),
+constraint fk_usuario_cliente
+	foreign key (usuario)
+	references usuario,
 constraint u_nomcliente
 	unique(nomcliente)
 );
@@ -103,6 +109,9 @@ constraint pk_pedido
 constraint fk_dni
 	foreign key(dni)
 	references cliente,
+constraint fk_usuario_pedido
+	foreign key (usuario)
+	references usuario,
 constraint chk_subtotal
 	check(subtotalpedido>=0.0),
 constraint chk_igv
@@ -129,6 +138,9 @@ constraint fk_nropedido
 constraint fk_codproducto
 	foreign key (codproducto)
 	references producto,
+constraint fk_usuario_detalle
+	foreign key (usuario)
+	references usuario,
 constraint chk_detpedido_preuni
 	check(preciounitario>0),
 constraint chk_detpedido_cant
@@ -144,7 +156,6 @@ create table usuario(
 usuario varchar2(30) not null,
 contrasenia varchar2(20) not null,
 tipo char not null,
-usuario varchar2(30) not null,
 constraint pk_usuario
 primary key(usuario)
 );
@@ -163,8 +174,9 @@ create table control(
 create table auditoria(
  codseguimiento number not null,
  cambio varchar2(500) not null,
- valor_inicio varchar2(50)not null,
- valor_modif varchar2(50)not null,
+ valor_inicio varchar2(50) ,
+ valor_modif varchar2(50) ,
+ fecha date,
  usuario varchar2(30)not null,
  constraint pk_auditoria
  primary key(codseguimiento),
@@ -215,6 +227,9 @@ constraint fk_nropedidos
 constraint fk_codtipo_pago
   foreign key(codtipo_pago)
   references tipo_pago,
+constraint fk_usuario_pagos
+	foreign key (usuario)
+	references usuario,
 constraint chk_totalpedidos  
  check(totalpedido > 0)
  );

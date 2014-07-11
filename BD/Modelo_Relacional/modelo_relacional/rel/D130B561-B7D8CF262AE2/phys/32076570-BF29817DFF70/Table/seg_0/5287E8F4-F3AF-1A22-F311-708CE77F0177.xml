@@ -1,69 +1,86 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="producto" directorySegmentName="seg_0" id="5287E8F4-F3AF-1A22-F311-708CE77F0177">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<columnProxies>
-<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="preciounitario" id="24C43F54-B97D-0801-6DF6-6B679725573B">
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="usuario" id="15A8F9B7-B711-DDCD-EB2E-8A943801CEC8">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="stock" id="68E4611A-D2DC-5C5F-E3E3-5E38581852D0">
+<ColumnProxy name="stock" id="508A27CE-9D63-7CFB-C961-8BFE5A0BD332">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="codproducto" id="8883207E-3F20-A6B0-958A-4498AC8F2C78">
+<ColumnProxy name="descrproducto" id="7D9F1565-13AE-D0B8-724D-6F560B40F07D">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="descrproducto" id="FA8828D3-6408-F150-34E4-57C10290885B">
+<ColumnProxy name="preciounitario" id="AAE240BB-B7BC-E6F6-C4FE-85A96DEC9446">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="codproducto" id="DE855199-877E-4CB5-35AF-94F00AB0BA12">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
-<primaryKeys>
-<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_producto" id="7BDD0747-557E-6274-50CE-81B47DFBC699">
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_usuario_producto" id="971E2583-BE9E-1C5F-8BF0-366ABBDAD16E">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_producto" id="FC8BA7BB-5A8F-CDA7-C139-1E3F28A4BCD4">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <indexSort>SORTED</indexSort>
 </PrimaryKey>
 </primaryKeys>
-<tableCheckConstraints>
-<TableCheckConstraint class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableCheckConstraintOraclev10g" name="SYS_producto0" id="63530B0E-A8E5-7AF7-8206-5B85EA965314">
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="SYS_producto0" id="63530B0E-A8E5-7AF7-8206-5B85EA965314">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </TableCheckConstraint>
-<TableCheckConstraint class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableCheckConstraintOraclev10g" name="SYS_producto1" id="651A93F8-75C3-4FEC-06A0-5B2BB4F409AF">
+<TableCheckConstraint name="SYS_producto1" id="651A93F8-75C3-4FEC-06A0-5B2BB4F409AF">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </TableCheckConstraint>
-<TableCheckConstraint class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableCheckConstraintOraclev10g" name="SYS_producto2" id="AE7D0E45-59BB-FAC7-4717-FDCB071DE9A5">
+<TableCheckConstraint name="SYS_producto2" id="AE7D0E45-59BB-FAC7-4717-FDCB071DE9A5">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 </TableCheckConstraint>
 </tableCheckConstraints>
 <uniqueKeys>
-<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="INDEX_1" id="E69D5CDC-36AB-E462-9B7B-9D30FEEFDD1B">
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="INDEX_1" id="FCD8D6DE-D4D6-E8FA-6BDB-179286BC3B00">
 <createdBy>YOSHITOMI</createdBy>
-<createdTime>2014-06-02 18:31:26 UTC</createdTime>
+<createdTime>2014-07-11 00:32:09 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>modelo_relacional</ownerDesignName>
 <indexSort>SORTED</indexSort>

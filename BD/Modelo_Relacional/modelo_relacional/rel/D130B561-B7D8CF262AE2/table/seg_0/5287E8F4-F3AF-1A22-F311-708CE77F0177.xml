@@ -57,6 +57,22 @@
 <domain>CD13AC26-0DE8-3A8F-346B-8312F907B535</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="usuario" id="15A8F9B7-B711-DDCD-EB2E-8A943801CEC8">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>2C01FD7D-8C68-0EAB-1C31-E7DA771F9A62</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1110455-1009-DACA-E9E5-E312412DF9DD</domain>
+<delegate>E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0762E791-410A-CEC4-5B94-94C61CF7240F" referredColumn="E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="7BDD0747-557E-6274-50CE-81B47DFBC699" name="pk_producto">
@@ -86,9 +102,20 @@
 <colUsage columnID="FA8828D3-6408-F150-34E4-57C10290885B"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="971E2583-BE9E-1C5F-8BF0-366ABBDAD16E" name="fk_usuario_producto">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15A8F9B7-B711-DDCD-EB2E-8A943801CEC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
-<tableCheckConstraints>
-<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_producto0" directorySegmentName="seg_0" id="63530B0E-A8E5-7AF7-8206-5B85EA965314">
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="SYS_producto0" directorySegmentName="seg_0" id="63530B0E-A8E5-7AF7-8206-5B85EA965314">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
 <createdTime>2014-06-02 18:31:26 UTC</createdTime>
@@ -97,7 +124,7 @@
 <importedID>E5C37AC3-FE2D-1AA2-88DD-8EF604602CF4</importedID>
 <rule>REGEXP_LIKE(codproducto,&apos;[PEB][IAONE][0-9][0-9]&apos;)</rule>
 </tableCheckConstraint>
-<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_producto1" directorySegmentName="seg_0" id="651A93F8-75C3-4FEC-06A0-5B2BB4F409AF">
+<tableCheckConstraint name="SYS_producto1" directorySegmentName="seg_0" id="651A93F8-75C3-4FEC-06A0-5B2BB4F409AF">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
 <createdTime>2014-06-02 18:31:26 UTC</createdTime>
@@ -106,7 +133,7 @@
 <importedID>E103C837-D458-AE0C-9EF2-BED4C1EDB855</importedID>
 <rule>preciounitario&gt;0</rule>
 </tableCheckConstraint>
-<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" name="SYS_producto2" directorySegmentName="seg_0" id="AE7D0E45-59BB-FAC7-4717-FDCB071DE9A5">
+<tableCheckConstraint name="SYS_producto2" directorySegmentName="seg_0" id="AE7D0E45-59BB-FAC7-4717-FDCB071DE9A5">
 <sourceDDLFile>Restaurante.sql</sourceDDLFile>
 <createdBy>YOSHITOMI</createdBy>
 <createdTime>2014-06-02 18:31:26 UTC</createdTime>

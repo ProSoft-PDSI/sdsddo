@@ -91,6 +91,22 @@
 <domain>E6C8593F-BD12-EB0F-8C71-5FCF03461328</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="usuario" id="1E56DF4F-6C9F-570A-453A-977655BAF49F">
+<sourceDDLFile>Restaurante.sql</sourceDDLFile>
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>4876F903-B60A-A76F-DB77-A9A101ECC687</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1110455-1009-DACA-E9E5-E312412DF9DD</domain>
+<delegate>E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="673D0325-191B-456C-1B41-8E4440AD0C18" referredColumn="E7E6C8AD-00BB-F3A9-DF1C-165681BCBBA8"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A2A23896-12BC-86CA-D915-8E3225EB39FD" name="pk_pagos">
@@ -127,6 +143,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0D610EA9-3131-3C9B-F02E-400F4E289FA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B11F6DDB-1DFF-5F3D-67E1-64A6FBCE2CF8" name="fk_usuario_pagos">
+<createdBy>YOSHITOMI</createdBy>
+<createdTime>2014-07-11 00:33:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E56DF4F-6C9F-570A-453A-977655BAF49F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
