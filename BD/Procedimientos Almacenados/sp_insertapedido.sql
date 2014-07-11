@@ -1,6 +1,6 @@
 CREATE OR REPLACE PROCEDURE sp_insertapedidos(
-  p_dni varchar2
-  p_usuario
+  p_dni varchar2,
+  p_usuario varchar
 )
 as
   v_nro varchar2(10);
