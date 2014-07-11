@@ -1,7 +1,8 @@
 create or replace procedure sp_agregardetallepedido(
   p_nropedido PEDIDO.NROPEDIDO%TYPE,
   p_codproducto varchar2,
-  p_cant number
+  p_cant number,
+  p_usuario varchar2
 )
 as
 v_preciouni number(5,2);
