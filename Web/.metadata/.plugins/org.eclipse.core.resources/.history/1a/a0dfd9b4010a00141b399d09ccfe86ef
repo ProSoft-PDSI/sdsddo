@@ -1,0 +1,20 @@
+package model;
+
+import dao.impl.LoginDaoImpl;
+import dao.spec.LoginDao;
+import entity.Usuario;
+
+public class LoginModel {
+	public Usuario validar(String user, String pass) {
+		Usuario usu;
+		LoginDao dao = new LoginDaoImpl();
+		usu = dao.validarlogin(user,pass);
+		System.out.println(usu);
+		if(usu==null){
+			throw new RuntimeException("Contraseña incorrecta o usuario no existe");
+		}
+		return usu;
+	}
+	
+	
+}

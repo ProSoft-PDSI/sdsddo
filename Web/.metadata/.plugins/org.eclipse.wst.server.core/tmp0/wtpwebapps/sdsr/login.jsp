@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/foundation.css" />
 	<link rel="stylesheet" href="css/estilos.css" />
 	<title>..::Sistema de Servicios de Restaurantes::.. - Login</title>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 	<section class="box">
@@ -23,7 +24,7 @@
             <br>
             <br>
             <input type="submit" value="Ingresar" class="button">
-            <a href=# id="enlaceolvidopass">¿Se ha olvidado la contraseña?</a>
+            <a href="Recuperacion.jsp" id="enlaceolvidopass">¿Se ha olvidado la contraseña?</a>
 		</form>
 		<c:if test="${requestScope.error != null}">
 			<c:out value="${requestScope.error}"></c:out>	

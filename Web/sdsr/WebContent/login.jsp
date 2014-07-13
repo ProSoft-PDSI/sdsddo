@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/foundation.css" />
 	<link rel="stylesheet" href="css/estilos.css" />
 	<title>..::Sistema de Servicios de Restaurantes::.. - Login</title>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 	<section class="box">

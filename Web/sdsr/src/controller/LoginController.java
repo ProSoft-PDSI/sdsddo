@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import dao.impl.MensajeDaoImpl;
+import dao.spec.MensajeDao;
 import entity.Cliente;
 import entity.Usuario;
 import model.ClienteModel;
@@ -37,6 +39,8 @@ public class LoginController extends HttpServlet {
 			ClienteModel model1 =  new ClienteModel(); 
 			Usuario usu1 = model.validar(user1, pass1);
 			Cliente cli1 = model1.getCliente(user1);
+			MensajeDao men = new MensajeDaoImpl();
+			System.out.println(men.getMensaje("MEN001"));
 			// Guardar dato en sesión
 			HttpSession session = request.getSession(true);
 			session.setAttribute("usuario", usu1);

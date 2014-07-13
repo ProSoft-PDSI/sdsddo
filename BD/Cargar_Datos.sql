@@ -98,8 +98,8 @@ insert into usuario(usuario,contrasenia,tipo) values ('admin','superusuario','S'
 -- ====================================
 -- Cargar datos a la tabla mensaje
 -- ====================================
-insert into mensaje(codmensaje,mensaje) values ('MEN01','El Usuario no Existe');
-insert into mensaje(codmensaje,mensaje) values ('MEN02','La Contraseña es Incorrecta');
+insert into mensaje(codmensaje,mensaje) values ('MEN001','El Usuario no Existe');
+insert into mensaje(codmensaje,mensaje) values ('MEN002','La Contraseña es Incorrecta');
 
 -- ====================================
 -- Cargar datos a la tabla control
