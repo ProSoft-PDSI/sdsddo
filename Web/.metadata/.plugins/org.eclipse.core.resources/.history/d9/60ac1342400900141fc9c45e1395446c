@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<title>..::Sistema de Servicios de Restaurantes::.. - Login</title>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>
+		$("#boton").click(function(){
+			$("#formulario").submit();
+		})
+	</script>
+</head>
+<body>
+	<section class="box">
+		<form method="post" action="LoginIngreso" id="formulario">
+			<label>Usuario</label>
+			<br>
+			<input type="text" name="usuario" class="large-12"/>
+			<br>
+			<br>
+			<label>Contraseña</label>
+			<br>
+			<input type="password" name="contrasenia" class="large-12"/>
+            <br>
+            <br>
+            <input type="submit" value="Ingresar" class="button" id="boton">
+            <a href="Recuperacion.jsp" id="enlaceolvidopass">¿Se ha olvidado la contraseña?</a>
+		</form>
+		<c:if test="${requestScope.error != null}">
+			<c:out value="${requestScope.error}"></c:out>	
+		</c:if>
+	</section>
+	<footer>
+	</footer>
+</body>
+</html>

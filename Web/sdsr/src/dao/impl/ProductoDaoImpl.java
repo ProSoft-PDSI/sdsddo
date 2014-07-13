@@ -49,7 +49,7 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 			bean.setPrecio(rs.getDouble("preciounitario"));
 			bean.setStock(rs.getInt("stock"));
 		} catch (SQLException e) {
-			e.printStackTrace();
+			throw new RuntimeException(e.getMessage());
 		}
 		return bean;
 		
