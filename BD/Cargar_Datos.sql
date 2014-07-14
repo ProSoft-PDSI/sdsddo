@@ -100,6 +100,8 @@ insert into usuario(usuario,contrasenia,tipo) values ('admin','superusuario','S'
 -- ====================================
 insert into mensaje(codmensaje,mensaje) values ('MEN001','El Usuario no Existe');
 insert into mensaje(codmensaje,mensaje) values ('MEN002','La Contraseña es Incorrecta');
+insert into mensaje(codmensaje,mensaje) values ('MEN003','Existen Campos Vacios');
+insert into mensaje(codmensaje,mensaje) values ('MEN004','Email Erroneo o Inexistente');
 
 -- ====================================
 -- Cargar datos a la tabla control

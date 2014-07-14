@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import dao.impl.MensajeDaoImpl;
-import dao.spec.MensajeDao;
 import entity.Cliente;
 import entity.Usuario;
 import model.ClienteModel;
@@ -20,28 +18,52 @@ import model.LoginModel;
 /**
  * Servlet implementation class LoginController
  */
-@WebServlet("/LoginIngreso")
+@WebServlet({"/LoginIngreso","/Recuperacion"})
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 
 	/**
+	 * @throws IOException 
+	 * @throws ServletException 
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String alias = request.getServletPath();
+		if(alias.equals("/LoginIngreso")){
+			login(request,response);
+		}else if(alias.equals("/Recuperacion")){
+			recuperacion(request,response);
+		}
+	}
+
+
+	private void recuperacion(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		try {
+			String email = request.getParameter("email");
+			LoginModel model = new LoginModel();
+			Usuario usu = model.validaremail(email);
+			HttpSession session = request.getSession(true);
+			session.setAttribute("usuario", usu);
+		} catch (Exception e) {
+			request.setAttribute("error", e.getMessage());
+		}
+		
+		RequestDispatcher rd = request.getRequestDispatcher("Recuperacion.jsp");
+		rd.forward(request, response);
+	}
+
+
+	private void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String paginaDestino = "home.jsp";
 		try {
-			// Datos
 			String user1 = request.getParameter("usuario");
 			String pass1 = request.getParameter("contrasenia");
-			// Proceso
 			LoginModel model = new LoginModel();
 			ClienteModel model1 =  new ClienteModel(); 
-			Usuario usu1 = model.validar(user1, pass1);
+			Usuario usu1 = model.validarusuariocontraseña(user1, pass1);
 			Cliente cli1 = model1.getCliente(user1);
-			MensajeDao men = new MensajeDaoImpl();
-			System.out.println(men.getMensaje("MEN001"));
-			// Guardar dato en sesión
 			HttpSession session = request.getSession(true);
 			session.setAttribute("usuario", usu1);
 			session.setAttribute("cliente", cli1);
@@ -51,6 +73,7 @@ public class LoginController extends HttpServlet {
 		}
 		RequestDispatcher rd = request.getRequestDispatcher(paginaDestino);
 		rd.forward(request, response);
+		
 	}
 
 }
