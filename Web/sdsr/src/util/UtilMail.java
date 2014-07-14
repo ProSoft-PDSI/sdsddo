@@ -12,7 +12,7 @@ import javax.mail.internet.MimeMessage;
 public class UtilMail {
 	private final Properties properties = new Properties();
 	
-	private String password;
+	//private String password;
 
 	private Session session;
 
@@ -28,24 +28,21 @@ public class UtilMail {
 		session = Session.getDefaultInstance(properties);
 	}
 
-	public void sendEmail(){
+	public void sendEmail(String Mensaje){
 
 		init();
 		try{
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress((String)properties.get("mail.smtp.mail.sender")));
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress("receptor@gmail.com"));
-			message.setSubject("Prueba");
-			message.setText("Texto");
+			message.setSubject("Recuperacion de Cuenta");
+			message.setText(Mensaje);
 			Transport t = session.getTransport("smtp");
 			t.connect((String)properties.get("mail.smtp.user"), "password");
 			t.sendMessage(message, message.getAllRecipients());
 			t.close();
 		}catch (MessagingException me){
-                        //Aqui se deberia o mostrar un mensaje de error o en lugar
-                        //de no hacer nada con la excepcion, lanzarla para que el modulo
-                        //superior la capture y avise al usuario con un popup, por ejemplo.
-			return;
+			throw new RuntimeException(me.getMessage());
 		}
 		
 	}

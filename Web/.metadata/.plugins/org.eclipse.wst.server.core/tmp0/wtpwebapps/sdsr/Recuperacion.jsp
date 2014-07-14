@@ -10,6 +10,7 @@
 </head>
 <body>
 	<form method="post" action="Recuperacion" >
+		
 	</form>
 </body>
 </html>

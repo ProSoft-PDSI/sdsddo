@@ -47,6 +47,17 @@ disconnect
 -- Conexion con la base de datos
 connect restaurante/admin
 
+-- ====================================
+-- Crear la Tabla de Usuarios:usuario
+-- ====================================
+create table usuario(
+usuario varchar2(30) not null,
+contrasenia varchar2(20) not null,
+tipo char not null,
+constraint pk_usuario
+primary key(usuario)
+);
+
 -- =====================================
 -- Crear la Tabla de Productos:producto
 -- =====================================

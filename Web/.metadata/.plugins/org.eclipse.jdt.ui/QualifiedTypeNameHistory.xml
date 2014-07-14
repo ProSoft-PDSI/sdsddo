@@ -30,4 +30,9 @@
 <fullyQualifiedTypeName name="javax.mail.Message"/>
 <fullyQualifiedTypeName name="javax.mail.Transport"/>
 <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
+<fullyQualifiedTypeName name="dao.spec.MensajeDao"/>
+<fullyQualifiedTypeName name="dao.impl.MensajeDaoImpl"/>
+<fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+<fullyQualifiedTypeName name="model.LoginModel"/>
+<fullyQualifiedTypeName name="entity.Usuario"/>
 </qualifiedTypeNameHistroy>

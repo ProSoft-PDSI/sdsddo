@@ -1,0 +1,12 @@
+package model;
+
+import dao.impl.MensajeDaoImpl;
+import dao.spec.MensajeDao;
+
+public class MensajeModel {
+	public static String getMensaje(String codmen){
+		MensajeDao dao = new MensajeDaoImpl();
+		String men = dao.getMensaje(codmen);
+		return men;
+	}
+}
