@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import entity.Cliente;
 import model.PedidosModel;
 
-@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido"})
+@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido","/ListaPedidos"})
 public class PedidosController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -48,7 +49,30 @@ public class PedidosController extends HttpServlet {
 				RequestDispatcher rd = request.getRequestDispatcher("ModficarPedido.jsp");
 				rd.forward(request, response);
 			}
+		}else if(alias.equals("/ListaPedidos")){
+			try {
+				ListaPedidos(request,response);
+			} catch (Exception e) {
+				request.setAttribute("error", e.getMessage());
+				RequestDispatcher rd = request.getRequestDispatcher("ModficarPedido.jsp");
+				rd.forward(request, response);
+			}
 		}
+	}
+
+	private void ListaPedidos(HttpServletRequest request,
+			HttpServletResponse response) {
+		try {
+			HttpSession session = request.getSession(true);
+			PedidosModel model = new PedidosModel();
+			Map<String,String> lista = model.;
+			session.setAttribute("listapedido", lista);
+		} catch (Exception e) {
+			request.setAttribute("error", e.getMessage());
+		}
+		RequestDispatcher rd = request.getRequestDispatcher("pedidoInsertar.jsp");
+		rd.forward(request, response);
+
 	}
 
 	private void ModificarPedido(HttpServletRequest request,

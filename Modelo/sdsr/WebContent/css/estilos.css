@@ -1,0 +1,25 @@
+
+*{
+    font-family:Verdana;
+}
+
+
+.box{
+    display: table-cell;
+    vertical-align: middle;
+    border:1px solid grey;
+    border-radius:1em;
+    padding:2em;
+    background-color:#FAFAFA;
+}
+
+/*centrado vertical y horizontal*/
+.vhcenter{
+    position:absolute;
+    left:50%;
+    top:50%;
+}
+
+#enlaceolvidopass{
+    font-size:11px;
+}

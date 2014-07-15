@@ -48,7 +48,7 @@ public class ProductoController extends HttpServlet {
 			ProductoModel model = new ProductoModel();
 			List<Producto> menu = model.getMenu();
 			request.setAttribute("menu", menu);
-			//request.getHeader("referer");
+			request.getHeader("referer");
 			
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());

@@ -1,9 +1,11 @@
 package dao.impl;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 
 import util.UtilDate;
 import dao.spec.ClienteDao;
@@ -54,5 +56,36 @@ public class ClienteDaoImpl implements ClienteDao,RowMapper<Cliente> {
 			e.printStackTrace();
 		}
 		return bean;
+	}
+
+	@Override
+	public void insertaUsuario(String dni, String nomcliente,
+			String direccioncliente, String emailcliente, Date fechanac,
+			String telefono, String usuario,String contrasenia) {
+		Connection cn=null;
+		try {
+			cn=AccesoDB.getConnection();
+			cn.setAutoCommit(false);
+			String sql="{call sp_agregarusuarios(?,?,?,?,?,?,?,?)}";
+			CallableStatement cstm = cn.prepareCall(sql);
+			cstm.setString(1, dni);
+			cstm.setString(2, nomcliente);
+			cstm.setString(3, direccioncliente);
+			cstm.setString(4, emailcliente);
+			cstm.setDate(5, UtilDate.javaToSQL(fechanac));
+			cstm.setString(6, telefono);
+			cstm.setString(7, contrasenia);
+			cstm.executeUpdate();
+			cstm.close();			
+		} catch (Exception e) {
+			throw new RuntimeException(e.getMessage());
+		}finally{
+			try {
+				cn.close();
+			} catch (Exception e2) {
+				
+			}
+		}
+		
 	}
 }

@@ -9,9 +9,6 @@
 	<title>..::Sistema de Servicios de Restaurantes::..</title>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript">
-		function agregaracarrito(seleccion){
-			console.log(String(seleccion));
-		}
 	
 	</script>
 </head>
@@ -21,7 +18,7 @@
 	<c:if test="${requestScope.menu != null}">
 		<table>
 			<c:forEach var = "i" items = "${requestScope.menu}" >
-				<tr><td id="${i.codProducto}"><c:out value="${i.nombre}"></c:out></td><td><button onclick="agregaracarrito(${i.stock})">Agregar</button></td></tr>
+				<tr><td id="${i.codProducto}"><c:out value="${i.nombre}"></c:out></td><td><button>Agregar</button></td></tr>
 			</c:forEach>
 		</table>
 	</c:if>

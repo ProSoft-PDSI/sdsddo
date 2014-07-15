@@ -8,6 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	${requestScope.}
+	<ul>
+		<li></li>
+	</ul>
 </body>
 </html>
