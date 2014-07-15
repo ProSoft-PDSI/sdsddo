@@ -520,14 +520,6 @@ val int;
 err_cli exception;
 err_usu exception;  
 BEGIN
-  /*comprobar si existe el cliente*/
-  select count(*) into  n from cliente where dni=p_dni;
-  if n = 0 then
-    insert into cliente values (p_dni,p_nombrecliente,p_direccioncliente,P_email,p_fechanac,p_telefono,p_usuario);   
-  else
-    raise err_cli;
-  end if;
-  
   /*comprobar si existe el usuario*/
   select count(*) into  n from usuario where usuario=p_usuario;
   if n = 0 then
@@ -535,7 +527,15 @@ BEGIN
   else
     raise err_usu;
   end if;
-  
+
+ /*comprobar si existe el cliente*/
+  select count(*) into  n from cliente where dni=p_dni;
+  if n = 0 then
+    insert into cliente values (p_dni,p_nombrecliente,p_direccioncliente,P_email,p_fechanac,p_telefono,p_usuario);   
+  else
+    raise err_cli;
+  end if;
+    
   commit;
   EXCEPTION
   WHEN err_cli THEN

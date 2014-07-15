@@ -41,11 +41,13 @@ public class LoginController extends HttpServlet {
 	private void recuperacion(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		try {
-			String email = request.getParameter("email");
+			String email = request.getParameter("correo");
 			LoginModel model = new LoginModel();
 			Usuario usu = model.validaremail(email);
 			HttpSession session = request.getSession(true);
 			session.setAttribute("usuario", usu);
+			model.mandarEmail(email);
+			request.setAttribute("mensaje", "Correo Enviado");
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
 		}

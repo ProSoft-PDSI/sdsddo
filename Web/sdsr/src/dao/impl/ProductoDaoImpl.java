@@ -81,4 +81,32 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 		return pro;
 	}
 
+	@Override
+	public String getNombreProducto(String codproducto) {
+		Connection cn=null;
+		String nombre=null;
+		try {
+			cn = AccesoDB.getConnection();
+			String sql="select descproducto from producto where codproducto = ?";
+			PreparedStatement pstm = cn.prepareStatement(sql);
+			pstm.setString(1, codproducto);
+			ResultSet rs = pstm.executeQuery(sql);
+			while(rs.next()){
+				nombre= rs.getString("DESCRPRODUCTO");
+			}
+		
+			rs.close();
+			pstm.close();
+		} catch (Exception e) {
+			throw new RuntimeException(e.getMessage());
+		}finally{
+			try {
+				cn.close();
+			} catch (SQLException e) {
+				throw new RuntimeException(e.getMessage());
+			}
+		}
+		return nombre;
+	}
+
 }
