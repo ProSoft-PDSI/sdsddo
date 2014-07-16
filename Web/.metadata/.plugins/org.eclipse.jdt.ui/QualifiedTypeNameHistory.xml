@@ -4,12 +4,9 @@
 <fullyQualifiedTypeName name="dao.util.AccesoDB"/>
 <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="model.PedidosModel"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="controller.LoginController"/>
-<fullyQualifiedTypeName name="model.ClienteModel"/>
 <fullyQualifiedTypeName name="dao.spec.ClienteDao"/>
 <fullyQualifiedTypeName name="entity.Cliente"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -43,4 +40,9 @@
 <fullyQualifiedTypeName name="dao.spec.ProductoDao"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="model.ClienteModel"/>
+<fullyQualifiedTypeName name="entity.Pedido"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>

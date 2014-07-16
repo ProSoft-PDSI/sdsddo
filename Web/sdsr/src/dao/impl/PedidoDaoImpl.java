@@ -4,11 +4,14 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Date;
 import java.util.Hashtable;
 import java.util.Map;
+
 import dao.spec.PedidoDao;
 import dao.spec.ProductoDao;
 import dao.util.AccesoDB;
+import entity.Pedido;
 
 public class PedidoDaoImpl implements PedidoDao {
 
@@ -137,6 +140,12 @@ public class PedidoDaoImpl implements PedidoDao {
 			}
 		}
 		return listapedidos;
+	}
+
+	@Override
+	public Pedido getPedido(String dni, Date fecha) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
