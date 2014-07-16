@@ -24,7 +24,6 @@ INDEX VERSION 1.126+C:\Users\Yoshitomi\Documents\GitHub\sdsddo\Web\.metadata\.pl
 3730526690.index
 1853051034.index
 3756503381.index
-1060362508.index
 223434235.index
 1574826849.index
 3963093497.index
