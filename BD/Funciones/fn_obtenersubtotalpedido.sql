@@ -1,5 +1,5 @@
 CREATE OR REPLACE FUNCTION fn_obtenersubtotalpedido(
-  p_nropedido varchar2
+  p_nropedido PEDIDO.NROPEDIDO%TYPE
 )
 return NUMBER
 is

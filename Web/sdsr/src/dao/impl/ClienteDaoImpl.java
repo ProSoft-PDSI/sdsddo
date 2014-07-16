@@ -25,8 +25,9 @@ public class ClienteDaoImpl implements ClienteDao,RowMapper<Cliente> {
 		    PreparedStatement pstm = cn.prepareStatement(sql);
 		    pstm.setString(1,usuario);
 		    ResultSet rs=pstm.executeQuery();
-		    cli=mapRow(rs);
-		    rs.next();
+		    while(rs.next()){
+		    	cli=mapRow(rs);
+		    }
 		    rs.close();
 		    pstm.close();
 		    return cli;
@@ -66,7 +67,7 @@ public class ClienteDaoImpl implements ClienteDao,RowMapper<Cliente> {
 		try {
 			cn=AccesoDB.getConnection();
 			cn.setAutoCommit(false);
-			String sql="{call sp_agregarusuarios(?,?,?,?,?,?,?,?)}";
+			String sql="{call sp_insertacliente(?,?,?,?,?,?,?,?)}";
 			CallableStatement cstm = cn.prepareCall(sql);
 			cstm.setString(1, dni);
 			cstm.setString(2, nomcliente);
@@ -74,7 +75,8 @@ public class ClienteDaoImpl implements ClienteDao,RowMapper<Cliente> {
 			cstm.setString(4, emailcliente);
 			cstm.setDate(5, UtilDate.javaToSQL(fechanac));
 			cstm.setString(6, telefono);
-			cstm.setString(7, contrasenia);
+			cstm.setString(7, usuario);
+			cstm.setString(8, contrasenia);
 			cstm.executeUpdate();
 			cstm.close();			
 		} catch (Exception e) {

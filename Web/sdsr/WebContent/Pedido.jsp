@@ -8,16 +8,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+		<c:if test="${sessionScope.lista!=null}">
+			<c:forEach var="p" items="${sessionScope.lista}">
+				<ul>
+					<li><c:out value="${p.key}"></c:out><c:out value="${p.value}"></c:out> </li>
+				</ul>
+				
+			</c:forEach>
+		</c:if>
+		<c:if test="${requestScope.lista == null}">
+			<c:out value="no hay datos"></c:out>
+		</c:if>
 	
-	<c:if test="${RequestScope.menu != null}">
-		<c:forEach var="p" items="${requestScope.lista}">
-			<c:out value="${p.key}"></c:out>
-			<c:out value="${p.value}"></c:out> 
-		</c:forEach>
-	</c:if>
-	
-	<ul>
-		<li></li>
-	</ul>
 </body>
 </html>
