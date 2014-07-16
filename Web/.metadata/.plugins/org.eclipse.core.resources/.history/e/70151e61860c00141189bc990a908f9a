@@ -13,7 +13,7 @@
 		<c:forEach var="p" items="${requestScope.lista}">
 			<c:out value="${p.key}"></c:out>
 			<c:out value="${p.value}"></c:out> 
-		</c:forEach>
+		</c:forEach>	
 	</c:if>
 	
 	<ul>

@@ -61,7 +61,7 @@ public class PedidosController extends HttpServlet {
 	}
 
 	private void ListaPedidos(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+			HttpServletResponse response) {
 		try {
 			HttpSession session = request.getSession(true);
 			PedidosModel model = new PedidosModel();

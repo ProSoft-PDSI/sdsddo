@@ -8,12 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
 	<c:if test="${RequestScope.menu != null}">
-		<c:forEach var="p" items="${requestScope.lista}">
-			<c:out value="${p.key}"></c:out>
-			<c:out value="${p.value}"></c:out> 
-		</c:forEach>
+		<c:forEach var="p" items="${requestScope.lista}"> 
+		</c:forEach>	
 	</c:if>
 	
 	<ul>
