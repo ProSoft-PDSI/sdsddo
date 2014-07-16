@@ -7,26 +7,18 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/foundation.css" />
 	<title>..::Sistema de Servicios de Restaurantes::..</title>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript">
-	
-	</script>
 </head>
 <body>
-<form method="post" action="Menu"> 
-	<input type="submit" value="presiona">
-	<c:if test="${requestScope.menu != null}">
+	<form action="Menu">
 		<table>
-			<c:forEach var = "i" items = "${requestScope.menu}" >
-				<tr><td id="${i.codProducto}"><c:out value="${i.nombre}"></c:out></td><td><button>Agregar</button></td></tr>
+			<c:forEach var = "i" items = "${requestScope.listamenu}" >
+				<tr><td><c:out value="${i.nombre}"></c:out></td><td><button>Agregar</button></td></tr>
 			</c:forEach>
 		</table>
-	</c:if>
+	</form>
 	<c:if test="${requestScope.error != null}">
 		<c:out value="${requestScope.error}"></c:out>
 	</c:if>
-	<div id="contenido">
-	</div>
-</form>
+
 </body>
 </html>

@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
@@ -12,9 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import entity.Cliente;
+import entity.Pedido;
+import entity.Producto;
 import model.PedidosModel;
+import model.ProductoModel;
 
-@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido","/ListaPedidos"})
+@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido","/ListaPedidos","/Menu"})
 public class PedidosController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -22,8 +26,8 @@ public class PedidosController extends HttpServlet {
     public PedidosController() {
         super();
     }
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String alias = request.getServletPath();
 		if(alias.equals("/InsertarPedido")){
 			try {
@@ -49,15 +53,31 @@ public class PedidosController extends HttpServlet {
 				RequestDispatcher rd = request.getRequestDispatcher("ModficarPedido.jsp");
 				rd.forward(request, response);
 			}
-		}else if(alias.equals("/ListaPedidos")){
-			try {
+		}
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String alias = request.getServletPath();
+		if(alias.equals("/ListaPedidos")){
 				ListaPedidos(request,response);
-			} catch (Exception e) {
-				request.setAttribute("error", e.getMessage());
-				RequestDispatcher rd = request.getRequestDispatcher("ModficarPedido.jsp");
-				rd.forward(request, response);
+		}else{
+			if(alias.equals("/Menu")){
+				Menu(request,response);
 			}
 		}
+	}
+
+	private void Menu(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ProductoModel model = new ProductoModel();
+		List<Producto> menu = model.getMenu();
+		for(Producto p:menu){
+			System.out.println(p.getNombre());
+		}
+		request.setAttribute("listamenu", menu);
+		RequestDispatcher rd;
+		rd = request.getRequestDispatcher("home.jsp");
+		rd.forward(request, response);
+		
 	}
 
 	private void ListaPedidos(HttpServletRequest request,
@@ -65,12 +85,12 @@ public class PedidosController extends HttpServlet {
 		try {
 			HttpSession session = request.getSession(true);
 			PedidosModel model = new PedidosModel();
-			Map<String,String> lista = model.getListaPedidos();
+			Map<String,String> lista = model.getListaPedidos(session.getAttribute("user"));
 			session.setAttribute("listapedido", lista);
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
 		}
-		RequestDispatcher rd = request.getRequestDispatcher("pedidoInsertar.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("Pedido.jsp");
 		rd.forward(request, response);
 
 	}
@@ -94,6 +114,8 @@ public class PedidosController extends HttpServlet {
 			Cliente cli = (Cliente)session.getAttribute("cliente");
 			PedidosModel model = new PedidosModel();
 			model.InsertarPedidos(cli.getDni());
+			Pedido pedido = 
+			session.setAttribute("pedido", pedido);
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
 		}

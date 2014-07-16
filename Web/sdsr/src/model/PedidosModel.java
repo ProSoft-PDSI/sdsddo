@@ -1,11 +1,13 @@
 package model;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 import dao.impl.PedidoDaoImpl;
 import dao.spec.PedidoDao;
 import entity.DetallePedido;
+import entity.Pedido;
 
 public class PedidosModel {
 	public void InsertarPedidos(String dni){
@@ -23,6 +25,13 @@ public class PedidosModel {
 	public Map<String,String> getListaPedidos(){
 		PedidoDao dao = new PedidoDaoImpl();
 		return dao.listaPedidos();
+		
+	}
+	
+	public Pedido getPedido(String dni,Date fecha){
+		
+		
+		return null;
 		
 	}
 	

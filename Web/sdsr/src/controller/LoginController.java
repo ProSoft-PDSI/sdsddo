@@ -18,7 +18,7 @@ import model.LoginModel;
 /**
  * Servlet implementation class LoginController
  */
-@WebServlet({"/LoginIngreso","/Recuperacion"})
+@WebServlet({"/LoginIngreso","/Recuperacion","/CerrarSesion"})
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -36,7 +36,28 @@ public class LoginController extends HttpServlet {
 			recuperacion(request,response);
 		}
 	}
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String alias = request.getServletPath();
+		if(alias.equals("/CerrarSesion")){
+			cerrarSesion(request,response);
+		}
+	}
 
+	private void cerrarSesion(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		try {
+			HttpSession session = request.getSession(true);
+			session.removeAttribute("user");
+			session.removeAttribute("cliente");
+			session.invalidate();
+			String pageToForward = request.getContextPath();
+			response.sendRedirect(pageToForward);
+		} catch (Exception e) {
+			request.setAttribute("error", e.getMessage());
+		}
+		
+	}
 
 	private void recuperacion(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -45,7 +66,7 @@ public class LoginController extends HttpServlet {
 			LoginModel model = new LoginModel();
 			Usuario usu = model.validaremail(email);
 			HttpSession session = request.getSession(true);
-			session.setAttribute("usuario", usu);
+			session.setAttribute("user", usu);
 			model.mandarEmail(email);
 			request.setAttribute("mensaje", "Correo Enviado");
 		} catch (Exception e) {
@@ -58,7 +79,7 @@ public class LoginController extends HttpServlet {
 
 
 	private void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String paginaDestino = "home.jsp";
+		String paginaDestino = "index.jsp";
 		try {
 			String user1 = request.getParameter("usuario");
 			String pass1 = request.getParameter("contrasenia");
@@ -67,7 +88,7 @@ public class LoginController extends HttpServlet {
 			Usuario usu1 = model.validarusuariocontraseña(user1, pass1);
 			Cliente cli1 = model1.getCliente(user1);
 			HttpSession session = request.getSession(true);
-			session.setAttribute("usuario", usu1);
+			session.setAttribute("user", usu1);
 			session.setAttribute("cliente", cli1);
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());

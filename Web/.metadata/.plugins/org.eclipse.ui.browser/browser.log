@@ -31,3 +31,16 @@ jul 12, 2014 15:23:19.38 1405196599366	addons.update-checker	WARN	Update manifes
 jul 13, 2014 21:17:06.92 NEW SESSION
 jul 13, 2014 21:17:06.92 1405304226906	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
 jul 13, 2014 21:44:44.42 [Child 924] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+
+jul 16, 2014 01:35:17.55 NEW SESSION
+jul 16, 2014 01:35:17.55 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 16, 2014 01:35:17.68 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 16, 2014 01:35:33.01 [Child 2760] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 16, 2014 01:38:30.24 [7156] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+
+jul 16, 2014 12:38:20.19 NEW SESSION
+jul 16, 2014 12:38:20.19 [Child 7976] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 16, 2014 12:56:39.08 1405533399061	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+jul 16, 2014 13:32:43.03 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 16, 2014 13:32:43.32 No permission to use the keyboard API for http://pubads.g.doubleclick.net
+jul 16, 2014 13:32:44.53 No permission to use the keyboard API for http://googleads.g.doubleclick.net

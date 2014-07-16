@@ -1,6 +1,6 @@
 CREATE OR REPLACE PROCEDURE sp_insertapedidos(
   p_dni varchar2,
-  p_usuario varchar
+  p_usuario varchar2
 )
 as
   v_nro varchar2(10);
@@ -10,7 +10,7 @@ as
   msg_error varchar2(100);
 begin
   v_nro := fn_obtenervalorcontrol('pedido');
-  insert into pedido values (v_nro,P_dni,sysdate,0,0,0,'E',p_usuario);
+  insert into pedido values (v_nro,p_dni,sysdate,0,0,0,'E',p_usuario);
   v_inicio:=substr(v_nro,4,3);
   n:=to_number(v_inicio);
   n:=n+1;
