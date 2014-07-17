@@ -5,8 +5,8 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/foundation.css" />
 	<title>..::Sistema de Servicios de Restaurantes::..</title>
+	<%@ include file="Carga.jsp" %>
 </head>
 <body id="page5">
 <div class="body6">
@@ -15,12 +15,7 @@
 <!-- header -->
 		<%@ include file="Cabecera.jsp" %>		
 		<article id="content">
-				<div class="wrap">
-					<div class="box">
-						<iframe>
-						</iframe>
-					</div>
-				</div>
+						<iframe src="home.jsp" height="910px" width="965px" name="frame" allowtransparency="true"></iframe>
 			</article>
 		</div>
 	</div>
