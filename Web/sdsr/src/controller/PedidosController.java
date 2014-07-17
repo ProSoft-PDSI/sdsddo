@@ -12,9 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import util.UtilDate;
 import entity.Cliente;
 import entity.Pedido;
 import entity.Producto;
+import entity.Usuario;
 import model.PedidosModel;
 import model.ProductoModel;
 
@@ -85,7 +87,8 @@ public class PedidosController extends HttpServlet {
 		try {
 			HttpSession session = request.getSession(true);
 			PedidosModel model = new PedidosModel();
-			Map<String,String> lista = model.getListaPedidos(session.getAttribute("user"));
+			Pedido ped = (Pedido)session.getAttribute("pedido");
+			Map<String,String> lista = model.getListaPedidos(ped.getNropedido());
 			session.setAttribute("listapedido", lista);
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
@@ -113,8 +116,9 @@ public class PedidosController extends HttpServlet {
 			HttpSession session = request.getSession(true);
 			Cliente cli = (Cliente)session.getAttribute("cliente");
 			PedidosModel model = new PedidosModel();
-			model.InsertarPedidos(cli.getDni());
-			Pedido pedido = 
+			Usuario usu = (Usuario)session.getAttribute("usuario");
+			model.InsertarPedidos(cli.getDni(),usu.getUsuario());
+			Pedido pedido = model.getPedido(cli.getDni(), UtilDate.now());
 			session.setAttribute("pedido", pedido);
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
