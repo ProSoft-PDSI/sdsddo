@@ -4,8 +4,8 @@
 <script>
 	$(document).ready(function(){
 		$("#menu a").click(function(){
-			$("#menu a").removeClass("active");
-			$("this").addClass("active");
+			$("#menu li").removeClass("active");
+			$("this").parent().addClass("active");
 		});
 	})
 
