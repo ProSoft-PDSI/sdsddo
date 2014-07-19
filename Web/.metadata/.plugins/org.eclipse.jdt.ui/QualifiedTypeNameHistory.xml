@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="dao.spec.ClienteDao"/>
 <fullyQualifiedTypeName name="entity.Cliente"/>
 <fullyQualifiedTypeName name="controller.ProductoController"/>
-<fullyQualifiedTypeName name="model.ProductoModel"/>
 <fullyQualifiedTypeName name="dao.util.RowMapper"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
@@ -28,15 +27,10 @@
 <fullyQualifiedTypeName name="util.UtilDate"/>
 <fullyQualifiedTypeName name="dao.impl.ClienteDaoImpl"/>
 <fullyQualifiedTypeName name="util.UtilMail"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="entity.Producto"/>
-<fullyQualifiedTypeName name="entity.DetallePedido"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="dao.impl.PedidoDaoImpl"/>
-<fullyQualifiedTypeName name="dao.spec.ProductoDao"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -45,4 +39,16 @@
 <fullyQualifiedTypeName name="entity.Pedido"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="dto.PedidoDto"/>
+<fullyQualifiedTypeName name="dao.spec.ProductoDao"/>
+<fullyQualifiedTypeName name="dao.impl.ProductoDaoImpl"/>
+<fullyQualifiedTypeName name="entity.Producto"/>
+<fullyQualifiedTypeName name="model.ProductoModel"/>
+<fullyQualifiedTypeName name="entity.DetallePedido"/>
+<fullyQualifiedTypeName name="dao.spec.ControlDao"/>
+<fullyQualifiedTypeName name="dao.impl.ControlDaoImpl"/>
+<fullyQualifiedTypeName name="controller.PedidosController"/>
+<fullyQualifiedTypeName name="model.ControlModel"/>
 </qualifiedTypeNameHistroy>

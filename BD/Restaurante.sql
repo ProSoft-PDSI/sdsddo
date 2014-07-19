@@ -63,8 +63,9 @@ primary key(usuario)
 -- =====================================
 create table producto(
 codproducto char(4) not null,
-nombreproducto varchar(30) not null,
-descrproducto varchar2(100)not null,
+nombreproducto varchar2(30) not null,
+descrproducto varchar2(400)not null,
+imagen varchar2(200) not null,
 preciounitario number(5,2) not null,
 stock number(3,0) not null,
 usuario varchar2(30) not null,
@@ -76,7 +77,7 @@ constraint fk_usuario_producto
 constraint u_descr_producto
 	unique(descrproducto),
 constraint chk_producto_codproducto
-	check( REGEXP_LIKE(codproducto,'[PEB][IAONE][0-9][0-9]')),
+	check( REGEXP_LIKE(codproducto,'[PE][INS][0-9][0-9]')),
 constraint chk_producto_preciounitario
   check(preciounitario>0),
 constraint chk_producto_stock

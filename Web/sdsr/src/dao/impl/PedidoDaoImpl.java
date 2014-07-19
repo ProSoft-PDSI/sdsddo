@@ -5,12 +5,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Date;
-import java.util.Hashtable;
-import java.util.Map;
-
 import util.UtilDate;
 import dao.spec.PedidoDao;
-import dao.spec.ProductoDao;
 import dao.util.AccesoDB;
 import dao.util.RowMapper;
 import entity.Pedido;
@@ -114,35 +110,6 @@ public class PedidoDaoImpl implements PedidoDao,RowMapper<Pedido> {
 		
 	}
 
-	@Override
-	public Map<String,String> listaPedidos(String nropedido) {
-		Connection cn=null;
-		Map<String,String> listapedidos = new Hashtable<String, String>();
-		try {
-			cn=AccesoDB.getConnection();
-			String sql = "select codproducto,cant from detallepedido where nropedido = ?";
-			PreparedStatement pstm = cn.prepareStatement(sql);
-			pstm.setString(1, nropedido);
-			ResultSet rs = pstm.executeQuery();
-			ProductoDao dao = new ProductoDaoImpl(); 
-			while(rs.next()){
-				String nombre = dao.getNombreProducto(rs.getString("codproducto"));
-				int cant = rs.getInt("cant");
-				listapedidos.put(nombre, String.valueOf(cant));
-			}
-			rs.close();
-			pstm.close();
-		} catch (Exception e) {
-			throw new RuntimeException(e.getMessage());
-		}finally{
-			try {
-				cn.close();
-			} catch (Exception e2) {
-				
-			}
-		}
-		return listapedidos;
-	}
 
 	@Override
 	public Pedido getPedido(String dni, Date fecha) {

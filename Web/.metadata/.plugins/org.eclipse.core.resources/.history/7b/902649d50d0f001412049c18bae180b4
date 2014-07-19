@@ -1,0 +1,5 @@
+package dto;
+
+public class PedidoDto {
+	private static List<DetallePedido> lista;
+}

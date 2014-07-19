@@ -10,6 +10,7 @@ import entity.DetallePedido;
 import entity.Pedido;
 
 public class PedidosModel {
+	
 	public void InsertarPedidos(String dni,String usuario){
 		PedidoDao dao = new PedidoDaoImpl();
 		dao.InsertarPedido(dni,usuario);
@@ -22,10 +23,6 @@ public class PedidosModel {
 		}
 	}
 	
-	public Map<String,String> getListaPedidos(String nropedido){
-		PedidoDao dao = new PedidoDaoImpl();
-		return dao.listaPedidos(nropedido);
-	}
 	
 	public Pedido getPedido(String dni,Date fecha){
 		PedidoDao dao = new PedidoDaoImpl();

@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
@@ -11,10 +12,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import dto.PedidoDto;
 import util.UtilDate;
 import entity.Cliente;
+import entity.DetallePedido;
 import entity.Pedido;
+import entity.Producto;
 import entity.Usuario;
+import model.ControlModel;
 import model.PedidosModel;
 import model.ProductoModel;
 
@@ -71,15 +76,19 @@ public class PedidosController extends HttpServlet {
 		rd.forward(request, response);
 		
 	}
-
+//revisar
 	private void ListaPedidos(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		try {
-			HttpSession session = request.getSession(true);
-			PedidosModel model = new PedidosModel();
-			Pedido ped = (Pedido)session.getAttribute("pedido");
-			Map<String,String> lista = model.getListaPedidos(ped.getNropedido());
-			session.setAttribute("listapedido", lista);
+			//HttpSession session = request.getSession(true);
+			String codProducto = (String) request.getAttribute("codigo");
+			int cantidad = (Integer)request.getAttribute("cant");
+			DetallePedido bean = new DetallePedido();
+			ControlModel model = new ControlModel();
+			bean.setNropedido(model.getValor("pedido"));
+			bean.setCodproducto(codProducto);
+			bean.setCant(cantidad);
+			PedidoDto.addDetallePedido(bean);
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
 		}
@@ -99,7 +108,7 @@ public class PedidosController extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 	}
-
+	//revisar
 	private void InsertarPedido(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		try {
@@ -108,8 +117,11 @@ public class PedidosController extends HttpServlet {
 			PedidosModel model = new PedidosModel();
 			Usuario usu = (Usuario)session.getAttribute("usuario");
 			model.InsertarPedidos(cli.getDni(),usu.getUsuario());
+			List<DetallePedido> lista = PedidoDto.getLista();
+			model.InsertaProductosDetallePedido(lista, usu.getUsuario());
 			Pedido pedido = model.getPedido(cli.getDni(), UtilDate.now());
-			session.setAttribute("pedido", pedido);
+			session.setAttribute("pedidos", pedido);
+			session.setAttribute("totalpedido", pedido.getTotalpedido());
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
 		}
