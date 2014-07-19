@@ -1,0 +1,30 @@
+package entity;
+
+public class DetallePedido {
+	String codproducto;
+	int cant;
+	double preciototal;
+	
+
+	public String getCodproducto() {
+		return codproducto;
+	}
+	public void setCodproducto(String codproducto) {
+		this.codproducto = codproducto;
+	}
+
+	public int getCant() {
+		return cant;
+	}
+	public void setCant(int cant) {
+		this.cant = cant;
+	}
+	public double getPreciototal() {
+		return preciototal;
+	}
+	public void setPreciototal(double preciototal) {
+		this.preciototal = preciototal;
+	}
+	
+	
+}

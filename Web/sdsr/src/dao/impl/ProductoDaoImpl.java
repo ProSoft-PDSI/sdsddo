@@ -89,12 +89,12 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 		String nombre=null;
 		try {
 			cn = AccesoDB.getConnection();
-			String sql="select descproducto from producto where codproducto = ?";
+			String sql="select nombreproducto from producto where codproducto = ?";
 			PreparedStatement pstm = cn.prepareStatement(sql);
 			pstm.setString(1, codproducto);
 			ResultSet rs = pstm.executeQuery(sql);
 			while(rs.next()){
-				nombre= rs.getString("DESCRPRODUCTO");
+				nombre= rs.getString("nombreproducto");
 			}
 		
 			rs.close();
