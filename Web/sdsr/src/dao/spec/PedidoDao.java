@@ -1,8 +1,6 @@
 package dao.spec;
 
 import java.util.Date;
-import java.util.Map;
-
 import entity.Pedido;
 
 public interface PedidoDao {

@@ -1,0 +1,113 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title></title>
+<meta charset="utf-8">
+</head>
+<body id="page5">
+<div class="body6">
+	<div class="body1">
+		<div class="main">
+<!-- header -->
+			<header>
+                <div id="ac_content" class="ac_content"><h1><span>PIZZERIA</span>RAVIOLI</h1></div>
+					<nav>
+						<ul id="top_nav">
+							<li><a href="index.html"><img src="images/icon_1.gif" alt=""></a></li>
+							<li><a href="Login.html"><img src="images/icon_2.gif" alt=""></a></li>
+							<li class="end"><a href="Contacto.html"><img src="images/icon_3.gif" alt=""></a></li>
+						</ul>
+					</nav>
+					<nav>
+						<ul id="menu">
+							<li class="active"><a href="index.html">Restaurant</a></li>
+							<li><a href="Entrada.html">Entrada</a></li>
+							<li><a href="Clasica.html">Pizza Clasica</a></li>
+							<li><a href="Especial.html">Especiales</a></li>
+							<li><a href="Contacto.html">Contacto</a></li>
+						</ul>
+					</nav>
+				</header>
+<!-- / header -->
+<!-- content -->
+
+			<article id="content">
+				<div class="wrap">
+					<div class="box">
+					<form id="ContactForm">
+						<section class="loginform cf">
+							<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+								<ul>
+								   <h1>Iniciar Sesion </h1>
+									<li>
+										<label for="usermail"><br>Email</label>
+										<input type="email" name="usermail" placeholder="yourname@email.com" required>
+									</li>
+									<li>
+										<label for="password">Password</label>
+										<input type="password" name="password" placeholder="password" required></li>
+									<li>
+										<input type="submit" value="Login">
+									</li>
+								</ul>
+							</form>
+						</section>
+					<div>
+						<form id="ContactForm">
+						<section class="loginform cf">
+						   <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+							<ul>
+							    <h1>Registrate</h1>
+								<li>
+									<label for="usermail"><br>Email</label>
+									<input type="Text" name="usermail"  required>
+								</li>
+								<li>
+									<label for="password">Contraseña</label>
+									<input type="Text" name="password"  required>
+								</li>
+								<li>
+									<label for="password">Confirmar Contraseña</label>
+									<input type="Text" name="password"  required>
+								</li>
+								<li>
+									<label for="Nombre">Nombre</label>
+									<input type="Text" name="Nombre"  required>
+								</li>
+								<li>
+									<label for="Apellido">Apellidos</label>
+									<input type="Text" name="Apellido"  required>
+								</li>
+								<li>
+									<label for="Number">DNI</label>
+									<input type="Text" name="Number"  required>
+								</li>
+								<li>
+									<label for="Direccion">Direccion</label>
+									<input type="Text" name="Direccion"  required>
+								</li>
+								<li>
+									<label for="Number">Telefono</label>
+									<input type="Text" name="Number"  required>
+								</li>
+								<li>
+									<input type="submit" value="Registrar">
+								</li>
+							</ul>
+						</form>
+					</section>
+							</form>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+
+</html>
