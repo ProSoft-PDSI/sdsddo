@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="controller.LoginController"/>
 <fullyQualifiedTypeName name="dao.spec.ClienteDao"/>
 <fullyQualifiedTypeName name="entity.Cliente"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="controller.ProductoController"/>
 <fullyQualifiedTypeName name="model.ProductoModel"/>
 <fullyQualifiedTypeName name="dao.util.RowMapper"/>
@@ -45,4 +44,5 @@
 <fullyQualifiedTypeName name="model.ClienteModel"/>
 <fullyQualifiedTypeName name="entity.Pedido"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

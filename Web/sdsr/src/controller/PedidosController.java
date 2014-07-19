@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
@@ -15,12 +14,11 @@ import javax.servlet.http.HttpSession;
 import util.UtilDate;
 import entity.Cliente;
 import entity.Pedido;
-import entity.Producto;
 import entity.Usuario;
 import model.PedidosModel;
 import model.ProductoModel;
 
-@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido","/ListaPedidos","/Menu"})
+@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido","/ListaPedidos","/Entrada"})
 public class PedidosController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -32,52 +30,44 @@ public class PedidosController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String alias = request.getServletPath();
 		if(alias.equals("/InsertarPedido")){
-			try {
 				InsertarPedido(request,response);
-			} catch (Exception e) {
-				request.setAttribute("error", e.getMessage());
-				RequestDispatcher rd = request.getRequestDispatcher("InsertarPedido.jsp");
-				rd.forward(request, response);
-			}
 		}else if(alias.equals("/EliminarPedido")){
-			try {
 				EliminarPedido(request,response);
-			} catch (Exception e) {
-				request.setAttribute("error", e.getMessage());
-				RequestDispatcher rd = request.getRequestDispatcher("EliminarPedido.jsp");
-				rd.forward(request, response);
-			}
 		}else if(alias.equals("/ModificarPedido")){
-			try {
 				ModificarPedido(request,response);
-			} catch (Exception e) {
-				request.setAttribute("error", e.getMessage());
-				RequestDispatcher rd = request.getRequestDispatcher("ModficarPedido.jsp");
-				rd.forward(request, response);
-			}
+		}else if(alias.equals("/Entrada")){
+			EntradaPost(request,response);
 		}
     }
+
+
+	private void EntradaPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		ProductoModel model = new ProductoModel();
+		request.setAttribute("listamenu", model.getEntrada());
+		HttpSession session = request.getSession(true);
+		String Codigo = (String) session.getAttribute("codigo");
+		
+		RequestDispatcher rd;
+		rd = request.getRequestDispatcher("Pedido");
+		rd.forward(request, response);
+		
+	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String alias = request.getServletPath();
 		if(alias.equals("/ListaPedidos")){
 				ListaPedidos(request,response);
-		}else{
-			if(alias.equals("/Menu")){
-				Menu(request,response);
-			}
+		}else if(alias.equals("/Entrada")){
+			Entrada(request,response);
 		}
 	}
 
-	private void Menu(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void Entrada(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ProductoModel model = new ProductoModel();
-		List<Producto> menu = model.getMenu();
-		for(Producto p:menu){
-			System.out.println(p.getNombre());
-		}
-		request.setAttribute("listamenu", menu);
+		request.setAttribute("listamenu", model.getEntrada());
 		RequestDispatcher rd;
-		rd = request.getRequestDispatcher("home.jsp");
+		rd = request.getRequestDispatcher("Entrada.jsp");
 		rd.forward(request, response);
 		
 	}

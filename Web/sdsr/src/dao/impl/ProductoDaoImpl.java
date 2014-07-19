@@ -16,12 +16,12 @@ import entity.Producto;
 public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 
 	@Override
-	public List<Producto> getMenu() {
+	public List<Producto> getEntrada() {
 		List<Producto> menu=new ArrayList<Producto>();
 		Connection cn=null;
 		try {
 			cn = AccesoDB.getConnection();
-			String sql="select * from producto";
+			String sql="select * from producto where codproducto like 'EN%' ";
 			Statement stm = cn.createStatement();
 			ResultSet rs = stm.executeQuery(sql);
 			while(rs.next()){
@@ -45,8 +45,10 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 		Producto bean = new Producto();
 		try {
 			bean.setCodProducto(rs.getString("codproducto"));
-			bean.setNombre(rs.getString("descrproducto"));
+			bean.setNombre(rs.getString("nombreproducto"));
+			bean.setDescripcion(rs.getString("descrproducto"));
 			bean.setPrecio(rs.getDouble("preciounitario"));
+			bean.setImagen(rs.getString("imagen"));
 			bean.setStock(rs.getInt("stock"));
 		} catch (SQLException e) {
 			throw new RuntimeException(e.getMessage());
