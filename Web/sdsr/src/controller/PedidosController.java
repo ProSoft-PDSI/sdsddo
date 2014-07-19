@@ -2,8 +2,6 @@ package controller;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Map;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +15,6 @@ import util.UtilDate;
 import entity.Cliente;
 import entity.DetallePedido;
 import entity.Pedido;
-import entity.Producto;
 import entity.Usuario;
 import model.ControlModel;
 import model.PedidosModel;
