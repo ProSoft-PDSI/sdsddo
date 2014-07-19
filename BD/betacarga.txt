@@ -1,0 +1,38 @@
+-- ==========================================================
+-- Cargar datos a la tabla: producto
+-- ==========================================================
+--Pizzas
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI01','Pizza Mozarella Personal',16.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI02','Pizza Mozarella Grande',27.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI03','Pizza Mozarella Familiar',34.50,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI04','Pizza Pepperoni Personal',21.70,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI05','Pizza Pepperoni Grande',36.60,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI06','Pizza Pepperoni Familiar',44.10,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI07','Pizza Tocino Personal',21.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI08','Pizza Tocino Grande',34.50,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI09','Pizza Tocino Familiar',43.80,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI10','Pizza Salame Personal',21.50,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI11','Pizza Salame Grande',37.60,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI12','Pizza Salame Familiar',45.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI13','Pizza Champignones Personal',22.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI14','Pizza Champignones Grande',37.90,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI15','Pizza Champignones Familiar',47.10,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI16','Pizza Americana Personal',22.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI17','Pizza Americana Grande',37.90,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI18','Pizza Americana Familiar',47.30,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI19','Pizza Hawaiana Personal',22.40,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI20','Pizza Hawaiana Grande',38.40,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI21','Pizza Hawaiana Familiar',47.80,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI22','Pizza Vegetariana Personal',21.90,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI23','Pizza Vegetariana Grande',37.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI24','Pizza Vegetariana Familiar',45.90,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI25','Pizza Anchoas Personal',19.10,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI26','Pizza Anchoas Grande',35.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI27','Pizza Anchoas Familiar',43.30,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI28','Pizza Full quesos Personal',22.80,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI29','Pizza Full quesos Grande',39.00,60,'admin');
+insert into producto(codproducto,descrproducto,preciounitario,stock,usuario) values ('PI30','Pizza Full quesos Familiar',45.80,60,'admin');
+
+
+
+-- Especiales

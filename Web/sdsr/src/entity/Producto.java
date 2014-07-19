@@ -3,7 +3,9 @@ package entity;
 public class Producto {
 	private String codProducto;
 	private String nombre;
+	private String descripcion;
 	private double precio;
+	private String imagen;
 	private int stock;
 	
 	public String getCodProducto() {
@@ -17,6 +19,18 @@ public class Producto {
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public String getImagen() {
+		return imagen;
+	}
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	public double getPrecio() {
 		return precio;

@@ -1,0 +1,8 @@
+#marco{
+	background: transparent;
+}
+
+.marco{
+	height:30em; 
+	width:100%; 
+}

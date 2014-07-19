@@ -13,10 +13,13 @@
 	<div class="body1">
 		<div class="main">
 <!-- header -->
-		<%@ include file="Cabecera.jsp" %>		
+		<header>
+		<%@ include file="Cabecera.jsp" %>
+		</header>	
+			
 		<article id="content">
-						<iframe src="home.jsp" height="910px" width="965px" name="frame" allowtransparency="true"></iframe>
-			</article>
+						<iframe src="home.jsp" class="marco" name="frame" allowtransparency="true"></iframe>
+		</article>
 		</div>
 	</div>
 </div>

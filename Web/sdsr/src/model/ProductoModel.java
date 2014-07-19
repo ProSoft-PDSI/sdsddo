@@ -6,9 +6,9 @@ import dao.impl.ProductoDaoImpl;
 import entity.Producto;
 
 public class ProductoModel {
-	public List<Producto> getMenu(){
+	public List<Producto> getEntrada(){
 		ProductoDaoImpl dao = new ProductoDaoImpl();
-		List<Producto> menu = dao.getMenu();
+		List<Producto> menu = dao.getEntrada();
 		return menu;
 	}
 	

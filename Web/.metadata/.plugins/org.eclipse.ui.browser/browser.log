@@ -50,3 +50,21 @@ jul 17, 2014 17:24:56.98 No permission to use the keyboard API for http://localh
 jul 17, 2014 17:28:29.98 No permission to use the keyboard API for http://localhost:8087
 jul 17, 2014 17:34:33.30 No permission to use the keyboard API for http://localhost:8087
 jul 17, 2014 17:35:06.95 No permission to use the keyboard API for http://localhost:8087
+
+jul 18, 2014 02:16:03.70 NEW SESSION
+jul 18, 2014 02:16:03.70 [Child 1896] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 18, 2014 10:04:26.00 [6812] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 18, 2014 10:35:11.79 No permission to use the keyboard API for http://es.scribd.com
+jul 18, 2014 10:35:12.93 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 18, 2014 10:35:16.32 No permission to use the keyboard API for http://es.scribd.com
+jul 18, 2014 10:35:16.79 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 18, 2014 10:35:18.32 No permission to use the keyboard API for http://syndication.adagora.com
+jul 18, 2014 10:35:18.33 No permission to use the keyboard API for http://syndication.adagora.com
+jul 18, 2014 10:35:18.52 No permission to use the keyboard API for http://es.scribd.com
+jul 18, 2014 10:35:18.54 No permission to use the keyboard API for http://es.scribd.com
+jul 18, 2014 10:35:21.60 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 18, 2014 11:16:08.44 No permission to use the keyboard API for http://lax1.ib.adnxs.com
+jul 18, 2014 11:16:08.81 No permission to use the keyboard API for http://lax1.ib.adnxs.com
+jul 18, 2014 11:16:08.83 No permission to use the keyboard API for http://lax1.ib.adnxs.com
+jul 18, 2014 11:16:10.69 [6764] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 18, 2014 13:55:21.25 1405709721257	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
