@@ -2,8 +2,6 @@ package model;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
-
 import dao.impl.PedidoDaoImpl;
 import dao.spec.PedidoDao;
 import entity.DetallePedido;

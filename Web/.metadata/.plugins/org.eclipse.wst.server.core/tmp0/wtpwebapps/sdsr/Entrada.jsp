@@ -20,7 +20,7 @@
 			<article id="content">
 				<div class="wrap">
 					<%int n = 1; %>
-			     <c:forEach var = "i" items = "${requestScope.listamenu}" >
+			     <c:forEach var = "i" items = "${requestScope.listaentrada}" >
 					<% if(n == 1) { %>
 					<section class="cols">
 						<div class="box">
@@ -28,6 +28,7 @@
 								<h2><c:out value="${i.nombre}"></c:out></h2>
 								<figure><img src="${i.imagen}" alt="" ></figure>
 								<p class="pad_bot1">${i.descripcion}</p>
+								<input type="hidden" name="codigo" value="${i.codProducto}"></input>
 								<a href="Entrada" class="button1">S./ ${i.precio} Pedir</a>
 							</div>
 						</div>
@@ -61,31 +62,32 @@
 					<h2>Clasicos</h2>
 					<div class="line1">
 						<div class="wrapper line2">
-							<div class="cols">
-								<div class="wrapper pad_bot1">
-								<h1>Palitos a la Toscana </h1>
-									<figure ><img src="images/ent_4.jpg" alt=""></figure>
-									<p class="pad_bot1">Exquisito palitos rellenos de queso <br> mozzarella, 
-									  jamon y tocino</p>
-									 <a href="#" class="button1">$ 12.00 Pedir</a>
+						<% int k = 1; %>
+			    		<c:forEach var = "i" items = "${requestScope.listaentradaclasico}" >
+			    			<% if(k == 1) { %>
+								<div class="cols">
+									<div class="wrapper pad_bot1">
+									<h1> ${i.nombre} </h1>
+										<figure ><img src="${i.imagen}" alt=""></figure>
+										<p class="pad_bot1">${i.descripcion}</p>
+										<input type="hidden" name="codigo" value="${i.codProducto}"></input>
+										<input type="submit" class="button1" value="S./ ${i.precio} Pedir"></input>
+									</div>
 								</div>
-							</div>
+							<% } %>
+							
+							<% if (k > 1 && k <= 3) { %>
 							<div class="cols pad_left1">
 								<div class="wrapper pad_bot1">
-								<h1>Alitas de pollo </h1>
-									<figure ><img src="images/ent_5.jpg" alt=""></figure>
-									<p class="pad_bot1">Alitas de pollo marinado y horneado <br> con nuestra exclusiva receta de salsa <br> picante.</p>
-									<a href="#" class="button1">$ 12.00 Pedir</a>
-								</div>
+										<h1> ${i.nombre} </h1>
+										<figure ><img src="${i.imagen}" alt=""></figure>
+										<p class="pad_bot1">${i.descripcion}</p>
+										<input type="hidden" name="codigo" value="${i.codProducto}"></input>
+										<input type="submit" class="button1" value="S./ ${i.precio} Pedir"></input>
+									</div>
 							</div>
-							<div class="col2 pad_left1">
-								<div class="wrapper pad_bot1">
-								<h1>Enrrollado de pollo</h1>
-									<figure ><img src="images/ent_6.jpg" alt=""></figure>
-									<p class="pad_bot1">Deliciosa masa recubierta con queso parmesano lleno de pollo y su salsa de barbacoa, horneados a la perfección.</p>
-									<a href="#" class="button1">$ 12.00 Pedir</a>
-								</div>
-							</div>
+							<% } %>
+							</c:forEach>
 						</div>
 					</div>
 				</section>

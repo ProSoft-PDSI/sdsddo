@@ -5,6 +5,7 @@ public class Producto {
 	private String nombre;
 	private String descripcion;
 	private double precio;
+	private String categoria;
 	private String imagen;
 	private int stock;
 	
@@ -43,5 +44,11 @@ public class Producto {
 	}
 	public void setStock(int stock) {
 		this.stock = stock;
+	}
+	public String getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 }

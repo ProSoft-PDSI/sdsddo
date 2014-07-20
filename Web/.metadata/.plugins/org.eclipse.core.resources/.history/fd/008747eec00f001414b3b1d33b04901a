@@ -1,0 +1,116 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title></title>
+</head>
+<body id="page3">
+<div class="body6">
+	<div class="body1">
+		<div class="main">
+<!-- header -->
+			<header>
+                 <div id="ac_content" class="ac_content"><h1><span>PIZZERIA</span>RAVIOLI</h1></div>
+					<nav>
+						<ul id="top_nav">
+							<li><a href="index.html"><img src="images/icon_1.gif" alt=""></a></li>
+							<li><a href="Login.html"><img src="images/icon_2.gif" alt=""></a></li>
+							<li class="end"><a href="Contacto.html"><img src="images/icon_3.gif" alt=""></a></li>
+						</ul>
+					</nav>
+					<nav>
+						<ul id="menu">
+							<li class="active"><a href="index.html">Restaurant</a></li>
+							<li><a href="Entrada.html">Entrada</a></li>
+							<li><a href="Clasica.html">Pizza Clasica</a></li>
+							<li><a href="Especial.html">Especiales</a></li>
+							<li><a href="Contacto.html">Contacto</a></li>
+						</ul>
+					</nav>
+				</header>
+<!-- / header -->
+<!-- content -->
+			<article id="content">
+				<div class="wrap">
+					<section class="cols">
+						<div class="box">
+							<div>
+								<h2 class="letter_spacing"> 	Mediterranea</h2>
+								<figure><img src="images/clas_1.jpg" alt="" ></figure>
+								<p class="pad_bot1"> Peperoni, tomate, champiñones, cebolla y aceitunas negras.</p>
+								<a href="#" class="button1">$ 18.00 Pedir</a>
+							</div>
+						</div>
+					</section>
+					<section class="cols pad_left1">
+						<div class="box">
+							<div>
+								<h2> Hawaiana </h2>
+								<figure><img src="images/clas_2.jpg" alt="" ></figure>
+								<p class="pad_bot1">" El paraiso de la mesa" Se completa con jamon, piña y queso mozzarella.</p>
+								<a href="#" class="button1">$ 23.00 Pedir</a>
+							</div>
+						</div>
+					</section>
+					<section class="cols pad_left1">
+						<div class="box">
+							<div>
+								<h2> Americana</h2>
+								<figure><img src="images/clas_3.jpg" alt="" ></figure>
+								<p class="pad_bot1"> La preferida de los chicos, jamon y queso mozzarella</p>
+								<a href="#" class="button1">$ 20.00 Pedir</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
+<div class="body2">
+	<div class="main">
+		<article id="content2">
+			<div class="wrapper">
+				<section class="pad_left1">
+					<h2>Clasicos</h2>
+					<div class="line1">
+						<div class="wrapper line2">
+							<div class="cols">
+								<div class="wrapper pad_bot1">
+								<h1> Pepperoni </h1>
+									<figure ><img src="images/clas_4.jpg" alt=""></figure>
+									<p class="pad_bot1"> Sabor incomparable de pepperoni<br> americano y queso mozzarella.</p>
+									 <a href="#" class="button1">$ 12.00 Pedir</a>
+								</div>
+							</div>
+							<div class="cols pad_left1">
+								<div class="wrapper pad_bot1">
+								<h1> Napolitana </h1>
+									<figure ><img src="images/clas_5.jpg" alt=""></figure>
+									<p class="pad_bot1">Una clasica combinacion de tomate,<br> salsa de oregano y queso mozzarella.</p>
+									<a href="#" class="button1">$ 12.00 Pedir</a>
+								</div>
+							</div>
+							<div class="col2 pad_left1">
+								<div class="wrapper pad_bot1">
+								<h1>Enrrollado de pollo</h1>
+									<figure ><img src="images/clas_6.jpg" alt=""></figure>
+									<p class="pad_bot1">Combinacion de carne molida,<br> rodajas de jalapeño, pimiento y cebolla.</p>
+									<a href="#" class="button1">$ 12.00 Pedir</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</article>
+<!-- / content -->
+	</div>
+</div>
+
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

@@ -20,7 +20,7 @@ import model.ControlModel;
 import model.PedidosModel;
 import model.ProductoModel;
 
-@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido","/ListaPedidos","/Entrada"})
+@WebServlet({"/InsertarPedido","/EliminarPedido","/ModificarPedido","/ListaPedidos","/Entrada","/Pizza"})
 public class PedidosController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -39,16 +39,30 @@ public class PedidosController extends HttpServlet {
 				ModificarPedido(request,response);
 		}else if(alias.equals("/Entrada")){
 			EntradaPost(request,response);
+		}else if(alias.equals("/Pizza")){
+			PizzaPost(request,response);
 		}
     }
 
 
+	private void PizzaPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		ProductoModel model = new ProductoModel();
+		request.setAttribute("listapizza", model.getPizza());
+		request.setAttribute("listapizzaclasico", model.getPizzaClasico());
+		RequestDispatcher rd;
+		rd = request.getRequestDispatcher("Clasica.jsp");
+		rd.forward(request, response);
+		
+	}
+
 	private void EntradaPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		ProductoModel model = new ProductoModel();
-		request.setAttribute("listamenu", model.getEntrada());
+		request.setAttribute("listaentrada", model.getEntrada());
+		request.setAttribute("listaentradaclasico", model.getEntradaClasico());
 		HttpSession session = request.getSession(true);
-		String Codigo = (String) session.getAttribute("codigo");
+		String codigo = (String) session.getAttribute("codigo");
 		
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("Pedido");
@@ -62,18 +76,31 @@ public class PedidosController extends HttpServlet {
 				ListaPedidos(request,response);
 		}else if(alias.equals("/Entrada")){
 			Entrada(request,response);
+		}else if(alias.equals("/Pizza")){
+			Pizza(request,response);
 		}
+	}
+
+	private void Pizza(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ProductoModel model = new ProductoModel();
+		request.setAttribute("listapizza", model.getPizza());
+		request.setAttribute("listapizzaclasico", model.getPizzaClasico());
+		RequestDispatcher rd;
+		rd = request.getRequestDispatcher("Clasica.jsp");
+		rd.forward(request, response);
+		
 	}
 
 	private void Entrada(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ProductoModel model = new ProductoModel();
-		request.setAttribute("listamenu", model.getEntrada());
+		request.setAttribute("listaentrada", model.getEntrada());
+		request.setAttribute("listaentradaclasico", model.getEntradaClasico());
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("Entrada.jsp");
 		rd.forward(request, response);
 		
 	}
-//revisar
+
 	private void ListaPedidos(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		try {
