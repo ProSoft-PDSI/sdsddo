@@ -18,7 +18,7 @@
 		</header>	
 			
 		<article id="content">
-						<iframe src="home.jsp" class="marco" name="frame" allowtransparency="true"></iframe>
+			<iframe src="home.jsp" class="marco" name="frame" allowtransparency="true"></iframe>
 		</article>
 		</div>
 	</div>

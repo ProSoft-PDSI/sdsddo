@@ -63,8 +63,9 @@ primary key(usuario)
 -- =====================================
 create table producto(
 codproducto char(4) not null,
-nombreproducto varchar2(30) not null,
+nombreproducto varchar2(100) not null,
 descrproducto varchar2(400)not null,
+categoria varchar2(30) not null, 
 imagen varchar2(200) not null,
 preciounitario number(5,2) not null,
 stock number(3,0) not null,

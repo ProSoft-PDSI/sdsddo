@@ -9,8 +9,26 @@ import entity.Producto;
 public class ProductoModel {
 	public List<Producto> getEntrada(){
 		ProductoDao dao = new ProductoDaoImpl();
-		List<Producto> menu = dao.getEntrada();
-		return menu;
+		List<Producto> entrada = dao.getEntrada();
+		return entrada;
+	}
+	
+	public List<Producto> getEntradaClasico(){
+		ProductoDao dao = new ProductoDaoImpl();
+		List<Producto> entrada = dao.getEntradaClasico();
+		return entrada;
+	}
+	
+	public List<Producto> getPizza(){
+		ProductoDao dao = new ProductoDaoImpl();
+		List<Producto> entrada = dao.getPizza();
+		return entrada;
+	}
+	
+	public List<Producto> getPizzaClasico(){
+		ProductoDao dao = new ProductoDaoImpl();
+		List<Producto> entrada = dao.getPizzaClasico();
+		return entrada;
 	}
 	
 	public Producto getProducto(String codProducto){

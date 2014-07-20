@@ -6,40 +6,43 @@
 <head>
 <title></title>
 <meta charset="utf-8" />
+<%@ include file="Carga.jsp" %>
 <style type="text/css">
 body {
 	Background: transparent;
 }
 </style>
-<%@ include file="Carga.jsp" %>
 </head>
 <body id="page5">
 <div class="body6">
 	<div class="body1">
 		<div class="main">
 <!-- content -->
+
 			<article id="content">
 				<div class="wrap">
 					<div class="box">
+					<div >
 					<form id="ContactForm">
 						<section class="loginform cf">
 							<form name="login" action="index_submit" method="get" accept-charset="utf-8">
 								<ul>
-								   <h1> Iniciar Sesion </h1>
+								   <h1>Iniciar Sesion </h1>
 									<li>
 										<label for="usermail"><br>Email</label>
-										<input type="text" name="usuario" placeholder="yourname@email.com" required>
+										<input type="email" name="usermail" placeholder="yourname@email.com" required>
 									</li>
 									<li>
 										<label for="password">Password</label>
-										<input type="password" name="contrasenia" placeholder="password" required></li>
+										<input type="password" name="password" placeholder="password" required></li>
 									<li>
 										<input type="submit" value="Login">
 									</li>
 								</ul>
-								</form>
+							</form>
 						</section>
 					</form>
+					</div>
 					<div>
 						<form id="ContactForm">
 						<section class="loginform cf">
@@ -48,35 +51,35 @@ body {
 							    <h1>Registrate</h1>
 								<li>
 									<label for="usermail"><br>Email</label>
-									<input type="Text" name="usermail"  required>
+									<input type="email" name="usermail"  required>
 								</li>
 								<li>
 									<label for="password">Contraseña</label>
-									<input type="Text" name="password"  required>
+									<input type="password" name="contrasenia1"  required>
 								</li>
 								<li>
 									<label for="password">Confirmar Contraseña</label>
-									<input type="Text" name="password"  required>
+									<input type="password" name="contrasenia2"  required>
 								</li>
 								<li>
 									<label for="Nombre">Nombre</label>
-									<input type="Text" name="Nombre"  required>
+									<input type="text" name="Nombre"  required>
 								</li>
 								<li>
 									<label for="Apellido">Apellidos</label>
-									<input type="Text" name="Apellido"  required>
+									<input type="text" name="Apellido"  required>
 								</li>
 								<li>
-									<label for="Number">DNI</label>
-									<input type="Text" name="Number"  required>
+									<label for="dni">DNI</label>
+									<input type="text" name="dni"  required>
 								</li>
 								<li>
 									<label for="Direccion">Direccion</label>
-									<input type="Text" name="Direccion"  required>
+									<input type="text" name="Direccion"  required>
 								</li>
 								<li>
 									<label for="Number">Telefono</label>
-									<input type="Text" name="Number"  required>
+									<input type="Text" name="telefono"  required>
 								</li>
 								<li>
 									<input type="submit" value="Registrar">
@@ -94,5 +97,4 @@ body {
 </div>
 <script type="text/javascript"> Cufon.now(); </script>
 </body>
-
 </html>

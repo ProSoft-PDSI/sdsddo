@@ -21,7 +21,7 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 		Connection cn=null;
 		try {
 			cn = AccesoDB.getConnection();
-			String sql="select * from producto where codproducto like 'EN%' ";
+			String sql="select * from producto where categoria = 'normal' and codproducto like 'EN%' ";
 			Statement stm = cn.createStatement();
 			ResultSet rs = stm.executeQuery(sql);
 			while(rs.next()){
@@ -41,6 +41,33 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 		return menu;
 	}
 	
+	
+	public List<Producto> getEntradaClasico() {
+		List<Producto> menu=new ArrayList<Producto>();
+		Connection cn=null;
+		try {
+			cn = AccesoDB.getConnection();
+			String sql="select * from producto where categoria = 'clasico' and codproducto like 'EN%' ";
+			Statement stm = cn.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			while(rs.next()){
+				menu.add(mapRow(rs));
+			}
+			rs.close();
+			stm.close();
+		} catch (Exception e) {
+			throw new RuntimeException(e.getMessage());
+		}finally{
+			try {
+				cn.close();
+			} catch (SQLException e) {
+				throw new RuntimeException(e.getMessage());
+			}
+		}
+		return menu;
+	}
+	
+	
 	public Producto mapRow(ResultSet rs) {
 		Producto bean = new Producto();
 		try {
@@ -48,6 +75,7 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 			bean.setNombre(rs.getString("nombreproducto"));
 			bean.setDescripcion(rs.getString("descrproducto"));
 			bean.setPrecio(rs.getDouble("preciounitario"));
+			bean.setCategoria(rs.getString("categoria"));
 			bean.setImagen(rs.getString("imagen"));
 			bean.setStock(rs.getInt("stock"));
 		} catch (SQLException e) {
@@ -109,6 +137,79 @@ public class ProductoDaoImpl implements ProductoDao,RowMapper<Producto> {
 			}
 		}
 		return nombre;
+	}
+
+
+	@Override
+	public List<Producto> getPizza() {
+		List<Producto> menu=new ArrayList<Producto>();
+		Connection cn=null;
+		try {
+			cn = AccesoDB.getConnection();
+			String sql="select * from producto where categoria = 'normal' "
+					+ "and codproducto like 'PI%'";
+			Statement stm = cn.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			while(rs.next()){
+				Producto bean = new Producto();
+				bean.setCodProducto("PI");
+				bean.setNombre(rs.getString(2));
+				bean.setDescripcion(rs.getString("descrproducto"));
+				bean.setPrecio(0);
+				bean.setCategoria(rs.getString("categoria"));
+				bean.setImagen(rs.getString("imagen"));
+				bean.setStock(rs.getInt("stock"));
+				menu.add(bean);
+			}
+			rs.close();
+			stm.close();
+		} catch (Exception e) {
+			throw new RuntimeException(e.getMessage());
+		}finally{
+			try {
+				cn.close();
+			} catch (SQLException e) {
+				throw new RuntimeException(e.getMessage());
+			}
+		}
+		return menu;
+	}
+
+
+	@Override
+	public List<Producto> getPizzaClasico() {
+		List<Producto> menu=new ArrayList<Producto>();
+		Connection cn=null;
+		try {
+			cn = AccesoDB.getConnection();
+			String sql="select * from producto where categoria = 'clasico'"
+					+ "and codproducto like 'PI%' "
+					+ "and nombreproducto like '%Personal'";
+			Statement stm = cn.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			while(rs.next()){
+				Producto bean = new Producto();
+				bean.setCodProducto("PI");
+				bean.setNombre(rs.getString(2));
+				bean.setDescripcion(rs.getString("descrproducto"));
+				bean.setPrecio(rs.getDouble("preciounitario"));
+				bean.setCategoria(rs.getString("categoria"));
+				bean.setImagen(rs.getString("imagen"));
+				bean.setStock(rs.getInt("stock"));
+				menu.add(bean);
+			}
+			rs.close();
+			stm.close();
+		} catch (Exception e) {
+			throw new RuntimeException(e.getMessage());
+		}finally{
+			try {
+				cn.close();
+			} catch (SQLException e) {
+				throw new RuntimeException(e.getMessage());
+			}
+		}
+		return menu;
 	}
 
 }
