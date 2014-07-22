@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.impl.MensajeDaoImpl;
+import dao.spec.MensajeDao;
 import model.ClienteModel;
 
 /**
@@ -48,22 +50,30 @@ public class ClienteController extends HttpServlet {
 	private void registro(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		try {
-			SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 			String dni = request.getParameter("dni");
-			String nomcliente = request.getParameter("nombre");
+			String nom = request.getParameter("nombre");
+			String ape = request.getParameter("apellido");
+			String nomcliente = nom + " " + ape;
 			String direccioncliente = request.getParameter("direccion");
 			String emailcliente = request.getParameter("correo");
 			Date fechanac = formato.parse(request.getParameter("fecnac").toString());
 			String telefono = request.getParameter("telefono");
 			String usuario = request.getParameter("usuario");
-			String contrasenia = request.getParameter("contrasenia");
+			String contrasenia1 = request.getParameter("contrasenia1");
+			String contrasenia2 = request.getParameter("contrasenia2");
+			String contrasenia = contrasenia1;
+			if(!contrasenia1.equals(contrasenia2) ){
+				MensajeDao dao = new MensajeDaoImpl();
+				throw new RuntimeException(dao.getMensaje("MEN005"));
+			}
 			ClienteModel model = new ClienteModel();
 			model.insertaUsuario(dni, nomcliente, direccioncliente, emailcliente, fechanac, telefono, usuario, contrasenia);
-			request.setAttribute("mensaje", "Se Realizo el Registro con Exito");
+			request.setAttribute("mensaje1", "Se Realizo el Registro con Exito");
 		} catch (Exception e) {
-			request.setAttribute("error", e.getMessage());
+			request.setAttribute("error1", e.getMessage());
 		}
-		RequestDispatcher rd = request.getRequestDispatcher("Registro.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("LoginRegistro.jsp");
 		rd.forward(request, response);
 		
 	}

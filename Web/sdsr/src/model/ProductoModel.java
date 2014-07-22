@@ -25,6 +25,12 @@ public class ProductoModel {
 		return entrada;
 	}
 	
+	public List<Producto> getEspeciales(){
+		ProductoDao dao = new ProductoDaoImpl();
+		List<Producto> entrada = dao.getEspeciales();
+		return entrada;
+	}
+	
 	public List<Producto> getPizzaClasico(){
 		ProductoDao dao = new ProductoDaoImpl();
 		List<Producto> entrada = dao.getPizzaClasico();

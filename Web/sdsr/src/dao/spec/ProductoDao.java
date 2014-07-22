@@ -9,6 +9,7 @@ public interface ProductoDao {
 	List<Producto> getEntradaClasico();
 	List<Producto> getPizza();
 	List<Producto> getPizzaClasico();
+	List<Producto> getEspeciales();
 	Producto getProducto(String Producto);
 	String getNombreProducto(String codproducto);
 }

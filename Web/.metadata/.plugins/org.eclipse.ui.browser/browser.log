@@ -72,3 +72,20 @@ jul 18, 2014 13:55:21.25 1405709721257	addons.update-checker	WARN	Update manifes
 jul 19, 2014 22:40:28.18 NEW SESSION
 jul 19, 2014 22:40:28.18 1405827628174	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
 jul 20, 2014 11:54:35.40 [8592] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+
+jul 20, 2014 12:36:37.98 NEW SESSION
+jul 20, 2014 12:36:37.98 No permission to use the keyboard API for http://www.techonthenet.com
+jul 20, 2014 12:36:38.25 No permission to use the keyboard API for http://www.techonthenet.com
+jul 20, 2014 12:36:38.36 No permission to use the keyboard API for http://www.techonthenet.com
+jul 20, 2014 12:36:48.96 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 20, 2014 12:36:49.28 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 20, 2014 12:37:49.98 NOTE: child process received `Goodbye', closing down
+jul 20, 2014 12:37:49.98 [Child 5248] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 20, 2014 13:35:05.00 NOTE: child process received `Goodbye', closing down
+jul 20, 2014 13:35:05.00 [Child 6800] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 20, 2014 13:37:04.71 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 20, 2014 13:37:27.04 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 20, 2014 13:37:42.47 NOTE: child process received `Goodbye', closing down
+jul 20, 2014 13:37:42.47 [Child 4880] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 20, 2014 14:06:01.50 NOTE: child process received `Goodbye', closing down
+jul 20, 2014 14:06:01.51 [3840] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310

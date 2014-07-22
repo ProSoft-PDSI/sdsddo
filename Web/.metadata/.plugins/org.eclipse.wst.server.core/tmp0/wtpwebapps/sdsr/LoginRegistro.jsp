@@ -14,83 +14,103 @@ body {
 </style>
 </head>
 <body id="page5">
-<div class="body6">
-	<div class="body1">
+<div class="body6" id="marco">
+	<div class="body1" id="marco">
 		<div class="main">
 <!-- content -->
 
 			<article id="content">
 				<div class="wrap">
 					<div class="box">
-					<div >
-					<form id="ContactForm">
 						<section class="loginform cf">
-							<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+							<form action="LoginIngreso" method="post" accept-charset="utf-8">
 								<ul>
 								   <h1>Iniciar Sesion </h1>
 									<li>
-										<label for="usermail"><br>Email</label>
-										<input type="email" name="usermail" placeholder="yourname@email.com" required>
+										<label for="usuario"><br>Usuario</label>
+										<input type="text" name="usuario" required>
 									</li>
 									<li>
-										<label for="password">Password</label>
-										<input type="password" name="password" placeholder="password" required></li>
+										<label for="contrasenia">Contrasenia</label>
+										<input type="password" name="contrasenia" required></li>
 									<li>
 										<input type="submit" value="Login">
 									</li>
+								
+								<c:if test="${requestScope.error != null}">
+										<li>${requestScope.error}</li>
+								</c:if>
+								<c:if test="${requestScope.mensaje != null}">
+										<li><span id="inicio"><a href="index.jsp" target="_top">${requestScope.mensaje}</a></span></li>
+								</c:if>
 								</ul>
 							</form>
 						</section>
-					</form>
-					</div>
-					<div>
-						<form id="ContactForm">
+					<div class="posicion">
 						<section class="loginform cf">
-						   <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+						   <form action="Registro" method="post" accept-charset="utf-8">
 							<ul>
-							    <h1>Registrate</h1>
+							    <h1>Registrate</h1><br>
 								<li>
-									<label for="usermail"><br>Email</label>
-									<input type="email" name="usermail"  required>
+									<label for="nombre">Nombre</label>
+									<input type="text" name="nombre"  required>
 								</li>
 								<li>
-									<label for="password">Contraseña</label>
-									<input type="password" name="contrasenia1"  required>
-								</li>
-								<li>
-									<label for="password">Confirmar Contraseña</label>
-									<input type="password" name="contrasenia2"  required>
-								</li>
-								<li>
-									<label for="Nombre">Nombre</label>
-									<input type="text" name="Nombre"  required>
-								</li>
-								<li>
-									<label for="Apellido">Apellidos</label>
-									<input type="text" name="Apellido"  required>
+									<label for="apellido">Apellidos</label>
+									<input type="text" name="apellido"  required>
 								</li>
 								<li>
 									<label for="dni">DNI</label>
 									<input type="text" name="dni"  required>
 								</li>
 								<li>
-									<label for="Direccion">Direccion</label>
-									<input type="text" name="Direccion"  required>
+									<label for="fecnac">Fecha Nacimiento</label>
+									<input type="date" name="fecnac"  required>
 								</li>
 								<li>
-									<label for="Number">Telefono</label>
-									<input type="Text" name="telefono"  required>
+									<label for="direccion">Direccion</label>
+									<input type="text" name="direccion"  required>
+								</li>
+								<li>
+									<label for="telefono">Telefono</label>
+									<input type="text" name="telefono"  required>
+								</li>
+								<li>
+									<label for="correo">Email</label>
+									<input type="email" name="correo"  required>
+								</li>
+								<li>
+									<label for="usuario">Usuario</label>
+									<input type="text" name="usuario"  required>
+								</li>
+								<li>
+									<label for="contrasenia1">Contraseña</label>
+									<input type="password" name="contrasenia1"  required>
+								</li>
+								<li>
+									<label for="contrasenia2">Confirmar Contraseña</label>
+									<input type="password" name="contrasenia2"  required>
 								</li>
 								<li>
 									<input type="submit" value="Registrar">
 								</li>
+								<c:if test="${requestScope.mensaje1 != null}">
+								<li>
+								
+									<c:out value="${requestScope.mensaje1}"></c:out>
+								</li>
+								</c:if>
+								<c:if test="${requestScope.error1 != null}">
+								<li>
+									<c:out value="${requestScope.error1}"></c:out>
+								</li>
+								</c:if>
 							</ul>
 						</form>
 					</section>
-							</form>
+							</div>
 						</div>
 					</div>
-				</div>
 			</article>
 		</div>
 	</div>
