@@ -1,6 +1,5 @@
 package dao.spec;
 
-import java.util.Date;
 import entity.Pedido;
 
 public interface PedidoDao {
@@ -8,5 +7,5 @@ public interface PedidoDao {
 	public void EliminarPedido(String nropedido,String usuario);
 	public void ModificarPedido(String nropedido,String codproducto,int cant,String usuario);
 	public void InsertarProductoPedidos(String nropedido,String codproducto,int cant,String usuario);
-	public Pedido getPedido(String dni,Date fecha);
+	public Pedido getPedido(String nropedido);
 }

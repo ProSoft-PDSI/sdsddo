@@ -79,7 +79,6 @@ public class LoginController extends HttpServlet {
 
 
 	private void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String paginaDestino = "index.jsp";
 		try {
 			String user1 = request.getParameter("usuario");
 			String pass1 = request.getParameter("contrasenia");
@@ -90,11 +89,11 @@ public class LoginController extends HttpServlet {
 			HttpSession session = request.getSession(true);
 			session.setAttribute("user", usu1);
 			session.setAttribute("cliente", cli1);
+			request.setAttribute("mensaje", "Dar Click para continuar");
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());
-			paginaDestino = "login.jsp";
 		}
-		RequestDispatcher rd = request.getRequestDispatcher(paginaDestino);
+		RequestDispatcher rd = request.getRequestDispatcher("LoginRegistro.jsp");
 		rd.forward(request, response);
 		
 	}

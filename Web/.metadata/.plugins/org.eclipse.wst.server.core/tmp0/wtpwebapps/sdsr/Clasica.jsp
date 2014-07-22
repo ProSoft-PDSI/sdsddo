@@ -25,7 +25,7 @@
 								<figure><img src="${i.imagen}" alt="" ></figure>
 								<p class="pad_bot1">${i.descripcion}</p>
 								<input type="hidden" name="codigo" value="${i.codProducto}"></input>
-								<a href="Entrada" class="button1">S./ ${i.precio} Pedir</a>
+								<a href="Pizza" class="button1">Pedir</a>
 							</div>
 						</div>
 					</section>
@@ -38,7 +38,7 @@
 								<figure><img src="${i.imagen}" alt="" ></figure>
 								<p class="pad_bot1">${i.descripcion}</p>
 								<input type="hidden" name="codigo" value="${i.codProducto}"></input>
-								<a href="Entrada" class="button1">S./ ${i.precio} Pedir</a>
+								<a href="Pizza" class="button1">Pedir</a>
 							</div>
 						</div>
 					</section>
@@ -58,31 +58,31 @@
 					<h2>Clasicos</h2>
 					<div class="line1">
 						<div class="wrapper line2">
+						<% int k = 1; %>
+			    			<c:forEach var = "i" items = "${requestScope.listapizzaclasico}" >
+			    			<% if(k == 1) { %>
 							<div class="cols">
 								<div class="wrapper pad_bot1">
-								<h1> Pepperoni </h1>
-									<figure ><img src="images/clas_4.jpg" alt=""></figure>
-									<p class="pad_bot1"> Sabor incomparable de pepperoni<br> americano y queso mozzarella.</p>
-									 <a href="#" class="button1">$ 12.00 Pedir</a>
+								<h1><c:out value="${i.nombre}"></c:out></h1>
+									<figure><img src="${i.imagen}" alt="" ></figure>
+									<p class="pad_bot1"> ${i.descripcion}</p>
+									 <a href="#" class="button1">Pedir</a>
 								</div>
 							</div>
+							<% } %>
+							<% if (k > 1 && k <= 3) { %>
 							<div class="cols pad_left1">
 								<div class="wrapper pad_bot1">
-								<h1> Napolitana </h1>
-									<figure ><img src="images/clas_5.jpg" alt=""></figure>
-									<p class="pad_bot1">Una clasica combinacion de tomate,<br> salsa de oregano y queso mozzarella.</p>
-									<a href="#" class="button1">$ 12.00 Pedir</a>
+								<h1><c:out value="${i.nombre}"></c:out></h1>
+									<figure><img src="${i.imagen}" alt="" ></figure>
+									<p class="pad_bot1"> ${i.descripcion}</p>
+									 <a href="#" class="button1">Pedir</a>
 								</div>
 							</div>
-							<div class="col2 pad_left1">
-								<div class="wrapper pad_bot1">
-								<h1>Enrrollado de pollo</h1>
-									<figure ><img src="images/clas_6.jpg" alt=""></figure>
-									<p class="pad_bot1">Combinacion de carne molida,<br> rodajas de jalapeño, pimiento y cebolla.</p>
-									<a href="#" class="button1">$ 12.00 Pedir</a>
-								</div>
-							</div>
+							<% } %>
+							</c:forEach>
 						</div>
+						
 					</div>
 				</section>
 			</div>

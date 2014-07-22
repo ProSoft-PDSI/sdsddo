@@ -112,7 +112,7 @@ public class PedidoDaoImpl implements PedidoDao,RowMapper<Pedido> {
 
 
 	@Override
-	public Pedido getPedido(String dni, Date fecha) {
+	public Pedido getPedido(String nropedido) {
 		Connection cn=null;
 		Pedido ped=null;
 		try {
@@ -120,10 +120,9 @@ public class PedidoDaoImpl implements PedidoDao,RowMapper<Pedido> {
 			String sql = "select nropedido,dni,subtotalpedido,igv,"
 					+ "totalpedido,estado "
 					+ "from detallepedido "
-					+ "where dni = ? and fecha = ?";
+					+ "where nropedido=?";
 			PreparedStatement pstm = cn.prepareStatement(sql);
-			pstm.setString(1, dni);
-			pstm.setDate(2, UtilDate.javaToSQL(fecha));
+			pstm.setString(1, nropedido);
 			ResultSet rs = pstm.executeQuery();
 			while(rs.next()){
 				mapRow(rs);

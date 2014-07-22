@@ -22,9 +22,9 @@ public class PedidosModel {
 	}
 	
 	
-	public Pedido getPedido(String dni,Date fecha){
+	public Pedido getPedido(String nropedido){
 		PedidoDao dao = new PedidoDaoImpl();
-		return dao.getPedido(dni, fecha);
+		return dao.getPedido(nropedido);
 		
 	}
 	

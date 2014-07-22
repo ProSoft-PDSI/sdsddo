@@ -1,0 +1,13 @@
+#marco{
+	background: transparent;
+}
+
+.marco{
+	height:80em; 
+	width:101%; 
+}
+
+.posicion{
+	float:left;
+	height:40em;
+}

@@ -24,23 +24,6 @@
 	</div>
 </div>
 <script type="text/javascript"> Cufon.now(); </script>
-<!--  
-			<c:if test="${sessionScope.user != null}">
-				Bienvenido <c:out value="${sessionScope.user.usuario}"></c:out> !!!! | <a href="CerrarSesion">Cerrar Sesion</a><br />
-			</c:if>
-			<c:if test="${sessionScope.user == null }">
-				<a href="login.jsp">Login</a>
-			</c:if>
-			<c:if test="${sessionScope.user != null}">
-				<a href="ListaPedido">Pedidos</a>
-			</c:if>
-			<a href="#"></a>
-			<a href="home.jsp">Menu</a>
-
-		<c:if test="${requestScope.error != null}">
-			<c:out value="${requestScope.error}"></c:out>
-		</c:if>
--->
 
 	</body>
 </html>
