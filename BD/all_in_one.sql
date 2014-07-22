@@ -281,13 +281,18 @@ insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,p
 commit;
 
 -- Entrada
-
 insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('EN01','Trio','Disfrute de las alas de pollo al horno, trozos de papa y 4 piezas de pollo con un nuevo manjar de salsa barbacoa..','normal','images/ent_1.png',10.50,60,'admin');
 insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('EN02','Palitos de Queso','Deliciosos palitos de queso mozzarella, acompañda de salsa de tomate..','normal','images/ent_2.png',5.50,60,'admin');
 insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('EN03','Pan al Ajo','El favorito de todos, nuestro crujiente pan al ajo bañado con queso mozzarella..','normal','images/ent_3.png',10.50,60,'admin');
 insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('EN04','Palitos a la Toscana','Exquisito palitos rellenos de queso mozzarella, jamon y tocino','clasico','images/ent_4.jpg',10.50,60,'admin');
 insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('EN05','Alitas de pollo','Alitas de pollo marinado y horneado con nuestra exclusiva receta de salsa picante.','clasico','images/ent_5.png',10.50,60,'admin');
 insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('EN06','Enrrollado de pollo','Deliciosa masa recubierta con queso parmesano lleno de pollo y su salsa de barbacoa, horneados a la perfección.','clasico','images/ent_6.jpg',10.50,60,'admin');
+commit;
+
+-- Especiales
+insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('ES01','Vegetariana','Exquisita combinacion de champiñones, aceitunas verdes, pimiento, cebolla y queso mozzarella.','normal','images/esp_1.jpg',18.50,60,'admin');
+insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('ES02','Lasagna','Lasagna horneada con capas de salsa Bolognesa y Alfredo, queso mozzarella y parmesano.','normal','images/esp_2.jpg',20.50,60,'admin');
+insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('ES03','Fetuccini','Generosa porcion de fettucinis con abundante salsa Alfredo con trozos de pechuga','normal','images/esp_3.jpg',22.50,60,'admin');
 commit;
 
 -- ====================================
@@ -303,6 +308,7 @@ insert into mensaje(codmensaje,mensaje) values ('MEN001','El Usuario no Existe')
 insert into mensaje(codmensaje,mensaje) values ('MEN002','La Contraseña es Incorrecta');
 insert into mensaje(codmensaje,mensaje) values ('MEN003','Existen Campos Vacios');
 insert into mensaje(codmensaje,mensaje) values ('MEN004','Email Erroneo o Inexistente');
+insert into mensaje(codmensaje,mensaje) values ('MEN005','Las Contraseñas no Coinciden');
 commit;
 
 -- ====================================
