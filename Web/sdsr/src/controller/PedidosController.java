@@ -37,14 +37,31 @@ public class PedidosController extends HttpServlet {
 			PizzaPost(request,response);
 		}else if(alias.equals("/Especiales")){
 			EspecialesPost(request,response);
+		}else if(alias.equals("/InsertarPedido")){
+			InsertarPedido(request,response);
 		}
     }
 
 
 	private void EspecialesPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		ProductoModel model = new ProductoModel();
-		request.setAttribute("listaespecial", model.getEspeciales());
+		try {
+			ProductoModel model = new ProductoModel();
+			request.setAttribute("listaespecial", model.getEspeciales());
+			
+			HttpSession session = request.getSession(true);
+			String codProducto = (String) request.getParameter("codigo");
+			int cantidad = Integer.parseInt((String)request.getParameter("cant"));
+			DetallePedido bean = new DetallePedido();
+			ControlModel model1 = new ControlModel();
+			bean.setNropedido(model1.getValor("pedido"));
+			bean.setCodproducto(codProducto);
+			bean.setCant(cantidad);
+			listapedido.add(bean);
+			session.setAttribute("lista", listapedido);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("Especiales.jsp");
 		rd.forward(request, response);
@@ -53,9 +70,25 @@ public class PedidosController extends HttpServlet {
 
 	private void PizzaPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		ProductoModel model = new ProductoModel();
-		request.setAttribute("listapizza", model.getPizza());
-		request.setAttribute("listapizzaclasico", model.getPizzaClasico());
+		try {
+			ProductoModel model = new ProductoModel();
+			request.setAttribute("listapizza", model.getPizza());
+			request.setAttribute("listapizzaclasico", model.getPizzaClasico());
+			
+			HttpSession session = request.getSession(true);
+			String codProducto = (String) request.getParameter("codigo");
+			int cantidad = Integer.parseInt((String)request.getParameter("cant"));
+			DetallePedido bean = new DetallePedido();
+			ControlModel model1 = new ControlModel();
+			bean.setNropedido(model1.getValor("pedido"));
+			bean.setCodproducto(codProducto);
+			bean.setCant(cantidad);
+			listapedido.add(bean);
+			session.setAttribute("lista", listapedido);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("Clasica.jsp");
 		rd.forward(request, response);
@@ -63,6 +96,7 @@ public class PedidosController extends HttpServlet {
 
 	private void EntradaPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		try {
 		ProductoModel model = new ProductoModel();
 		request.setAttribute("listaentrada", model.getEntrada());
 		request.setAttribute("listaentradaclasico", model.getEntradaClasico());
@@ -77,7 +111,9 @@ public class PedidosController extends HttpServlet {
 		bean.setCant(cantidad);
 		listapedido.add(bean);
 		session.setAttribute("lista", listapedido);
-		
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("Pedido.jsp");
 		rd.forward(request, response);
@@ -94,8 +130,6 @@ public class PedidosController extends HttpServlet {
 			Pizza(request,response);
 		}else if(alias.equals("/Especiales")){
 			Especiales(request,response);
-		}else if(alias.equals("/InsertarPedido")){
-			InsertarPedido(request,response);
 		}
 	}
 
@@ -111,9 +145,13 @@ public class PedidosController extends HttpServlet {
 
 
 	private void Pizza(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try{
 		ProductoModel model = new ProductoModel();
 		request.setAttribute("listapizza", model.getPizza());
 		request.setAttribute("listapizzaclasico", model.getPizzaClasico());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("Clasica.jsp");
 		rd.forward(request, response);
@@ -121,9 +159,13 @@ public class PedidosController extends HttpServlet {
 	}
 
 	private void Entrada(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try{
 		ProductoModel model = new ProductoModel();
 		request.setAttribute("listaentrada", model.getEntrada());
 		request.setAttribute("listaentradaclasico", model.getEntradaClasico());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		RequestDispatcher rd;
 		rd = request.getRequestDispatcher("Entrada.jsp");
 		rd.forward(request, response);
@@ -141,18 +183,25 @@ public class PedidosController extends HttpServlet {
 
 	private void InsertarPedido(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+			try{
 			HttpSession session = request.getSession(true);
-			Cliente cli = (Cliente)session.getAttribute("cliente");
-			Usuario usu = (Usuario)session.getAttribute("usuario");
-			PedidosModel model = new PedidosModel();
-			model.InsertarPedidos(cli.getDni(),usu.getUsuario());
-			System.out.println(cli.getDni() + " " + usu.getUsuario());
-			ControlModel model1 = new ControlModel();
-			Pedido pedido = model.getPedido(model1.getValor("pedido"));
-			model.InsertaProductosDetallePedido(listapedido, usu.getUsuario());
-			session.setAttribute("totalpedido", pedido.getTotalpedido());
-			request.setAttribute("mensaje", "insercion Exitosa");
-			RequestDispatcher rd = request.getRequestDispatcher("Pedido.jsp");
+				Cliente cli = (Cliente)session.getAttribute("cliente");
+				Usuario usu = (Usuario)session.getAttribute("user");
+				PedidosModel model = new PedidosModel();
+				ControlModel model1 = new ControlModel();
+				String codigo = model1.getValor("pedido");
+				model.InsertarPedidos(cli.getDni(),usu.getUsuario());
+				model.InsertaProductosDetallePedido(listapedido, usu.getUsuario());
+				Pedido pedido = model.getPedido(codigo);
+				session.setAttribute("nropedido",codigo);
+				session.setAttribute("totalpedido", pedido.getTotalpedido());
+				System.out.println(pedido.getTotalpedido());
+				request.setAttribute("mensaje", "insercion Exitosa");
+				session.removeAttribute("listapedido");
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}		
+			RequestDispatcher rd = request.getRequestDispatcher("Pagos");
 			rd.forward(request, response);
 	}
 

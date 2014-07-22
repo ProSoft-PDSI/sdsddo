@@ -56,8 +56,9 @@
 <c:if test="${sessionScope.user!=null}">
 <%int h = 1; %>
 <form method="post" action="Entrada">
+
 <c:forEach var = "i" items = "${requestScope.listaentrada}" >
-<div id="modal-<% out.print(h); %>" class="md-modal md-effect-1" >
+<div id="modal-1" class="md-modal md-effect-1" >
 
 
 			<div class="md-content">
@@ -88,15 +89,23 @@
 </div>
 </c:forEach>
 
+
+
 					  
 	
 	</form>
 </c:if>
 
 <c:if test="${sessionScope.user==null}">
-	<script type="text/javascript">
-		alert("necesita iniciar session")
-	</script>
+	<div id="modal-1" class="md-modal md-effect-1" >
+		<div class="md-content">
+			<a href="#"  class="md-close">X</a>
+			<h3><span>Necesita Iniciar Sesion<span></h3>
+			<div>
+			<a href="LoginRegistro.jsp" class="button1 md-close">Iniciar Session</a>
+			</div>
+		</div>
+	</div>
 </c:if>
 
 <div class="body2">

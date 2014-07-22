@@ -116,7 +116,7 @@ fecha date not null,
 subtotalpedido number(5,2) not null,
 igv    number(5,2) not null,
 totalpedido  number(5,2) not null,
-estado char(1) not null,
+estado varchar2(3) not null,
 usuario varchar2(30) not null,
 constraint pk_pedido
 	primary key(nropedido),

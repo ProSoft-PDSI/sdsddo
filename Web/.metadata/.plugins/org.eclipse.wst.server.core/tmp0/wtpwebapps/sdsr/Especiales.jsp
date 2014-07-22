@@ -53,6 +53,7 @@
 </div>
 
 <%int h = 1; %>
+<form method="post" action="Especiales">
 <c:forEach var = "i" items = "${requestScope.listaespecial}" >
 <% if(h == 1) { %>
 <div id="modal-1" class="md-modal md-effect-1" >
@@ -81,6 +82,7 @@
 <% h++; %>        
 </div>
 </c:forEach>
+</form>
 <%@ include file="footer.jsp" %>
 </body>
 </html>

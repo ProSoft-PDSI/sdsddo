@@ -1,0 +1,31 @@
+#marco{
+	background: transparent;
+}
+
+.marco{
+	height:80em; 
+	width:101%; 
+}
+
+.posicion{
+	height:60em;
+}
+
+#inicio{
+	color:white;
+	position:relative;
+	left:43em;
+}
+
+#inicio a{
+	color:white;
+}
+
+#enlace a{
+	color:white;
+}
+
+.tablita
+{
+	border:2px solid black;
+}

@@ -1,6 +1,5 @@
 package model;
 
-import java.util.Date;
 import java.util.List;
 import dao.impl.PedidoDaoImpl;
 import dao.spec.PedidoDao;

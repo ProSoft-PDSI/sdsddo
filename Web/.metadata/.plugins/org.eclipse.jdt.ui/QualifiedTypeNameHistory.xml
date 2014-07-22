@@ -20,7 +20,6 @@
 <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
 <fullyQualifiedTypeName name="model.LoginModel"/>
 <fullyQualifiedTypeName name="entity.Usuario"/>
-<fullyQualifiedTypeName name="util.UtilDate"/>
 <fullyQualifiedTypeName name="dao.impl.ClienteDaoImpl"/>
 <fullyQualifiedTypeName name="util.UtilMail"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
@@ -53,4 +52,6 @@
 <fullyQualifiedTypeName name="entity.DetallePedido"/>
 <fullyQualifiedTypeName name="model.ControlModel"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="util.UtilDate"/>
 </qualifiedTypeNameHistroy>

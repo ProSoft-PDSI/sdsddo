@@ -20,19 +20,19 @@
 			<article id="content">
 				<div class="wrap">
 					<div class="box">
+						<form method="post" action="InsertarPedido">
 						<div>
 							<h2 class="letter_spacing"><span>Pedidos</span></h2>
 		<c:if test="${sessionScope.lista!=null}">	
 				<table class="tablita">
 					<c:forEach var="p" items="${sessionScope.lista}">
 						<tr>
-						<td>${p.nropedido}</td>
 						<td>${p.codproducto}</td> 
 						<td>${p.cant}</td>
 						</tr>
 					</c:forEach>
 				</table>
-				<a href="InsertarPedido" class="button1">Hacer Pedido</a>
+				<input type="submit" class="button1" value="Hacer Pedido">
 				
 				<c:if test="${requestScope.mensaje != null}">
 						${requestScope.mensaje};
@@ -46,6 +46,7 @@
 			<c:out value="no hay datos"></c:out>
 		</c:if>
 			</div>
+			</form>
 					</div>
 				</div>
 			</article>
