@@ -1808,3 +1808,12 @@
 127.0.0.1 - - [22/Jul/2014:14:00:15 -0500] "GET /sdsr/css/default.css HTTP/1.1" 404 1001
 127.0.0.1 - - [22/Jul/2014:14:00:15 -0500] "GET /sdsr/css/default.css HTTP/1.1" 404 1001
 127.0.0.1 - - [22/Jul/2014:14:00:17 -0500] "GET /js/htc/sepia.htc HTTP/1.1" 404 993
+127.0.0.1 - - [22/Jul/2014:15:19:34 -0500] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/Contacto.jsp HTTP/1.1" 200 2429
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/css/default.css HTTP/1.1" 404 1001
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/css/estilos.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/css/component.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/js/modernizr.custom.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/images/box_bg.png HTTP/1.1" 304 -
+127.0.0.1 - - [22/Jul/2014:15:19:35 -0500] "GET /sdsr/images/box_top2.png HTTP/1.1" 304 -
