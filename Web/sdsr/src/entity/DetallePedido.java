@@ -1,6 +1,12 @@
 package entity;
 
-public class DetallePedido {
+import java.io.Serializable;
+
+public class DetallePedido implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	String nropedido;
 	String codproducto;
 	int cant;

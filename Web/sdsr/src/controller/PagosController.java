@@ -3,7 +3,6 @@ package controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,9 +35,9 @@ public class PagosController extends HttpServlet {
 			
 			//Datos
 			//String nropedido = (request.getParameter("td_pedido")).replaceAll(" ", "");//
-			String nropedido=(String) session.getAttribute("pedido");
+			String nropedido=(String) session.getAttribute("nropedido");
 			String codtipo_pago=(request.getParameter("hid_tipo_pago")).replaceAll(" ", "");
-			Double totalpedido=Double.parseDouble((String) session.getAttribute("total"));//
+			Double totalpedido=Double.parseDouble((String) session.getAttribute("totalpedido"));//
 			Double efectivo=Double.parseDouble(request.getParameter("imp_efec"));
 			Double cambio=Double.parseDouble(request.getParameter("hid_cambio"));//
 			String estado="P";

@@ -41,7 +41,7 @@ body {
 										<li>${requestScope.error}</li>
 								</c:if>
 								<c:if test="${requestScope.mensaje != null}">
-										<li><span id="inicio"><a href="index.jsp" target="_top">${requestScope.mensaje}</a></span></li>
+										<li><span id="enlace"><a href="index.jsp" target="_top">${requestScope.mensaje}</a></span></li>
 								</c:if>
 								</ul>
 							</form>

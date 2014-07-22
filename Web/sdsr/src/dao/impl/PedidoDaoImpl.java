@@ -4,7 +4,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.Date;
+
 import util.UtilDate;
 import dao.spec.PedidoDao;
 import dao.util.AccesoDB;
@@ -19,9 +19,10 @@ public class PedidoDaoImpl implements PedidoDao,RowMapper<Pedido> {
 		try {
 			cn=AccesoDB.getConnection();
 			cn.setAutoCommit(false);
-			String sql="{call sp_insertapedidos(?)}";
+			String sql="{call sp_insertapedidos(?,?)}";
 			CallableStatement cstm = cn.prepareCall(sql);
 			cstm.setString(1, dni);
+			cstm.setString(2, usuario);
 			cstm.executeUpdate();
 			cstm.close();			
 		} catch (Exception e) {
@@ -93,8 +94,9 @@ public class PedidoDaoImpl implements PedidoDao,RowMapper<Pedido> {
 			String sql="{call sp_insertadetallepedido(?,?,?,?)}";
 			CallableStatement cstm = cn.prepareCall(sql);
 			cstm.setString(1, nropedido);
-			cstm.setString(1, codproducto);
+			cstm.setString(2, codproducto);
 			cstm.setInt(3, cant);
+			cstm.setString(4,usuario);
 			cstm.executeUpdate();
 			cstm.close();			
 		} catch (Exception e) {
@@ -117,9 +119,9 @@ public class PedidoDaoImpl implements PedidoDao,RowMapper<Pedido> {
 		Pedido ped=null;
 		try {
 			cn=AccesoDB.getConnection();
-			String sql = "select nropedido,dni,subtotalpedido,igv,"
+			String sql = "select nropedido,dni,fecha,subtotalpedido,igv,"
 					+ "totalpedido,estado "
-					+ "from detallepedido "
+					+ "from pedido "
 					+ "where nropedido=?";
 			PreparedStatement pstm = cn.prepareStatement(sql);
 			pstm.setString(1, nropedido);
@@ -147,6 +149,7 @@ public class PedidoDaoImpl implements PedidoDao,RowMapper<Pedido> {
 		try {
 			bean.setNropedido(rs.getString("nropedido"));
 			bean.setDni(rs.getString("dni"));
+			bean.setFecha(UtilDate.sqlToJava(rs.getDate("fecha")));
 			bean.setSubtotalpedido(rs.getDouble("totalpedido"));
 			bean.setIgv(rs.getDouble("igv"));
 			bean.setTotalpedido(rs.getDouble("totalpedido"));

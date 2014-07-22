@@ -89,3 +89,158 @@ jul 20, 2014 13:37:42.47 NOTE: child process received `Goodbye', closing down
 jul 20, 2014 13:37:42.47 [Child 4880] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
 jul 20, 2014 14:06:01.50 NOTE: child process received `Goodbye', closing down
 jul 20, 2014 14:06:01.51 [3840] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+
+jul 22, 2014 02:16:35.80 NEW SESSION
+jul 22, 2014 02:16:35.80 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 02:17:44.30 [Child 4020] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+jul 22, 2014 11:25:04.18 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:25:07.29 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:25:09.44 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:25:09.57 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:26:24.41 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:26:25.03 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:26:34.97 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:26:35.81 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:26:50.37 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:26:52.40 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:26:57.06 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:28:46.22 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:28:59.47 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:51:03.90 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:51:12.67 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:51:19.06 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:51:24.98 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 11:54:26.69 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 12:04:55.70 No permission to use the keyboard API for http://googleads.g.doubleclick.net
+jul 22, 2014 12:52:28.68 
+jul 22, 2014 12:52:28.69 ###!!! [Parent][MessageChannel::InterruptCall] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.69 
+jul 22, 2014 12:52:28.69 
+jul 22, 2014 12:52:28.69 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.70 
+jul 22, 2014 12:52:28.70 
+jul 22, 2014 12:52:28.70 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.70 
+jul 22, 2014 12:52:28.70 
+jul 22, 2014 12:52:28.70 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.71 
+jul 22, 2014 12:52:28.71 
+jul 22, 2014 12:52:28.71 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.71 
+jul 22, 2014 12:52:28.71 
+jul 22, 2014 12:52:28.71 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.71 
+jul 22, 2014 12:52:28.71 
+jul 22, 2014 12:52:28.71 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.71 
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 
+jul 22, 2014 12:52:28.72 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.73 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.73 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.73 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.73 
+jul 22, 2014 12:52:28.74 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.74 
+jul 22, 2014 12:52:28.74 
+jul 22, 2014 12:52:28.74 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.74 
+jul 22, 2014 12:52:28.74 
+jul 22, 2014 12:52:28.74 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.74 
+jul 22, 2014 12:52:28.74 
+jul 22, 2014 12:52:28.74 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.75 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.75 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.75 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.75 
+jul 22, 2014 12:52:28.76 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.76 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.76 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.76 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.76 
+jul 22, 2014 12:52:28.77 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 
+jul 22, 2014 12:52:28.77 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.78 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.78 
+jul 22, 2014 12:52:28.96 
+jul 22, 2014 12:52:28.99 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:28.99 
+jul 22, 2014 12:52:29.26 
+jul 22, 2014 12:52:29.26 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:29.26 
+jul 22, 2014 12:52:29.27 
+jul 22, 2014 12:52:29.27 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:29.27 
+jul 22, 2014 12:52:29.27 
+jul 22, 2014 12:52:29.27 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:29.28 
+jul 22, 2014 12:52:29.30 
+jul 22, 2014 12:52:29.30 ###!!! [Parent][MessageChannel::Call] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:29.30 
+jul 22, 2014 12:52:29.31 
+jul 22, 2014 12:52:29.31 ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:29.31 
+jul 22, 2014 12:52:29.34 
+jul 22, 2014 12:52:29.34 ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:29.34 
+jul 22, 2014 12:52:29.34 
+jul 22, 2014 12:52:29.34 ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+jul 22, 2014 12:52:29.34 

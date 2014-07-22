@@ -50,6 +50,7 @@ public class LoginController extends HttpServlet {
 			HttpSession session = request.getSession(true);
 			session.removeAttribute("user");
 			session.removeAttribute("cliente");
+			session.removeAttribute("lista");
 			session.invalidate();
 			String pageToForward = request.getContextPath();
 			response.sendRedirect(pageToForward);

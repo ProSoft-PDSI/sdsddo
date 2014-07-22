@@ -116,7 +116,7 @@ fecha date not null,
 subtotalpedido number(5,2) not null,
 igv    number(5,2) not null,
 totalpedido  number(5,2) not null,
-estado char(1) not null,
+estado varchar2(3) not null,
 usuario varchar2(30) not null,
 constraint pk_pedido
 	primary key(nropedido),
@@ -256,6 +256,12 @@ END;
 /
 SET TERMOUT OFF
 
+-- ====================================
+-- Cargar datos a la tabla usuario
+-- ====================================
+insert into usuario(usuario,contrasenia,tipo) values ('admin','superusuario','S');
+commit;
+
 -- ==========================================================
 -- Cargar datos a la tabla: producto
 -- ==========================================================
@@ -295,11 +301,6 @@ insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,p
 insert into producto(codproducto,nombreproducto,descrproducto,categoria,imagen,preciounitario,stock,usuario) values ('ES03','Fetuccini','Generosa porcion de fettucinis con abundante salsa Alfredo con trozos de pechuga','normal','images/esp_3.jpg',22.50,60,'admin');
 commit;
 
--- ====================================
--- Cargar datos a la tabla usuario
--- ====================================
-insert into usuario(usuario,contrasenia,tipo) values ('admin','superusuario','S');
-commit;
 
 -- ====================================
 -- Cargar datos a la tabla mensaje

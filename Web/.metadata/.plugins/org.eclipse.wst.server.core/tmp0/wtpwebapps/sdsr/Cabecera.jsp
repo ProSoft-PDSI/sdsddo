@@ -19,10 +19,10 @@
 	<ul id="top_nav">
 		<li><a href="index.jsp"><img src="images/icon_1.gif" alt=""></a></li>
 		<c:if test="${sessionScope.user == null }">
-			<li><a href="LoginRegistro.jsp" target="frame"><img src="images/icon_2.gif" alt=""></a></li>
+			<li><a href="LoginRegistro.jsp" target="frame"><img src="images/icon_2.gif" alt="Login y Registro"></a></li>
 		</c:if>
 		<c:if test="${sessionScope.user != null }">
-		<li><a href="ListaPedidos" target="frame">C</a></li>
+		<li><a href="ListaPedidos" target="frame"><img src="images/icon_4.gif" alt="Carrito"></a></li>
 		</c:if>
 		<li class="end"><a href="Contacto.jsp" target="frame"><img src="images/icon_3.gif" alt=""></a></li>
 	</ul>
