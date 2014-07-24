@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import entity.Usuario;
 import model.PagosModel;
 
 /**
@@ -32,16 +34,16 @@ public class PagosController extends HttpServlet {
 		try {
 			//Session
 			HttpSession session=request.getSession();
-			
+			Usuario usu1=(Usuario) session.getAttribute("user");
 			//Datos
-			//String nropedido = (request.getParameter("td_pedido")).replaceAll(" ", "");//
 			String nropedido=(String) session.getAttribute("nropedido");
 			String codtipo_pago=(request.getParameter("hid_tipo_pago")).replaceAll(" ", "");
-			Double totalpedido=Double.parseDouble((String) session.getAttribute("totalpedido"));//
-			Double efectivo=Double.parseDouble(request.getParameter("imp_efec"));
+			Double totalpedido=Double.parseDouble((String) session.getAttribute("totalpedido"));
+			Double efectivo=Double.parseDouble((String) request.getParameter("hid_imp_efec"));
 			Double cambio=Double.parseDouble(request.getParameter("hid_cambio"));//
 			String estado="P";
-			String usuario=request.getParameter("hid_usuario");
+			//String usuario=request.getParameter("hid_usuario");
+			String usuario=usu1.getUsuario();
 			
 			//Proceso
 			PagosModel model= new PagosModel();

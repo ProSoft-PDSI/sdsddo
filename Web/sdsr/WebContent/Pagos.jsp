@@ -16,11 +16,12 @@
 			<h1>PAGOS</h1>
 		</header>
 		<nav id="menu">
-			<ul>
+			<!-- <ul>
 				<li>Principal1</li>
 				<li>Principal2</li>
 				<li>Principal3</li>
 			</ul>
+			-->
 		</nav>
 		<section id="seccion">
 			<form id="formulario" name="formulario" method="post" action="">
@@ -55,7 +56,7 @@
 					<tr>
 						<td>Monto:</td>
 						<td id="td_imp_efec" name="td_imp_efec"><input type="number" id="imp_efec"
-							name="imp_efec" min="0" pattern="[0-9]*[.,]?[0-9]+"></td>
+							 name="imp_efec" min="0" maxlength="6" pattern="[0-9]*[.,]?[0-9]+"></td>
 					</tr>
 					<tr>
 						<td></td>
@@ -77,6 +78,7 @@
 				<input type="hidden" id="hid_tipo_pago" name="hid_tipo_pago"> <input
 					type="hidden" id="hid_usuario" name="hid_usuario" value="${sessionScope.usuario}">
 					<input type="hidden" id="hid_cambio" name="hid_cambio">
+					<input type="hidden" id="hid_imp_efec" name="hid_imp_efec">
 			</form>
 
 		</section>

@@ -25,7 +25,7 @@
 								<figure><img src="${i.imagen}" alt="" ></figure>
 								<p class="pad_bot1">${i.descripcion}</p>
 								<input type="hidden" name="codigo" value="${i.codProducto}"></input>
-								<a href="Pizza" class="button1">Pedir</a>
+								<a class="md-trigger button1" data-modal="modal-1" >Pedir</a>
 							</div>
 						</div>
 					</section>
@@ -38,7 +38,7 @@
 								<figure><img src="${i.imagen}" alt="" ></figure>
 								<p class="pad_bot1">${i.descripcion}</p>
 								<input type="hidden" name="codigo" value="${i.codProducto}"></input>
-								<a href="Pizza" class="button1">Pedir</a>
+								<a class="md-trigger button1" data-modal="modal-2" >Pedir</a>
 							</div>
 						</div>
 					</section>
@@ -131,6 +131,6 @@
 	</div>
 </div>
 
-<script type="text/javascript"> Cufon.now(); </script>
+<%@ include file="footer.jsp" %>
 </body>
 </html>
