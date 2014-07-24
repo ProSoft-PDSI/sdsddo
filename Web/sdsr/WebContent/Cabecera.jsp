@@ -24,7 +24,6 @@
 		<c:if test="${sessionScope.user != null }">
 		<li><a href="ListaPedidos" target="frame"><img src="images/icon_4.gif" alt="Carrito"></a></li>
 		</c:if>
-		<li class="end"><a href="Contacto.jsp" target="frame"><img src="images/icon_3.gif" alt=""></a></li>
 	</ul>
 </nav>
 <nav>
@@ -33,6 +32,5 @@
 		<li><a href="Entrada" target="frame">Entrada</a></li>
 		<li><a href="Pizza" target="frame">Pizza Clasica</a></li>
 		<li><a href="Especiales" target="frame">Especiales</a></li>
-		<li><a href="Contacto.jsp" target="frame">Contacto</a></li>
 	</ul>
 </nav>

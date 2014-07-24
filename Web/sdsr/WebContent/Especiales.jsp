@@ -82,6 +82,19 @@
 <% h++; %>        
 </div>
 </c:forEach>
+
+<c:if test="${sessionScope.user==null}">
+	<div id="modal-1" class="md-modal md-effect-1" >
+		<div class="md-content">
+			<a href="#"  class="md-close">X</a>
+			<h3><span>Necesita Iniciar Sesion<span></h3>
+			<div>
+			<a href="LoginRegistro.jsp" class="button1 md-close">Iniciar Session</a>
+			</div>
+		</div>
+	</div>
+</c:if>
+
 </form>
 <%@ include file="footer.jsp" %>
 </body>

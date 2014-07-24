@@ -63,7 +63,7 @@ public class PedidosController extends HttpServlet {
 			System.out.println(e.getMessage());
 		}
 		RequestDispatcher rd;
-		rd = request.getRequestDispatcher("Especiales.jsp");
+		rd = request.getRequestDispatcher("Pedido.jsp");
 		rd.forward(request, response);
 		
 	}
@@ -90,7 +90,7 @@ public class PedidosController extends HttpServlet {
 		}
 		
 		RequestDispatcher rd;
-		rd = request.getRequestDispatcher("Clasica.jsp");
+		rd = request.getRequestDispatcher("Pedido.jsp");
 		rd.forward(request, response);
 	}
 
@@ -201,7 +201,7 @@ public class PedidosController extends HttpServlet {
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}		
-			RequestDispatcher rd = request.getRequestDispatcher("Pagos");
+			RequestDispatcher rd = request.getRequestDispatcher("Pagos.jsp");
 			rd.forward(request, response);
 	}
 
