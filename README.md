@@ -9,4 +9,4 @@ Sistema hecho por
 
 Elaborado para el el curso de Proyecto de Desarrollo I
 
-**Estado**:Activo
+**Estado**:Finalizado(Alpha)
