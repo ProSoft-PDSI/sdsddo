@@ -1,0 +1,93 @@
+pueden bajarse la aplicacion de windows o el plugin de Eclipse
+yo tengo ambos porsiaca pq a veces el de windows falla
+
+primero bajamos el el de windows y lo instalaremos
+
+toma su tiempo,depende del ancho de banda que poseas
+
+bueno yo ya estaba logeado vamos a deslogearnos
+
+aqui pónen su nombre de usuario y contraseña
+
+para poder guardar el repositorio le dan a clone
+
+si quieren pueden cambiar la carpeta donde 
+se guardara el repositorio
+
+yo lo guardare en el por defecto
+
+esperamos
+
+ya acabo
+
+alli esta todos los cambios y puedes entrar a los 
+archivos desde la carpeta
+
+ahora les enseñare como instalar el de eclipse
+
+pero antes les enseñare como subir
+
+una vez descrito los cambios que se hicieron hacen commit
+
+para actualizar y confirmar los cambios le dan a sync
+
+a veces suele demorar
+
+si  ven que no avanza lo pueden cerrar y volver abrir
+por siaca le pondre sync,si no estan seguros pueden fijarse
+en github
+
+si tienen temor de malograr puede crear un branch
+
+el cual permite hacer cambios sin afectar al proyecto
+despues ese cambio se puede unir
+
+ahora lo hare desde eclipse
+
+para instalar pueden hacer 2 cosas
+
+copiar la direccion que les dan en la pagina de eclipse en
+marketplace o buscarlo alli mismo
+
+bueno no se pq no funciona xD!!!
+
+probemos la otra
+
+el plugin se llama egit
+
+bueno yo ya lo instale pero lo volvere a instalar
+
+me habia equivocado el enlace se copiaba en new software
+
+puede que se demore un pco pq hay un monton de plugins
+
+mejor usaremos el marketplace
+
+bueno no quiere
+
+pero donde dice update les aparecera install
+
+tmb pueden instar junto con el 
+egit el github mylyn connector
+
+cuando termine volvemos
+
+ya acabo
+
+para llegar a esto le ponen click derecho commit
+
+escriben lo que paso
+
+se escribe asi,pq el primero es el titulo y el de abajo
+es la descripcion
+
+aqui le dan commit and push
+
+para subir de frente
+
+y ya esta pueden fijarse en github
+
+
+alguna pregunta me avisan!!!
+
+

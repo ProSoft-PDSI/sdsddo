@@ -1,5 +1,0 @@
-package model;
-
-public class ControlModel {
-	public String getValor(String parametro);
-}
