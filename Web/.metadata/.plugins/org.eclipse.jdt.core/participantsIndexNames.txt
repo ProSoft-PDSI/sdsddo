@@ -1,3 +1,0 @@
-INDEX VERSION 1.126
-C:\Users\YOSHITOMI\Documents\GitHub\sdsddo\Web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3483207819.index
-\sdsr\src

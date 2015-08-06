@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete 7 elements from project &apos;modelo&apos;&#x0D;&#x0A;- Original project: &apos;modelo&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     modelo/src/controller&#x0D;&#x0A;     modelo/src/dao.impl&#x0D;&#x0A;     modelo/src/dao.spec&#x0D;&#x0A;     modelo/src/dao.util&#x0D;&#x0A;     modelo/src/entity&#x0D;&#x0A;     modelo/src/model&#x0D;&#x0A;     modelo/src/util" description="Delete elements" element1="/src&lt;util" element10="/src&lt;controller" element2="/src&lt;model" element3="/src&lt;entity" element4="/src&lt;dao.util" element5="/src&lt;dao" element6="/src&lt;dao.spec" element7="/src&lt;dao" element8="/src&lt;dao.impl" element9="/src&lt;dao" elements="10" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1405312540768" subPackages="false" version="1.0"/>
-</session>
